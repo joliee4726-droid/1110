@@ -1,0 +1,2123 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>현장실습 자소서 워크북</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EDF1EE; --surface:#FFFFFF; --sunk:#F5F7F5; --ink:#17202B; --muted:#5B6673; --line:#CBD3CE;
+  --action:#22406B; --action-ink:#FFFFFF; --pen:#C23B2E; --pen-soft:#FBE9E6; --hl:#F7EB7A; --hl-ink:#3D3500;
+  --ok:#2F7A55; --ok-soft:#E3F2EA; --soft:#2E5AAC; --soft-bg:#E6EDF8;
+  --ui:'IBM Plex Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;
+  --text:'Gowun Batang','Nanum Myeongjo','AppleMyungjo',serif;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#121614; --surface:#1B201D; --sunk:#161A18; --ink:#E7ECE8; --muted:#9AA59F; --line:#2E3531;
+    --action:#8FB2E8; --action-ink:#0E1A2B; --pen:#F07A6C; --pen-soft:#3A1F1C; --hl:#6B6320; --hl-ink:#FFF6B8;
+    --ok:#6CC49A; --ok-soft:#18302A; --soft:#8FB2E8; --soft-bg:#1C2738;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121614; --surface:#1B201D; --sunk:#161A18; --ink:#E7ECE8; --muted:#9AA59F; --line:#2E3531;
+  --action:#8FB2E8; --action-ink:#0E1A2B; --pen:#F07A6C; --pen-soft:#3A1F1C; --hl:#6B6320; --hl-ink:#FFF6B8;
+  --ok:#6CC49A; --ok-soft:#18302A; --soft:#8FB2E8; --soft-bg:#1C2738;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 120px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--ui);font-size:15px;line-height:1.6}
+button,input,textarea,select{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--soft);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.top-in{max-width:1120px;margin:0 auto;padding:12px 20px;display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+.brand{font-family:var(--text);font-weight:700;font-size:21px;letter-spacing:-.01em}
+.brand-sub{color:var(--muted);font-size:13px}
+.top-right{margin-left:auto;display:flex;gap:8px;align-items:center}
+.who{font-size:13px;color:var(--muted)}
+
+.shell{max-width:1120px;margin:0 auto;padding:20px;display:grid;grid-template-columns:230px minmax(0,1fr);gap:28px;align-items:start}
+nav.rail{position:sticky;top:calc(env(safe-area-inset-top,0px) + 110px)}
+.rail ol{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}
+.rail li{margin:0}
+.rail button{display:block;width:100%;text-align:left;background:none;border:0;padding:10px 12px 10px 16px;margin-left:-2px;border-left:2px solid transparent;cursor:pointer;border-radius:0 8px 8px 0}
+.rail button:hover{background:var(--surface)}
+.rail button[aria-current="step"]{border-left-color:var(--action);background:var(--surface)}
+.rail .n{font-weight:700;color:var(--muted);margin-right:6px}
+.rail button[aria-current="step"] .n{color:var(--action)}
+.rail .t{font-weight:600}
+.rail .time{display:block;font-size:12px;color:var(--muted)}
+.rail .done .n::after{content:" ✓";color:var(--ok)}
+.rail-note{margin-top:18px;font-size:12.5px;color:var(--muted);line-height:1.6}
+
+main{min-width:0}
+section.step{display:none}
+section.step.show{display:block}
+h1{font-family:var(--text);font-size:28px;line-height:1.3;margin:0 0 6px;letter-spacing:-.01em}
+.lead{color:var(--muted);margin:0 0 22px;max-width:62ch}
+h2{font-size:17px;margin:0 0 4px}
+.hint{color:var(--muted);font-size:13.5px;margin:0 0 12px;max-width:66ch}
+
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;margin-bottom:18px}
+.panel.flat{background:var(--sunk)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label.f{display:block;font-size:13.5px;font-weight:600;margin-bottom:6px}
+label.f small{font-weight:400;color:var(--muted);margin-left:4px}
+input[type=text],input[type=number],textarea,select{width:100%;background:var(--sunk);border:1px solid var(--line);border-radius:8px;padding:10px 12px}
+textarea{resize:vertical;min-height:90px;line-height:1.7}
+textarea.draft{font-family:var(--text);font-size:15.5px;min-height:170px}
+input:focus,textarea:focus,select:focus{border-color:var(--action);background:var(--surface);outline:none;box-shadow:0 0 0 3px var(--soft-bg)}
+.check{display:flex;gap:8px;align-items:flex-start;font-size:14px;margin-top:10px;cursor:pointer}
+.check input{margin-top:4px;width:17px;height:17px;accent-color:var(--action)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;border-radius:8px;padding:10px 16px;border:1px solid var(--action);background:var(--action);color:var(--action-ink);font-weight:600;cursor:pointer;text-decoration:none}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;color:var(--action)}
+.btn.quiet{background:transparent;border-color:var(--line);color:var(--ink)}
+.btn.danger{background:transparent;border-color:var(--pen);color:var(--pen)}
+.btn.small{padding:6px 11px;font-size:13px}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.next{display:flex;justify-content:space-between;gap:10px;margin-top:6px}
+
+.qcard{border:1px solid var(--line);border-radius:10px;padding:16px;margin-bottom:14px;background:var(--surface)}
+.qhead{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.qnum{font-family:var(--text);font-weight:700;font-size:18px}
+.qhead .sp{flex:1}
+.qgrid{display:grid;grid-template-columns:1fr 130px 150px;gap:10px;margin-bottom:10px}
+.count{font-size:12.5px;color:var(--muted);text-align:right;margin-top:4px}
+.count b{color:var(--ink)}
+.count .over{color:var(--pen);font-weight:700}
+
+.flow{counter-reset:f;list-style:none;padding:0;margin:0}
+.flow li{counter-increment:f;position:relative;padding:0 0 14px 40px}
+.flow li::before{content:counter(f);position:absolute;left:0;top:0;width:28px;height:28px;border-radius:50%;border:1.5px solid var(--action);color:var(--action);font-weight:700;display:flex;align-items:center;justify-content:center;font-size:14px}
+.flow li b{display:block}
+.flow li span{color:var(--muted);font-size:14px}
+
+.cmds{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:14px;margin:0}
+.cmds dt{font-weight:700;white-space:nowrap}
+.cmds dd{margin:0;color:var(--muted)}
+.ai-pick{display:flex;gap:8px;flex-wrap:wrap}
+details.prev summary{cursor:pointer;color:var(--action);font-weight:600;font-size:14px}
+details.prev pre{white-space:pre-wrap;font-size:12.5px;line-height:1.6;background:var(--sunk);border:1px solid var(--line);border-radius:8px;padding:12px;max-height:340px;overflow:auto;margin:10px 0 0}
+.mini{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.mini button{text-align:left;background:var(--sunk);border:1px solid var(--line);border-radius:8px;padding:12px;cursor:pointer}
+.mini button:hover{border-color:var(--action)}
+.mini b{display:block;font-size:14px}
+.mini span{font-size:12.5px;color:var(--muted)}
+
+.demo-bar{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:14px 18px}
+.demo-bar b{display:block;font-size:14.5px}
+.demo-bar span{font-size:13px;color:var(--muted)}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{border:1px solid var(--action);color:var(--action);background:transparent;border-radius:999px;padding:7px 16px;font-weight:600;cursor:pointer}
+.chip:hover{background:var(--soft-bg)}
+.prog-pill{font-size:12.5px;font-weight:700;border:1px solid var(--line);border-radius:999px;padding:3px 10px;color:var(--muted);white-space:nowrap}
+.prog-pill.ok{color:var(--ok);border-color:var(--ok)}
+.steps2{list-style:none;margin:0 0 18px;padding:0;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.steps2 li{display:flex;align-items:center;gap:14px;padding:16px 20px;border-top:1px solid var(--line)}
+.steps2 li:first-child{border-top:0}
+.steps2 .sn{flex:none;width:34px;height:34px;border-radius:50%;background:var(--action);color:var(--action-ink);font-weight:700;display:flex;align-items:center;justify-content:center;font-size:16px}
+.steps2 .sb{flex:1;min-width:0}
+.steps2 .sb b{display:block;font-size:16px}
+.steps2 .sb span{display:block;font-size:13.5px;color:var(--muted)}
+.btn.big{padding:13px 26px;font-size:16px}
+details.help{padding:0}
+details.help>summary{cursor:pointer;padding:16px 20px;font-weight:700;list-style-position:inside}
+.help-body{padding:0 20px 20px}
+.md{font-size:14px;line-height:1.7;overflow-x:auto}
+.md table{min-width:620px;margin:10px 0}
+.md th{background:var(--sunk)}
+.md p{margin:6px 0}
+.nextbar{background:var(--action);color:var(--action-ink)}
+.nextbar-in{max-width:1120px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.nb-label{font-size:12px;font-weight:700;opacity:.8;border:1px solid currentColor;border-radius:999px;padding:1px 9px}
+.nb-msg{font-weight:600;flex:1;min-width:200px}
+#nbBtn{background:var(--action-ink);color:var(--action);border-color:var(--action-ink)}
+.nextbar.done{background:var(--ok)}
+.nextbar.done #nbBtn{color:var(--ok)}
+.pn{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:var(--action);color:var(--action-ink);font-size:13px;margin-right:8px;vertical-align:1px}
+h2.sec{margin:26px 0 10px}
+.re-eval{margin-top:18px;padding-top:14px;border-top:1px solid var(--line)}
+.panel.submit{border-color:var(--action)}
+.btn.copied{background:var(--ok);border-color:var(--ok);color:#fff}
+.flash{animation:flash 1.2s ease}
+@keyframes flash{0%{box-shadow:0 0 0 0 var(--hl)}30%{box-shadow:0 0 0 6px var(--hl)}100%{box-shadow:0 0 0 0 transparent}}
+.stiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.stile{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;text-align:center}
+.stile span{display:block;font-size:12.5px;color:var(--muted);font-weight:600}
+.stile b{font-family:var(--text);font-size:30px;line-height:1.2}
+.stile b small{font-size:14px;margin-left:2px;font-family:var(--ui)}
+.stile.hit{border-color:var(--ok);color:var(--ok)}
+.sline{margin:10px 0 0;font-size:15px}
+.score-sum{margin:12px 0 4px;padding:16px 18px;border-radius:10px;background:var(--sunk);border:1px solid var(--line)}
+.score-sum .big{font-family:var(--text);font-size:28px;font-weight:700;line-height:1.2}
+.score-sum .delta{font-size:16px;font-weight:700;color:var(--ok);margin-left:8px}
+.score-sum .goal{display:block;margin-top:6px;font-weight:600}
+.score-sum.hit{border-color:var(--ok);background:var(--ok-soft)}
+.score-sum .goal.miss{color:var(--pen)}
+.score-sum .cond{display:block;margin-top:6px;font-size:13.5px;color:var(--muted)}
+.score-sum .empty{color:var(--muted);font-size:14px}
+details.score-edit{margin-top:10px}
+details.score-edit summary{cursor:pointer;font-size:13px;color:var(--muted)}
+.fileline{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:8px}
+.filebtn{cursor:pointer}
+.fstat{font-size:13px;color:var(--muted)}
+.fstat.err{color:var(--pen)}
+.fstat.ok{color:var(--ok)}
+.drop{outline:2px dashed var(--action);outline-offset:2px}
+.expgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.expgrid .span2{grid-column:1 / -1}
+.expgrid textarea{min-height:76px}
+.expcount{font-size:13px;font-weight:600;color:var(--muted);margin-left:6px}
+.expcount.ok{color:var(--ok)}
+.modes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:12px}
+.mode{display:block;border:1.5px solid var(--line);border-radius:10px;padding:12px 14px;cursor:pointer;background:var(--sunk)}
+.mode input{margin-right:6px;accent-color:var(--action)}
+.mode b{font-size:14.5px}
+.mode span{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}
+.mode:has(input:checked){border-color:var(--action);background:var(--soft-bg)}
+.presets{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.preset{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 13px;font-size:13.5px;cursor:pointer}
+.preset:hover{border-color:var(--action)}
+.preset.on{background:var(--action);color:var(--action-ink);border-color:var(--action)}
+.preset .warn{font-size:11.5px;opacity:.75;margin-left:4px}
+.guide5{padding:14px 18px}
+.guide5>summary{cursor:pointer}
+table.g5{min-width:560px;font-size:13.5px;margin-top:10px}
+table.g5 td:first-child{white-space:nowrap;font-weight:600}
+.card5{border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:16px 18px;margin-bottom:14px}
+.card5.star{border-color:var(--action);box-shadow:0 0 0 1px var(--action)}
+.c5head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.c5head .qnum{flex:none}
+.c5head select{width:auto;padding:6px 10px;font-size:13.5px}
+.c5head .sp{flex:1}
+.starbtn{border:1px solid var(--line);background:var(--sunk);border-radius:999px;padding:5px 12px;font-size:13px;cursor:pointer}
+.starbtn.on{background:var(--action);color:var(--action-ink);border-color:var(--action)}
+.c5basic{display:grid;grid-template-columns:1.2fr 1.4fr 1fr;gap:8px}
+.c5line{display:grid;grid-template-columns:118px minmax(0,1fr);gap:8px;align-items:center;margin-top:8px}
+.c5line label{font-size:13px;font-weight:600;color:var(--muted)}
+.c5line input{padding:8px 10px}
+.c5prev{margin-top:12px;font-family:var(--text);font-size:14.5px;line-height:1.8;background:var(--sunk);border-radius:8px;padding:10px 14px;white-space:pre-wrap;word-break:keep-all}
+.c5ex summary{cursor:pointer;font-size:13px;color:var(--action);font-weight:600;margin-top:10px}
+.c5ex pre{white-space:pre-wrap;font-size:13px;background:var(--sunk);border-radius:8px;padding:10px;margin:8px 0 0;font-family:var(--ui)}
+.linkrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 0;border-top:1px solid var(--line)}
+.linkrow:first-child{border-top:0}
+.linkrow .lt{flex:1;min-width:180px;font-size:14px}
+.linkrow .chip{padding:5px 12px;font-size:13px}
+.linkrow .chip.on{background:var(--action);color:var(--action-ink)}
+.verbs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:12px}
+.vgroup b{display:block;font-size:12.5px;color:var(--muted);margin-bottom:6px}
+.vgroup .vbtns{display:flex;flex-wrap:wrap;gap:6px}
+.verb{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 12px;font-size:13.5px;cursor:pointer}
+.verb.on{background:var(--action);color:var(--action-ink);border-color:var(--action)}
+.c5acts{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:4px 0 8px;font-size:13px;color:var(--muted)}
+.c5acts .verb{padding:4px 10px;font-size:12.5px}
+.c5tip{margin:0 0 10px;font-size:13px;color:var(--ok);font-weight:600}
+.c5basic label.c5q,.c5basic .c5q{display:block;font-size:13px;font-weight:600;margin-bottom:4px}
+.c5line{grid-template-columns:230px minmax(0,1fr)!important}
+.c5line label{display:flex;flex-direction:column;line-height:1.35}
+.c5line label .c5q{font-size:13.5px;font-weight:700;color:var(--ink)}
+.c5line label small{font-size:11.5px;color:var(--muted);font-weight:500}
+.c5exgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px}
+.c5exgrid b{font-size:12.5px;color:var(--muted)}
+.c5exgrid pre{margin-top:4px!important}
+.c5prev .muted{color:var(--muted);font-family:var(--ui);font-size:13px}
+.c5prev b{font-family:var(--ui);font-size:12.5px;color:var(--muted)}
+.score-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.changed{font-family:var(--text);font-size:15.5px;line-height:1.95;background:var(--sunk);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin-top:8px;word-break:keep-all}
+.changed strong{font-weight:700;background:linear-gradient(transparent 62%,var(--soft-bg) 62%)}
+.blanks{margin-top:14px;border:1.5px dashed var(--hl-ink);border-radius:10px;padding:14px;background:var(--surface)}
+.blanks h3{font-size:15px;margin:0 0 4px}
+.blank-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto;gap:8px;align-items:center;padding:8px 0;border-top:1px solid var(--line)}
+.blank-row:first-of-type{border-top:0}
+.blank-lab{font-size:14px}
+.blank-lab mark{background:var(--hl);color:var(--hl-ink);padding:1px 4px;border-radius:2px}
+/* 교정지 */
+.proof{font-family:var(--text);font-size:16px;line-height:1.95;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 20px;white-space:normal;word-break:keep-all}
+.proof:empty::before{content:"아직 내용이 없습니다. 위 칸에 붙여 넣거나 직접 쓰세요.";color:var(--muted);font-family:var(--ui);font-size:14px}
+mark.m-confirm{background:var(--hl);color:var(--hl-ink);padding:1px 2px;border-radius:2px}
+mark.m-risk{background:none;color:inherit;text-decoration:underline wavy var(--pen);text-underline-offset:4px;text-decoration-thickness:1.5px}
+mark.m-style{background:none;color:inherit;border-bottom:2px dotted var(--soft)}
+mark.m-long{background:var(--pen-soft);color:inherit}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px;color:var(--muted);margin:10px 0 0}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{display:inline-block;width:22px;height:12px;border-radius:2px}
+.sw.c{background:var(--hl)} .sw.r{border-bottom:2px solid var(--pen)} .sw.s{border-bottom:2px dotted var(--soft)} .sw.l{background:var(--pen-soft)}
+
+.issues{list-style:none;margin:12px 0 0;padding:0}
+.issues li{padding:8px 0 8px 22px;border-top:1px solid var(--line);position:relative;font-size:14px}
+.issues li::before{position:absolute;left:0;top:8px;font-weight:700}
+.issues li.hard::before{content:"!";color:var(--pen)}
+.issues li.warn::before{content:"~";color:var(--pen)}
+.issues li.soft::before{content:"·";color:var(--soft)}
+.issues li.good::before{content:"✓";color:var(--ok)}
+
+.status{display:inline-block;font-size:12.5px;font-weight:700;padding:3px 10px;border-radius:999px;border:1px solid currentColor;white-space:nowrap}
+.st-0{color:var(--pen)} .st-1{color:#9A6B00} .st-2{color:var(--ok)} .st-3{color:var(--soft)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .st-1{color:#E7C15A}}
+:root[data-theme="dark"] .st-1{color:#E7C15A}
+
+.table-wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:560px}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:13px;color:var(--muted);font-weight:600}
+.toast{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 22px);transform:translateX(-50%) translateY(20px);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:8px;font-size:14px;opacity:0;pointer-events:none;transition:all .2s;z-index:50}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+.empty{color:var(--muted);font-size:14px;padding:6px 0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+@media (max-width:860px){
+  .shell{grid-template-columns:1fr;gap:10px;padding:14px}
+  nav.rail{position:static}
+  .rail ol{display:flex;border-left:0;border-bottom:2px solid var(--line);overflow-x:auto}
+  .rail button{border-left:0;border-bottom:2px solid transparent;margin:0 0 -2px;border-radius:8px 8px 0 0;padding:8px 12px;white-space:nowrap}
+  .rail button[aria-current="step"]{border-bottom-color:var(--action)}
+  .rail .time,.rail-note{display:none}
+  .row,.qgrid,.mini,.score-row,.blank-row,.expgrid,.modes,.c5basic{grid-template-columns:1fr}
+  .verbs{grid-template-columns:1fr 1fr}
+  .c5line{grid-template-columns:1fr!important;gap:4px}
+  .c5exgrid{grid-template-columns:1fr}
+  h1{font-size:23px}
+}
+
+details.diff{padding:14px 18px}
+details.diff>summary{cursor:pointer;font-weight:700;font-size:15px}
+details.diff table{min-width:520px;font-size:13.5px;margin-top:10px}
+details.diff td:first-child{white-space:nowrap;font-weight:600}
+.must4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:12px}
+.must4 div{background:var(--sunk);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:13px}
+.must4 b{display:block;font-size:14px;color:var(--action)}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.ba div{border-radius:8px;padding:10px 12px;font-family:var(--text);font-size:14.5px;line-height:1.8;word-break:keep-all}
+.ba .b{background:var(--pen-soft)} .ba .a{background:var(--ok-soft)}
+.ba small{display:block;font-family:var(--ui);font-weight:700;font-size:12px;color:var(--muted)}
+.selfsub{margin:14px 0 2px;font-size:13.5px;font-weight:700;color:var(--action)}
+@media (max-width:860px){.must4,.ba{grid-template-columns:1fr}.shell>*{min-width:0}}
+.entry{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:18px}
+.entry a,.entry div.here{display:block;border:1.5px solid var(--line);border-radius:12px;padding:16px 18px;text-decoration:none;color:var(--ink);background:var(--surface)}
+.entry a:hover{border-color:var(--action)}
+.entry .here{border-color:var(--action)!important;background:var(--soft-bg)!important}
+.entry b{display:block;font-size:16px;margin-bottom:2px}
+.entry span{display:block;font-size:13.5px;color:var(--muted)}
+.entry em{display:inline-block;font-style:normal;font-size:12px;font-weight:700;margin-top:8px;color:var(--action)}
+@media (max-width:860px){.entry{grid-template-columns:1fr}}
+
+details.import{padding:14px 18px}
+details.import>summary{cursor:pointer;list-style-position:inside}
+details.import>summary b{font-size:14.5px}
+details.import>summary span{display:block;font-size:13px;color:var(--muted);margin:2px 0 0 18px}
+.panel.imported{border-color:var(--ok);background:var(--ok-soft)}
+.panel.imported h2{color:var(--ok)}
+.imp-list{list-style:none;margin:10px 0 0;padding:0;font-size:14px}
+.imp-list li{padding:6px 0;border-top:1px solid var(--line);display:flex;gap:10px}
+.imp-list li:first-child{border-top:0}
+.imp-list .k{flex:none;width:110px;color:var(--muted);font-weight:600}
+.imp-list a{color:var(--action);font-weight:600;cursor:pointer;margin-left:auto;white-space:nowrap}
+.imp-pick{margin-top:12px;padding:12px;border:1px dashed var(--action);border-radius:10px}
+.imp-pick b{display:block;font-size:14px;margin-bottom:8px}
+.imp-pick .chips{gap:6px}
+</style>
+</head>
+<body>
+<div id="host"></div>
+<template id="tplF">
+<header class="top">
+  <div class="top-in">
+    <span class="brand">현장실습 자소서 처음 쓰기</span>
+    <span class="brand-sub">내 경험에서 현장실습 지원 자소서까지, 순서대로 따라 하기</span>
+    <div class="top-right">
+      <span class="who" id="whoLabel"></span><span class="prog-pill" id="progPill" hidden></span>
+      <button class="btn quiet small no-print" id="resetBtn" type="button">새 학생으로 시작</button>
+    </div>
+  </div>
+
+
+<div class="nextbar" id="nextBar" role="status" aria-live="polite"><div class="nextbar-in"><span class="nb-label">지금 할 일</span><span class="nb-msg" id="nbMsg"></span><button class="btn small" type="button" id="nbBtn"></button></div></div>
+</header>
+
+<div class="shell">
+  <nav class="rail" aria-label="진행 단계">
+    <ol id="rail">
+      <li><button type="button" data-go="1"><span class="n">1</span><span class="t">소재 정리</span></button></li>
+      <li><button type="button" data-go="2"><span class="n">2</span><span class="t">지원 정보</span></button></li>
+      <li><button type="button" data-go="3"><span class="n">3</span><span class="t">AI 코치와 초안</span></button></li>
+      <li><button type="button" data-go="4"><span class="n">4</span><span class="t">결과 정리</span></button></li>
+    </ol>
+    <p class="rail-note">입력한 내용은 이 브라우저에만 저장됩니다. 공용 PC라면 마친 뒤 ‘새 학생으로 시작’을 눌러 지워 주세요.</p>
+  </nav>
+
+  <main>
+  <!-- STEP 1 -->
+  <section class="step" id="s1">
+    <h1>소재 정리: 좋아하는 행동에서 경험 찾기</h1>
+    <p class="lead">현장실습 지원서는 정규 채용과 보는 기준이 다릅니다. 아래 차이를 먼저 읽고, 내가 좋아하는 행동과 그 행동을 했던 경험을 이력서 경력 기술 5줄로 정리하세요. 이 카드가 이력서의 경력 기술이 되고 자소서의 재료가 됩니다.</p>
+    <p class="hint" style="margin:0 0 8px;font-weight:700;color:var(--ink)">먼저 나에게 맞는 입구를 고르세요</p>
+    <nav class="entry" aria-label="워크북 선택"><div class="here"><b>아직 하나도 안 썼어요</b><span>경험 정리부터 AI 코치 질문까지 따라가며 처음부터 씁니다</span><em>지금 이 화면입니다 ↓</em></div><a href="#" data-app="revise"><b>써 온 자소서가 있어요</b><span>정규 채용용으로 쓴 것도 됩니다. 현장실습 기준으로 진단하고 다듬습니다</span><em>첨삭으로 가기 →</em></a></nav>
+    <details class="panel diff" open>
+      <summary>현장실습 자소서는 정규 채용 자소서와 이렇게 다릅니다 (1분 읽기)</summary>
+      <p class="hint" style="margin:8px 0 0">정규 채용은 “당장 성과를 낼 사람인가”를 봅니다. 현장실습은 <b>“이 기간에 무엇을 배워 갈지 알고, 현장에 안전하게 적응할 사람인가”</b>를 봅니다.</p>
+      <div class="table-wrap"><table>
+        <tr><th>항목</th><th>정규 채용 자소서</th><th>현장실습 자소서</th></tr>
+        <tr><td>지원동기</td><td>회사 비전 공감</td><td>전공 수업에서 배운 것과 현장 사이의 <b>‘빈칸’</b>을 메우려는 이유</td></tr>
+        <tr><td>역량</td><td>직무에 바로 투입할 역량</td><td>기초역량(정확성·기록·규칙 지키기·협업)과 <b>실습생으로 실제 보조할 수 있는 일</b></td></tr>
+        <tr><td>경험</td><td>성과·수치 중심</td><td><b>과정, 피드백을 받아 고친 방식, 배운 점</b> 중심</td></tr>
+        <tr><td>포부</td><td>“입사 후 기여”</td><td><b>실습 기간 안의 학습계획</b>과 실습 후 학업·진로 연결</td></tr>
+        <tr><td>톤</td><td>자신감 있는 주장</td><td>겸손하되 구체적인 학습 의지 (막연한 “배우겠습니다” 금지)</td></tr>
+      </table></div>
+      <p class="hint" style="margin:14px 0 0"><b>자소서 전체에 아래 4가지가 각각 한 번 이상 들어가야 합니다.</b></p>
+      <div class="must4">
+        <div><b>① 왜 이 실습인가</b>수업에서 궁금했지만 현장을 봐야 알 수 있는 것</div>
+        <div><b>② 학습목표 1개</b>실습 기간 안에 익힐 업무 한 가지</div>
+        <div><b>③ 실습생의 기여</b>기록·정리·확인·보조처럼 실제로 할 수 있는 일</div>
+        <div><b>④ 실습 후 연결</b>복학 후 수업·졸업 과제·진로 결정에 쓸 방법</div>
+      </div>
+      <div class="ba">
+        <div class="b"><small>이렇게 쓰면 탈락 위험</small>입사 후 맡은 업무를 완벽하게 수행하여 회사 발전에 기여하겠습니다. 많은 것을 배우겠습니다.</div>
+        <div class="a"><small>현장실습용으로 고치면</small>실습 기간 동안 입고 서류와 실물을 대조하는 일을 정확히 익히고, 확인한 내용을 정해진 양식에 빠짐없이 기록하겠습니다. 이 경험을 졸업 과제 주제를 정하는 근거로 쓰겠습니다.</div>
+      </div>
+    </details>
+
+    <div class="panel flat demo-bar">
+      <div><b>처음이라면 예시부터 보세요</b><span>가상의 학생 자료로 모든 단계를 미리 볼 수 있습니다. 내 자료를 넣기 전에 ‘새 학생으로 시작’을 누르면 지워집니다.</span></div>
+      <button class="btn ghost small" type="button" id="demoBtn">예시로 채워 보기</button>
+    </div>
+
+    <div class="panel" id="likePanel">
+      <h2><span class="pn">1</span>내가 좋아하는 행동 고르기 <small style="font-weight:400;color:var(--muted)">2~3개</small></h2>
+      <p class="hint">잘하는 것보다 <b>할 때 시간 가는 줄 모르는 행동</b>을 고르세요. 고른 행동을 실제로 했던 경험을 아래 카드로 정리합니다.</p>
+      <div class="verbs" id="verbs"></div>
+      <div class="fileline"><input type="text" id="verbCustom" placeholder="목록에 없으면 직접 쓰기 (예: 가르친다)" style="max-width:280px"><button class="btn ghost small" type="button" id="verbAdd">추가</button><span class="fstat" id="verbStat"></span></div>
+    </div>
+
+    <h2 class="sec"><span class="pn">2</span>그 행동을 했던 경험을 5줄로 정리하기</h2>
+    <details class="panel guide5">
+      <summary><b>5줄 구조 한눈에 보기</b></summary>
+      <div class="table-wrap"><table class="g5">
+        <tr><th>줄</th><th>쓰는 내용</th><th>형식</th></tr>
+        <tr><td>기본 정보</td><td>어디서, 무엇을, 언제</td><td>[운영 기관] [프로그램명] 참여 (20XX.XX~XX.XX)</td></tr>
+        <tr><td>① 수행 범위</td><td>전체적으로 무엇을 했나</td><td>[분야·과정] 전반 실습 및 [주요 업무] 경험</td></tr>
+        <tr><td>② 도구·핵심 행동</td><td>무엇을 써서 무엇을 했나</td><td>[도구·장비·프로그램]을 활용한 [대상] [행동] 수행</td></tr>
+        <tr><td>③ 기준·주의점</td><td>무엇을 지키며 했나</td><td>[기준·주의점]을 고려해 [작업] 수행</td></tr>
+        <tr><td>④ 문제·비교</td><td>예상과 달랐던 일, 무엇을 비교했나</td><td>[예상과 다른 결과] 발생 시 [조건·데이터] 비교</td></tr>
+        <tr><td>⑤ 조치·결과</td><td>어떻게 했고 무엇이 달라졌나</td><td>[조치]를 통해 [결과·변화] 확인</td></tr>
+      </table></div>
+      <p class="hint" style="margin:10px 0 0">자소서로 옮길 때는 ①②③이 상황과 과정, ④가 전환점, ⑤가 결과가 됩니다. 배운 점은 이력서에는 넣지 않고 ⑥에 따로 적어 자소서에만 씁니다. 모르는 줄은 비워 두세요. AI 코치가 질문으로 함께 채웁니다.<br><b>현장실습 자소서에서는</b> 숫자 성과보다 ④⑤에서 <b>누구에게 어떤 피드백을 받고 무엇을 고쳤는지</b>와 ⑥ 배운 점이 더 중요합니다.</p>
+    </details>
+
+    <div id="cards"></div>
+    <div class="btns" style="margin-top:0"><button class="btn ghost" type="button" id="addCard">경험 카드 추가</button></div>
+
+    <div class="panel" style="margin-top:18px">
+      <h2><span class="pn">3</span>나에 대해 짧게 <small style="font-weight:400;color:var(--muted)">선택, 나의 한 줄을 만드는 데 씁니다</small></h2>
+      <div class="row" style="margin-top:12px">
+        <div><label class="f" for="me_major">전공</label><input type="text" id="me_major" placeholder="예: 산업공학"></div>
+        <div><label class="f" for="me_value">일할 때 가장 중요하게 여기는 것</label><input type="text" id="me_value" placeholder="예: 약속한 시간 지키기"></div>
+      </div>
+      <div class="row" style="margin-top:12px">
+        <div><label class="f" for="me_proud">가장 뿌듯했던 순간 한 줄</label><input type="text" id="me_proud" placeholder="예: 대기 시간이 줄어 손님이 고맙다고 한 날"></div>
+        <div><label class="f" for="me_combo">다른 지원자와 다른 나만의 조합</label><input type="text" id="me_combo" placeholder="예: 공대 전공 + 고객 응대 경험"></div>
+      </div>
+    </div>
+
+    <div class="next" style="margin-top:26px"><span></span><button class="btn" type="button" data-go="2">지원 정보로 가기</button></div>
+  </section>
+
+  <!-- STEP 2 -->
+  
+<section class="step" id="s2">
+    <h1>어느 현장실습에 지원하나요?</h1>
+    <p class="lead">실습 기관과 모집공고를 넣고, 현장실습 자소서에 꼭 들어가야 할 4가지를 미리 적어 봅니다. 모르는 칸은 비워 두면 AI 코치가 선택지로 함께 찾습니다.</p>
+    <div class="panel">
+      <h2><span class="pn">1</span>지원 방향</h2>
+      <div class="modes" role="radiogroup" aria-label="지원 방향">
+        <label class="mode"><input type="radio" name="mode" value="full"><b>실습 기관이 정해졌어요</b><span>모집공고에 맞춰 씁니다</span></label>
+        <label class="mode"><input type="radio" name="mode" value="role"><b>실습 분야만 정했어요</b><span>그 분야 실습생이 하는 일 기준으로 씁니다</span></label>
+        <label class="mode"><input type="radio" name="mode" value="none"><b>아직 정하지 않았어요</b><span>어디에나 쓸 수 있는 기본 현장실습 자소서를 씁니다</span></label>
+      </div>
+      <div id="modeFields" style="margin-top:14px">
+        <div class="row">
+          <div id="fCompany"><label class="f" for="company">실습 기관명</label><input type="text" id="company" placeholder="예: ○○구청, ○○제조"></div>
+          <div id="fRole"><label class="f" for="role">실습 분야·직무</label><input type="text" id="role" list="roleList" placeholder="예: 품질관리 현장실습 (목록에서 고르거나 직접 입력)"></div>
+        </div>
+        <p class="hint" id="modeHint" style="margin:10px 0 0"></p>
+      </div>
+      <datalist id="roleList"><option value="영업"><option value="B2B영업"><option value="마케팅"><option value="인사(HR)"><option value="재무·회계"><option value="사무·행정"><option value="고객서비스(CS)"><option value="구매·SCM"><option value="생산관리"><option value="품질관리"><option value="연구개발(R&amp;D)"><option value="소프트웨어 개발"><option value="데이터 분석"><option value="디자인"><option value="교육·강의"><option value="공공기관 사무"></datalist>
+      <div style="margin-top:12px"><label class="f" for="student">이름 <small>선택</small></label><input type="text" id="student" placeholder="예: 홍길동"></div>
+    </div>
+
+    <div class="panel" id="jdPanel">
+      <h2><span class="pn">2</span>현장실습 모집공고 (실습 내용) <small id="jdOpt" style="font-weight:400;color:var(--muted)"></small></h2>
+      <p class="hint">실습 내용(실습생이 맡는 일), 지원 자격, 우대사항 부분을 붙여 넣으세요. 학교 현장실습 지원시스템의 공고도 됩니다. 이미지뿐이라면 아래를 체크하고 ChatGPT에 파일을 직접 첨부하면 됩니다.</p>
+      <textarea id="jd" rows="7" placeholder="실습 내용&#10;· …&#10;&#10;지원 자격&#10;· …&#10;&#10;우대사항&#10;· …"></textarea>
+      <div class="fileline"><label class="btn quiet small filebtn">PDF·TXT 파일에서 불러오기<input type="file" id="jdFile" accept=".pdf,.txt,image/*" hidden></label><span class="fstat" id="jdStat"></span></div>
+      <label class="check"><input type="checkbox" id="jdAttach"> 공고를 이미지나 PDF로 ChatGPT에 직접 첨부하겠습니다</label>
+      <label class="check"><input type="checkbox" id="blind"> 블라인드 채용입니다 (공기업·공공기관 등, 학교명·출신지·가족 정보 금지)</label>
+    </div>
+
+    <div class="panel" id="internPanel">
+      <h2><span class="pn">3</span>현장실습 준비 4가지 <small style="font-weight:400;color:var(--muted)">모르면 비워 두세요</small></h2>
+      <p class="hint">아래 4가지가 현장실습 자소서의 뼈대입니다. 한 줄씩 말하듯 적으세요. 비워 두면 AI 코치가 공고의 실습 내용에서 선택지를 만들어 함께 찾습니다.</p>
+      <div class="row">
+        <div><label class="f" for="period">실습 기간</label><input type="text" id="period" placeholder="예: 2026.03~06, 16주 (학기제)"></div>
+        <div><label class="f" for="credit">학점 연계</label><select id="credit"><option value="">모름</option><option value="yes">학점 인정 (학기제·하계·동계)</option><option value="no">학점 인정 없음</option></select></div>
+      </div>
+      <div style="margin-top:14px"><label class="f" for="prep_gap">① 수업에서 배웠지만 현장에서 직접 확인하고 싶은 것 <small>→ 지원동기</small></label><input type="text" id="prep_gap" placeholder="예: 물류관리 수업에서 입고 절차를 배웠지만 실제로 서류와 물건을 어떻게 맞추는지 모른다"></div>
+      <div style="margin-top:12px"><label class="f" for="prep_goal">② 실습 기간에 가장 먼저 익히고 싶은 업무 1개 <small>→ 학습목표, 공고의 실습 내용에서 고르세요</small></label><input type="text" id="prep_goal" placeholder="예: 입고 서류와 실물을 대조하는 일"></div>
+      <div style="margin-top:12px"><label class="f" for="prep_help">③ 실습생으로 확실히 해낼 수 있는 일 <small>→ 실습생의 기여</small></label><input type="text" id="prep_help" placeholder="예: 정해진 양식에 빠짐없이 기록하기, 모르는 것은 메모했다가 정해진 때에 질문하기"></div>
+      <div style="margin-top:12px"><label class="f" for="prep_after">④ 실습을 마친 뒤 어디에 쓰고 싶은지 <small>→ 실습 후 계획</small></label><input type="text" id="prep_after" placeholder="예: 졸업 과제 주제 정하기, 세부 직무 정하기, 자격증 준비 방향 정하기"></div>
+      <p class="hint" style="margin:12px 0 0">쓰지 말아야 할 것: “입사 후”, “회사 발전에 기여”, “많이 배우겠습니다”처럼 실습생 범위를 넘거나 막연한 말.</p>
+    </div>
+
+    <div class="panel">
+      <h2><span class="pn">4</span>자소서 문항</h2>
+      <p class="hint">자주 나오는 문항을 눌러 고르거나, 지원할 곳의 문항을 직접 쓰세요. 글자수는 제출 사이트 기준으로 고치세요.</p>
+      <div class="presets" id="presets"></div>
+      <div id="qList" style="margin-top:12px"></div>
+      <div class="btns" style="margin-top:0"><button class="btn ghost" type="button" id="addQ">문항 직접 쓰기</button></div>
+    </div>
+
+    <div class="panel">
+      <h2><span class="pn">5</span>경험과 문항 연결 <small style="font-weight:400;color:var(--muted)">가볍게, 모르면 AI에게 맡기세요</small></h2>
+      <p class="hint">각 경험을 어느 문항에 쓰고 싶은지 눌러 두세요. 비워 두면 AI 코치가 추천합니다.</p>
+      <div id="links"></div>
+    </div>
+
+    <div class="next" style="margin-top:26px"><span></span><button class="btn" type="button" data-go="3">AI 코치로 가기</button></div>
+  </section>
+
+  
+<!-- STEP 2 -->
+  <section class="step" id="s3">
+    <h1>AI 코치와 초안 만들기</h1>
+
+    <div id="readyBox"></div>
+
+    <ol class="steps2">
+      <li><span class="sn">1</span><div class="sb"><b>지시문 복사</b></div><button class="btn big" type="button" id="copyMaster">복사하기</button></li>
+      <li><span class="sn">2</span><div class="sb"><b>ChatGPT 새 대화에 붙여 넣고 보내기</b><span>공고가 이미지·PDF면 함께 첨부</span></div></li>
+      <li><span class="sn">3</span><div class="sb"><b>문항별 소재 배치표 확인하고 고르기</b><span>예: ① / ② 2번은 대안 소재로</span></div></li>
+      <li><span class="sn">4</span><div class="sb"><b>나의 한 줄 고르기</b><span>예: 2번 / 직접: 약속한 일을 끝까지 확인하는 사람</span></div></li>
+      <li><span class="sn">5</span><div class="sb"><b>질문에 답하기: 실제로 한 것만 고르고 내 말로 한 줄</b><span>예: ② 재고를 엑셀로 정리했어요 / 직접: 6개월 / 모르면 ⑤</span></div></li>
+      <li><span class="sn">6</span><div class="sb"><b>모든 문항 초안이 나오면 ‘/완성’ 보내기</b></div><button class="btn ghost" type="button" data-quick="/완성">/완성 복사</button></li>
+      <li><span class="sn">7</span><div class="sb"><b>결과 전체를 복사해 3단계에 붙여 넣기</b></div><button class="btn" type="button" data-go="4">3단계로</button></li>
+    </ol>
+
+
+    <div class="panel">
+      <h2>AI가 규칙을 어길 때</h2>
+      <p class="hint">AI는 대화가 길어지면 규칙을 잊곤 합니다. 해당하는 버튼을 눌러 복사해 보내면 바로잡힙니다.</p>
+      <div class="mini">
+        <button type="button" data-fix="one"><b>질문을 여러 개 한다</b><span>질문을 1개씩만 하도록 되돌립니다</span></button>
+        <button type="button" data-fix="fact"><b>내가 말하지 않은 내용이 들어갔다</b><span>확인 안 된 내용을 빈칸으로 바꿉니다</span></button>
+        <button type="button" data-fix="len"><b>글자수가 모자라거나 넘친다</b><span>95~100%로 다시 맞춥니다</span></button>
+        <button type="button" data-fix="format"><b>/완성 결과가 나뉘지 않는다</b><span>워크북이 읽는 형식으로 다시 출력합니다</span></button>
+        <button type="button" data-fix="dup"><b>문항끼리 소재가 겹친다</b><span>소재 배치를 다시 받습니다</span></button>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>필요할 때 추가로 보내는 요청</h2>
+      <p class="hint">같은 대화창에 붙여 넣으세요. 누르면 복사됩니다.</p>
+      <div class="mini">
+        <button type="button" data-mini="role"><b>나와 팀 구분하기</b><span>내가 한 일과 팀이 한 일을 문장마다 나눕니다</span></button>
+        <button type="button" data-mini="voice"><b>내 말투로 다듬기</b><span>내 원문과 답변에서 쓴 표현을 기준으로 AI식 표현을 바꿉니다</span></button>
+        <button type="button" data-mini="fit"><b>글자수에 맞추기</b><span>제한의 95~100%로 줄이거나 확인된 사실로 채웁니다</span></button>
+        <button type="button" data-mini="more"><b>경험이 부족하다</b><span>상황 예시를 보며 떠오르는 경험을 찾습니다</span></button>
+        <button type="button" data-mini="company"><b>실습 기관 관심 보여 주기</b><span>내가 조사할 과제를 받고, 조사한 뒤에만 넣습니다</span></button>
+        <button type="button" data-mini="intern"><b>정규직 표현 바꾸기</b><span>‘입사 후 기여’를 실습 기간 학습계획으로 바꿉니다</span></button>
+      </div>
+      <details class="prev" style="margin-top:14px"><summary>지시문 미리 보기</summary><pre id="masterPrev"></pre></details>
+    </div>
+
+    <div class="next"><button class="btn quiet" type="button" data-go="2">자료 고치기</button><button class="btn" type="button" data-go="4">결과 붙여 넣으러 가기</button></div>
+  </section>
+
+  <!-- STEP 3 -->
+  <section class="step" id="s4">
+    <h1>결과 정리</h1>
+    <p class="lead">ChatGPT의 ‘/완성’ 결과를 붙여 넣으면 문항별로 나뉩니다.</p>
+
+    <div class="panel">
+      <h2><span class="pn">1</span>‘/완성’ 결과 붙여 넣기</h2>
+      <textarea id="aiOut" rows="5" style="margin-top:10px" placeholder="ChatGPT 답변 전체를 여기에 붙여 넣으세요"></textarea>
+      <div class="btns"><button class="btn" type="button" id="parseBtn">문항별로 나누기</button></div>
+    </div>
+
+    <div class="panel" id="careerPanel">
+      <h2><span class="pn">2</span>이력서 경력 기술 5줄</h2>
+      <p class="hint" id="careerHint">‘/완성’ 결과를 붙여 넣으면 경험별 5줄이 여기에 나옵니다. 이력서 경력 기술란에 그대로 쓸 수 있습니다.</p>
+      <textarea id="career" class="draft" rows="8" placeholder="[운영 기관] [프로그램명] 참여 (20XX.XX~XX.XX)&#10;- …"></textarea>
+      <div class="fileline" style="justify-content:space-between"><span class="fstat" id="careerStat"></span><button class="btn ghost small" type="button" id="copyCareer">경력 기술 복사</button></div>
+    </div>
+
+    <h2 class="sec"><span class="pn">3</span>자소서 문항별 확인</h2>
+    <div id="proofList"></div>
+
+    <div class="panel">
+      <h2><span class="pn">4</span>제출 전 스스로 확인</h2>
+      <label class="check"><input type="checkbox" class="self" data-k="fact"> 모든 문장이 내가 실제로 한 일이다</label>
+      <label class="check"><input type="checkbox" class="self" data-k="role"> 팀이 한 일을 내가 한 것처럼 쓰지 않았다</label>
+      <label class="check"><input type="checkbox" class="self" data-k="voice"> 소리 내어 읽고 내 말투와 다른 단어를 고쳤다</label>
+      <label class="check"><input type="checkbox" class="self" data-k="consist"> 같은 경험의 기간·인원·숫자가 문항마다 같다</label>
+      <p class="selfsub">현장실습 필수 요소 (자소서 전체 기준)</p>
+      <label class="check"><input type="checkbox" class="self" data-k="gap"> ① 지원동기에 ‘수업에서 배운 것과 현장 사이의 빈칸’(왜 이 실습인지)이 있다</label>
+      <label class="check"><input type="checkbox" class="self" data-k="goal"> ② 실습 기간 안에 익힐 업무가 한 가지 이상 구체적으로 있다</label>
+      <label class="check"><input type="checkbox" class="self" data-k="scope"> ③ 실습생이 실제로 할 수 있는 일만 약속했다 (‘입사 후’, ‘회사 발전에 기여’ 없음)</label>
+      <label class="check"><input type="checkbox" class="self" data-k="after"> ④ 실습 후 학업·진로에 어떻게 쓸지 적었다</label>
+    </div>
+
+    <div class="panel submit">
+      <h2><span class="pn">5</span>첨삭으로 넘어가기</h2>
+      <p class="hint">초안이 완성되면 점수 평가와 다듬기는 첨삭에서 합니다. 아래 버튼을 누르면 실습 기관·공고·실습 기간·문항·초안이 첨삭 화면에 한 번에 채워집니다. 따로 복사할 필요가 없습니다.</p>
+      <div class="btns"><button class="btn big" type="button" id="copyHandover">첨삭으로 넘어가기 →</button></div>
+      <div class="btns" style="margin-top:10px"><button class="btn quiet" type="button" id="copyFinal">초안만 복사</button><button class="btn quiet" type="button" data-go="3">AI 코치로 돌아가기</button></div>
+    </div>
+  </section>
+
+  </main>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+</template>
+<template id="tplR">
+<header class="top">
+  <div class="top-in">
+    <span class="brand">현장실습 자소서 첨삭</span>
+    <span class="brand-sub">써 온 자소서를 현장실습 기준으로 진단하고 다듬기</span>
+    <div class="top-right">
+      <span class="who" id="whoLabel"></span><span class="prog-pill" id="progPill" hidden></span>
+      <button class="btn quiet small no-print" id="resetBtn" type="button">새 학생으로 시작</button>
+    </div>
+  </div>
+
+
+<div class="nextbar" id="nextBar" role="status" aria-live="polite"><div class="nextbar-in"><span class="nb-label">지금 할 일</span><span class="nb-msg" id="nbMsg"></span><button class="btn small" type="button" id="nbBtn"></button></div></div>
+</header>
+
+<div class="shell">
+  <nav class="rail" aria-label="진행 단계">
+    <ol id="rail">
+      <li><button type="button" data-go="1"><span class="n">1</span><span class="t">자료 넣기</span></button></li>
+      <li><button type="button" data-go="2"><span class="n">2</span><span class="t">AI 코치와 보완</span></button></li>
+      <li><button type="button" data-go="3"><span class="n">3</span><span class="t">교정지 점검</span></button></li>
+    </ol>
+    <p class="rail-note">입력한 내용은 이 브라우저에만 저장됩니다. 공용 PC라면 마친 뒤 ‘새 학생으로 시작’을 눌러 지워 주세요.</p>
+  </nav>
+
+  <main>
+  <!-- STEP 1 -->
+  <section class="step" id="s1">
+    <h1>지원할 현장실습과 지금 쓴 자소서를 넣어 주세요</h1>
+    <p class="lead">현장실습 모집공고가 있어야 실습 업무에 맞춘 질문을 받을 수 있습니다. 자소서는 완성되지 않아도 괜찮습니다. 정규 채용용으로 써 둔 자소서도 넣으면 현장실습 기준으로 바꿉니다.</p>
+    <p class="hint" style="margin:0 0 8px;font-weight:700;color:var(--ink)">먼저 나에게 맞는 입구를 고르세요</p>
+    <nav class="entry" aria-label="워크북 선택"><a href="#" data-app="first"><b>아직 하나도 안 썼어요</b><span>경험 정리부터 AI 코치 질문까지 따라가며 처음부터 씁니다</span><em>처음 쓰기로 가기 →</em></a><div class="here"><b>써 온 자소서가 있어요</b><span>정규 채용용으로 쓴 것도 됩니다. 현장실습 기준으로 진단하고 다듬습니다</span><em>지금 이 화면입니다 ↓</em></div></nav>
+    <details class="panel diff" open>
+      <summary>현장실습 자소서는 정규 채용 자소서와 이렇게 다릅니다 (1분 읽기)</summary>
+      <p class="hint" style="margin:8px 0 0">정규 채용은 “당장 성과를 낼 사람인가”를 봅니다. 현장실습은 <b>“이 기간에 무엇을 배워 갈지 알고, 현장에 안전하게 적응할 사람인가”</b>를 봅니다.</p>
+      <div class="table-wrap"><table>
+        <tr><th>항목</th><th>정규 채용 자소서</th><th>현장실습 자소서</th></tr>
+        <tr><td>지원동기</td><td>회사 비전 공감</td><td>전공 수업에서 배운 것과 현장 사이의 <b>‘빈칸’</b>을 메우려는 이유</td></tr>
+        <tr><td>역량</td><td>직무에 바로 투입할 역량</td><td>기초역량(정확성·기록·규칙 지키기·협업)과 <b>실습생으로 실제 보조할 수 있는 일</b></td></tr>
+        <tr><td>경험</td><td>성과·수치 중심</td><td><b>과정, 피드백을 받아 고친 방식, 배운 점</b> 중심</td></tr>
+        <tr><td>포부</td><td>“입사 후 기여”</td><td><b>실습 기간 안의 학습계획</b>과 실습 후 학업·진로 연결</td></tr>
+        <tr><td>톤</td><td>자신감 있는 주장</td><td>겸손하되 구체적인 학습 의지 (막연한 “배우겠습니다” 금지)</td></tr>
+      </table></div>
+      <p class="hint" style="margin:14px 0 0"><b>자소서 전체에 아래 4가지가 각각 한 번 이상 들어가야 합니다.</b></p>
+      <div class="must4">
+        <div><b>① 왜 이 실습인가</b>수업에서 궁금했지만 현장을 봐야 알 수 있는 것</div>
+        <div><b>② 학습목표 1개</b>실습 기간 안에 익힐 업무 한 가지</div>
+        <div><b>③ 실습생의 기여</b>기록·정리·확인·보조처럼 실제로 할 수 있는 일</div>
+        <div><b>④ 실습 후 연결</b>복학 후 수업·졸업 과제·진로 결정에 쓸 방법</div>
+      </div>
+      <div class="ba">
+        <div class="b"><small>이렇게 쓰면 탈락 위험</small>입사 후 맡은 업무를 완벽하게 수행하여 회사 발전에 기여하겠습니다. 많은 것을 배우겠습니다.</div>
+        <div class="a"><small>현장실습용으로 고치면</small>실습 기간 동안 입고 서류와 실물을 대조하는 일을 정확히 익히고, 확인한 내용을 정해진 양식에 빠짐없이 기록하겠습니다. 이 경험을 졸업 과제 주제를 정하는 근거로 쓰겠습니다.</div>
+      </div>
+    </details>
+
+    <details class="panel import" id="importBox">
+      <summary><b>초안 붙여 넣기</b><span>처음 쓰기 워크북에서 복사한 내용, 예전에 써 둔 자소서, ChatGPT 결과 모두 붙여 넣을 수 있습니다</span></summary>
+      <textarea id="importTxt" rows="5" style="margin-top:12px" placeholder="써 둔 자소서를 그대로 붙여 넣으세요.&#10;문항 질문과 답변을 통째로 붙여 넣으면 문항별로 자동으로 나뉩니다. 답변만 한 덩어리로 붙이면 어느 문항에 넣을지 고를 수 있습니다."></textarea>
+      <div class="btns"><button class="btn" type="button" id="importBtn">가져오기</button><span class="fstat" id="importStat"></span></div>
+      <div class="imp-pick" id="importPick" hidden></div>
+    </details>
+    <div class="panel imported" id="importedBox" hidden></div>
+    <div class="panel flat demo-bar">
+      <div><b>처음이라면 예시부터 보세요</b><span>가상의 학생 자료로 모든 단계를 미리 볼 수 있습니다. 내 자료를 넣기 전에 ‘새 학생으로 시작’을 누르면 지워집니다.</span></div>
+      <button class="btn ghost small" type="button" id="demoBtn">예시로 채워 보기</button>
+    </div>
+
+    <div class="panel">
+      <h2>실습 기관과 실습 분야</h2>
+      <div class="row" style="margin-top:12px">
+        <div><label class="f" for="company">실습 기관명</label><input type="text" id="company" placeholder="예: ○○구청, ○○제조"></div>
+        <div><label class="f" for="role">실습 분야·직무</label><input type="text" id="role" placeholder="예: 물류운영 현장실습"></div>
+      </div>
+      <div class="row" style="margin-top:12px">
+        <div><label class="f" for="period">실습 기간</label><input type="text" id="period" placeholder="예: 2026.03~06, 16주 (학기제)"></div>
+        <div><label class="f" for="credit">학점 연계</label><select id="credit"><option value="">모름</option><option value="yes">학점 인정 (학기제·하계·동계)</option><option value="no">학점 인정 없음</option></select></div>
+      </div>
+      <div style="margin-top:12px"><label class="f" for="student">이름 <small>선택, 상담사 확인용</small></label><input type="text" id="student" placeholder="예: 홍길동"></div>
+    </div>
+
+    <div class="panel">
+      <h2>현장실습 모집공고 (실습 내용)</h2>
+      <p class="hint">실습 내용(실습생이 맡는 일), 지원 자격, 우대사항 부분을 복사해 붙여 넣으세요. 이미지나 PDF뿐이라면 아래를 체크하고 AI 채팅창에 파일을 직접 첨부하면 됩니다.</p>
+      <textarea id="jd" rows="7" placeholder="실습 내용&#10;· …&#10;&#10;지원 자격&#10;· …&#10;&#10;우대사항&#10;· …"></textarea>
+      <div class="fileline"><label class="btn quiet small filebtn">PDF·TXT 파일에서 불러오기<input type="file" id="jdFile" accept=".pdf,.txt,image/*" hidden></label><span class="fstat" id="jdStat"></span></div>
+      <label class="check"><input type="checkbox" id="jdAttach"> 공고를 이미지나 PDF로 AI 채팅창에 직접 첨부하겠습니다</label>
+      <label class="check"><input type="checkbox" id="blind"> 블라인드 채용입니다 (공기업·공공기관 등, 학교명·출신지·가족 정보 금지)</label>
+    </div>
+
+    <div class="panel">
+      <h2>참고 자료 <small style="font-weight:400;color:var(--muted)">선택</small></h2>
+      <p class="hint">이력서 요약, 활동·아르바이트·프로젝트 목록을 적어 두면 소재가 부족한 문항에서 바로 후보로 씁니다.</p>
+      <textarea id="extra" rows="4" placeholder="예: 카페 아르바이트 6개월 / 팀 프로젝트(화면 담당) / 물류관리 A0 / 실습에서 먼저 익히고 싶은 업무"></textarea>
+    </div>
+
+    <h2 style="margin:26px 0 4px">자소서 문항</h2>
+    <p class="hint">문항 질문, 글자수 제한, 지금 쓴 답변을 넣으세요. 글자수는 제출 사이트 기준(공백 포함 여부)을 확인해 고르세요.</p>
+    <div id="qList"></div>
+    <div class="btns" style="margin-top:0"><button class="btn ghost" type="button" id="addQ">문항 추가</button></div>
+
+    <div class="next" style="margin-top:26px"><span></span><button class="btn" type="button" data-go="2">AI 코치 준비하기</button></div>
+  </section>
+
+  <!-- STEP 2 -->
+  <section class="step" id="s2">
+    <h1>AI 코치</h1>
+
+    <div id="readyBox"></div>
+
+    <ol class="steps2">
+      <li><span class="sn">1</span><div class="sb"><b>지시문 복사</b></div><button class="btn big" type="button" id="copyMaster">복사하기</button></li>
+      <li><span class="sn">2</span><div class="sb"><b>ChatGPT 새 대화에 붙여 넣고 보내기</b><span>공고가 이미지·PDF면 함께 첨부</span></div></li>
+      <li><span class="sn">3</span><div class="sb"><b>목표 점수를 숫자로 답하기</b><span>예: 85</span></div></li>
+      <li><span class="sn">4</span><div class="sb"><b>문항 1부터 하나씩: 실제로 한 것만 고르고 내 말로 한 줄</b><span>문항 1이 끝나면 AI가 문항 2로 넘어갑니다. 이미 잘 쓴 문항은 ‘/다음’으로 건너뛰세요</span></div><button class="btn ghost" type="button" data-quick="/다음">/다음 복사</button></li>
+      <li><span class="sn">5</span><div class="sb"><b>‘/완성’ 보내기</b></div><button class="btn ghost" type="button" data-quick="/완성">/완성 복사</button></li>
+      <li><span class="sn">6</span><div class="sb"><b>결과 전체를 복사해 3단계에 붙여 넣기</b></div><button class="btn" type="button" data-go="3">3단계로</button></li>
+    </ol>
+
+    <div class="panel">
+      <h2>AI가 규칙을 어길 때</h2>
+      <p class="hint">AI는 대화가 길어지면 규칙을 잊곤 합니다. 해당하는 버튼을 눌러 복사해 보내면 바로잡힙니다.</p>
+      <div class="mini">
+        <button type="button" data-fix="one"><b>질문을 여러 개 한다</b><span>질문을 1개씩만 하도록 되돌립니다</span></button>
+        <button type="button" data-fix="fact"><b>내가 말하지 않은 내용이 들어갔다</b><span>확인 안 된 내용을 빈칸으로 바꿉니다</span></button>
+        <button type="button" data-fix="len"><b>글자수가 모자라거나 넘친다</b><span>95~100%로 다시 맞춥니다</span></button>
+        <button type="button" data-fix="format"><b>/완성 결과가 나뉘지 않는다</b><span>워크북이 읽는 형식으로 다시 출력합니다</span></button>
+        <button type="button" data-fix="score"><b>점수가 안 나온다</b><span>진단·목표·최종 점수를 한 줄로 다시 받습니다</span></button>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>필요할 때 추가로 보내는 요청</h2>
+      <p class="hint">같은 대화창에 붙여 넣으세요. 누르면 복사됩니다.</p>
+      <div class="mini">
+        <button type="button" data-mini="role"><b>나와 팀 구분하기</b><span>내가 한 일과 팀이 한 일을 문장마다 나눕니다</span></button>
+        <button type="button" data-mini="voice"><b>내 말투로 다듬기</b><span>내 원문과 답변에서 쓴 표현을 기준으로 AI식 표현을 바꿉니다</span></button>
+        <button type="button" data-mini="fit"><b>글자수에 맞추기</b><span>제한의 95~100%로 줄이거나 확인된 사실로 채웁니다</span></button>
+        <button type="button" data-mini="company"><b>실습 기관 관심 보여 주기</b><span>내가 조사할 과제를 받고, 조사한 뒤에만 넣습니다</span></button>
+        <button type="button" data-mini="intern"><b>정규직 표현 바꾸기</b><span>‘입사 후 기여’를 실습 기간 학습계획으로 바꿉니다</span></button>
+      </div>
+      <details class="prev" style="margin-top:14px"><summary>지시문 미리 보기</summary><pre id="masterPrev"></pre></details>
+    </div>
+
+    <div class="next"><button class="btn quiet" type="button" data-go="1">자료 고치기</button><button class="btn" type="button" data-go="3">결과 붙여 넣으러 가기</button></div>
+  </section>
+
+  <!-- STEP 3 -->
+  <section class="step" id="s3">
+    <h1>결과 정리</h1>
+    <p class="lead">ChatGPT의 ‘/완성’ 결과를 붙여 넣으면 문항별로 나뉩니다.</p>
+
+    <div class="panel">
+      <h2><span class="pn">1</span>‘/완성’ 결과 붙여 넣기</h2>
+      <textarea id="aiOut" rows="5" style="margin-top:10px" placeholder="ChatGPT 답변 전체를 여기에 붙여 넣으세요"></textarea>
+      <div class="btns"><button class="btn" type="button" id="parseBtn">문항별로 나누기</button></div>
+    </div>
+
+    <h2 class="sec"><span class="pn">2</span>문항별 확인</h2>
+    <div id="proofList"></div>
+
+    <div class="panel">
+      <h2><span class="pn">3</span>제출 전 스스로 확인</h2>
+      <label class="check"><input type="checkbox" class="self" data-k="fact"> 모든 문장이 내가 실제로 한 일이다</label>
+      <label class="check"><input type="checkbox" class="self" data-k="role"> 팀이 한 일을 내가 한 것처럼 쓰지 않았다</label>
+      <label class="check"><input type="checkbox" class="self" data-k="voice"> 소리 내어 읽고 내 말투와 다른 단어를 고쳤다</label>
+      <label class="check"><input type="checkbox" class="self" data-k="consist"> 같은 경험의 기간·인원·숫자가 문항마다 같다</label>
+      <p class="selfsub">현장실습 필수 요소 (자소서 전체 기준)</p>
+      <label class="check"><input type="checkbox" class="self" data-k="gap"> ① 지원동기에 ‘수업에서 배운 것과 현장 사이의 빈칸’(왜 이 실습인지)이 있다</label>
+      <label class="check"><input type="checkbox" class="self" data-k="goal"> ② 실습 기간 안에 익힐 업무가 한 가지 이상 구체적으로 있다</label>
+      <label class="check"><input type="checkbox" class="self" data-k="scope"> ③ 실습생이 실제로 할 수 있는 일만 약속했다 (‘입사 후’, ‘회사 발전에 기여’ 없음)</label>
+      <label class="check"><input type="checkbox" class="self" data-k="after"> ④ 실습 후 학업·진로에 어떻게 쓸지 적었다</label>
+    </div>
+
+    <div class="panel" id="finalEval">
+      <h2><span class="pn">4</span>최종 평가</h2>
+      <div class="score-sum" id="scoreSum"></div>
+      <div class="md" id="evalMd"></div>
+      <p class="hint" id="evalEmpty" style="margin:8px 0 0">‘/완성’ 결과를 붙여 넣으면 평가표가 여기에 나옵니다.</p>
+      <details class="score-edit"><summary>점수 직접 적기</summary>
+      <div class="score-row" style="margin-top:10px">
+        <div><label class="f" for="scInit">처음 점수</label><input type="number" min="0" max="100" id="scInit" placeholder="예: 68"></div>
+        <div><label class="f" for="scTarget">목표 점수</label><input type="number" min="0" max="100" id="scTarget" placeholder="예: 85"></div>
+        <div><label class="f" for="scFinal">최종 점수</label><input type="number" min="0" max="100" id="scFinal" placeholder="예: 82"></div>
+      </div></details>
+      <div class="re-eval">
+        <b>빈칸을 채웠다면 다시 평가받기</b>
+        <div class="btns" style="margin-top:8px"><button class="btn ghost" type="button" id="reEval">재평가 요청 복사</button></div>
+        <textarea id="evalOut" rows="3" style="margin-top:10px" placeholder="ChatGPT의 재평가 결과를 여기에 붙여 넣으세요"></textarea>
+      </div>
+    </div>
+
+    <div class="panel submit">
+      <h2><span class="pn">5</span>제출</h2>
+      <div class="btns"><button class="btn big" type="button" id="copyFinal">최종 자소서 복사</button><button class="btn quiet" type="button" data-go="2">AI 코치로 돌아가기</button></div>
+    </div>
+  </section>
+
+  </main>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+</template>
+<script>
+(function(){
+"use strict";
+
+var last={};
+window.ok2=function(msg){var now=Date.now();if(last.m===msg&&now-last.t<6000){last={};return true;}last={m:msg,t:now};var el=document.getElementById('toast');if(el){el.textContent=msg+' 한 번 더 누르면 진행합니다.';el.classList.add('on');clearTimeout(el._t);el._t=setTimeout(function(){el.classList.remove('on');},5000);}return false;};
+window.resetAll=function(){try{['jaso-intern-first-v1','jaso-intern-revise-v1','intern-app'].forEach(function(k){localStorage.removeItem(k);});}catch(e){}window.switchApp('first',true);};
+var host=document.getElementById('host');
+var INIT={first:initF,revise:initR};
+window.switchApp=function(name,fresh){
+  try{localStorage.setItem('intern-app',name);}catch(e){}
+  var root=document.createElement('div');root.className='app';
+  root.appendChild(document.getElementById(name==='revise'?'tplR':'tplF').content.cloneNode(true));
+  host.replaceChildren(root);
+  INIT[name](root);
+  window.scrollTo(0,0);
+};
+document.addEventListener('click',function(e){var a=e.target.closest('[data-app]');if(!a)return;e.preventDefault();window.switchApp(a.dataset.app);});
+function initF(ROOT){
+
+'use strict';
+var KEY='jaso-intern-first-v1';
+var STATUS=['미완성','최소 제출 가능','상담 우선 검토','고도화 가능'];
+var state=load();
+
+function blank(){return{company:'',role:'',student:'',jd:'',jdAttach:false,extra:'',items:[newItem()],aiOut:'',aiHandoff:'',memo:'',self:{},override:{},score:{},evalOut:'',copied:false,blind:false,exp:{},me:{},mode:'full',cards:[newCard()],career:'',likes:[],period:'',credit:'',prep:{},step:1};}
+function newCard(){return{type:'work',org:'',name:'',period:'',l1:'',l2:'',l3:'',l4:'',l5:'',learn:'',star:false,tags:[],acts:[]};}
+function newItem(){return{q:'',limit:500,mode:'with',draft:'',memo:'',final:'',raw:''};}
+function load(){try{var s=localStorage.getItem(KEY);if(s){var o=JSON.parse(s);if(o&&o.items&&o.items.length)return Object.assign(blank(),o);}}catch(e){}return blank();}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}}
+var $=function(id){return document.getElementById(id);};
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+function norm(t){return(t||'').replace(/\r\n?/g,'\n').replace(/\s+$/,'');}
+function cntWith(t){return norm(t).length;}
+function cntWithout(t){return norm(t).replace(/\s/g,'').length;}
+function cnt(it,t){return it.mode==='without'?cntWithout(t):cntWith(t);}
+function modeLabel(m){return m==='without'?'공백 제외':'공백 포함';}
+
+function toast(msg){var el=$('toast');el.textContent=msg;el.classList.add('on');clearTimeout(el._t);el._t=setTimeout(function(){el.classList.remove('on');},2200);}
+function copyText(t,okMsg,btn){
+  if(btn){var old=btn.dataset.label||btn.textContent;btn.dataset.label=old;btn.textContent='복사됨 ✓';btn.classList.add('copied');clearTimeout(btn._c);btn._c=setTimeout(function(){btn.textContent=old;btn.classList.remove('copied');},1800);}
+  function fallback(){var ta=document.createElement('textarea');ta.value=t;ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();var ok=false;try{ok=document.execCommand('copy');}catch(e){}document.body.removeChild(ta);toast(ok?okMsg:'복사가 막혀 있습니다. 미리 보기를 열어 직접 선택해 복사하세요.');}
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(function(){toast(okMsg);},fallback);}else fallback();
+}
+
+/* ---------- steps ---------- */
+function go(n){
+  n=+n;state.step=n;save();
+  document.querySelectorAll('section.step').forEach(function(s){s.classList.toggle('show',s.id==='s'+n);});
+  document.querySelectorAll('#rail button').forEach(function(b){if(+b.dataset.go===n)b.setAttribute('aria-current','step');else b.removeAttribute('aria-current');});
+  if(n===1)renderCards();
+  if(n===2)renderLinks();
+  if(n===3)renderReady();
+  if(n===4)renderProof();
+  markDone();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function nextAction(){
+  var s=state;
+  var ln=(s.likes||[]).length;
+  if(ln<2)return{m:'내가 좋아하는 행동을 2~3개 고르세요 (지금 '+ln+'개)',b:'고르러 가기',f:function(){go(1);setTimeout(function(){var el=$('likePanel');el.scrollIntoView({behavior:'smooth',block:'center'});el.classList.add('flash');},200);}};
+  var cc=cardCount();
+  if(cc<2)return{m:'경험 카드를 2개 이상 정리하세요 (지금 '+cc+'개, 기관·활동명과 2줄 이상)',b:'정리하러 가기',f:function(){go(1);setTimeout(function(){var cs=document.querySelectorAll('.card5');var tg=null;for(var i=0;i<cs.length;i++){if(!cardValid(state.cards[i])){tg=cs[i];break;}}if(!tg){$('addCard').click();return;}tg.scrollIntoView({behavior:'smooth',block:'center'});tg.classList.add('flash');var x=tg.querySelector('input');if(x)x.focus({preventScroll:true});},200);}};
+  var md=s.mode||'full';
+  if(md==='full'&&!(s.company.trim()&&s.role.trim()))return{m:'실습 기관명과 실습 분야를 넣으세요 (정하지 않았다면 지원 방향을 바꾸세요)',b:'1단계로',f:function(){go(2);focusEl(s.company.trim()?'role':'company');}};
+  if(md==='role'&&!s.role.trim())return{m:'희망 실습 분야를 넣으세요',b:'넣으러 가기',f:function(){go(2);focusEl('role');}};
+  if(!s.items.some(function(i){return i.q.trim();}))return{m:'자소서 문항을 고르거나 직접 쓰세요',b:'고르러 가기',f:function(){go(2);setTimeout(function(){var el=$('presets');el.scrollIntoView({behavior:'smooth',block:'center'});el.classList.add('flash');},200);}};
+  var noQ=s.items.findIndex(function(i){return!i.q.trim();});
+  if(noQ>=0)return{m:'문항 '+(noQ+1)+'의 질문을 넣으세요',b:'넣으러 가기',f:function(){go(2);focusEl('q'+noQ);}};
+  if(!s.copied)return{m:'지시문을 복사해 ChatGPT 새 대화에 붙여 넣으세요',b:'복사하기',f:function(){go(3);$('copyMaster').click();}};
+  var hasFinal=s.items.some(function(i){return i.final.trim();});
+  if(!hasFinal)return{m:'ChatGPT에서 소재 고르기 → 질문 답하기 → ‘/완성’까지 마치고 결과를 붙여 넣으세요',b:'붙여 넣으러 가기',f:function(){go(4);focusEl('aiOut');}};
+  var bi=s.items.findIndex(function(i){return/【[^】]*】/.test(i.final);});
+  if(bi>=0){var n=(s.items[bi].final.match(/【[^】]*】/g)||[]).length;return{m:'문항 '+(bi+1)+'에 채울 빈칸이 '+n+'곳 있습니다',b:'빈칸 채우기',f:function(){go(4);setTimeout(function(){var el=$('bl'+bi);if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.classList.add('flash');var x=el.querySelector('input');if(x)x.focus({preventScroll:true});}},200);}};}
+  var li=s.items.findIndex(function(it){var n=cnt(it,it.final);return it.limit&&(n>it.limit||n<it.limit*0.9);});
+  if(li>=0){var it=s.items[li];return{m:'문항 '+(li+1)+' 글자수를 맞추세요 ('+cnt(it,it.final)+'/'+it.limit+'자)',b:'맞추기 요청 복사',f:function(){copyText(MINI.fit.replace('[문항 번호]','[문항 '+(li+1)+']'),'복사했습니다. ChatGPT에 보내고 새 결과를 붙여 넣으세요.',$('nbBtn'));}};}
+  var SELF=['fact','role','voice','consist','gap','goal','scope','after'];var selfN=SELF.filter(function(k){return s.self&&s.self[k];}).length;
+  if(selfN<SELF.length)return{m:'제출 전 스스로 확인 '+SELF.length+'가지를 체크하세요 ('+selfN+'/'+SELF.length+')',b:'확인하러 가기',f:function(){go(4);setTimeout(function(){var el=document.querySelector('.self');if(el)el.closest('.panel').scrollIntoView({behavior:'smooth',block:'center'});},200);}};
+  return{m:'초안 완성! 첨삭으로 넘어가 점수 진단을 받으세요',b:'첨삭으로 넘어가기',done:true,f:function(){$('copyHandover').click();}};
+}
+function focusEl(id){setTimeout(function(){var el=$(id);if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.focus({preventScroll:true});el.classList.add('flash');}},200);}
+var curAct=null;
+function renderNext(){curAct=nextAction();$('nbMsg').textContent=curAct.m;var b=$('nbBtn');if(!b.classList.contains('copied'))b.textContent=curAct.b;$('nextBar').classList.toggle('done',!!curAct.done);}
+function markDone(){
+  var d1=cardCount()>=2&&(state.likes||[]).length>=2;
+  var d2=((state.mode==='none')||state.role||state.company)&&state.items.some(function(i){return i.q.trim();});
+  var d3=!!state.aiOut.trim();
+  var d4=state.items.length&&state.items.every(function(i){return i.final.trim();});
+  var flags={1:d1,2:d2,3:d3,4:d4};
+  document.querySelectorAll('#rail button').forEach(function(b){b.classList.toggle('done',!!flags[b.dataset.go]);});
+  var w=[state.student,state.company].filter(Boolean).join(' / ');
+  $('whoLabel').textContent=w;
+  var pill=$('progPill');
+  if(state.items.some(function(i){return i.final.trim();})){
+    var ok=state.items.filter(function(it){return analyze(it).status>=1;}).length;
+    pill.hidden=false;pill.textContent='초안 완성 '+ok+'/'+state.items.length;pill.classList.toggle('ok',ok===state.items.length);
+  }else pill.hidden=true;
+  renderNext();
+}
+ROOT.addEventListener('click',function(e){var g=e.target.closest('[data-go]');if(g){go(g.dataset.go);}});
+
+/* ---------- step 1 ---------- */
+['company','role','student','jd'].forEach(function(id){var el=$(id);el.value=state[id]||'';el.addEventListener('input',function(){state[id]=el.value;save();markDone();});});
+var MEK=['major','value','proud','combo'];
+var CTYPES={bootcamp:'직무부트캠프·교육',class:'수업·과제',team:'팀 프로젝트·공모전',work:'아르바이트',intern:'인턴·현장실습',club:'동아리·대외활동·봉사',etc:'자격증·독학·기타'};
+var CEX={
+ bootcamp:'[직무부트캠프 · 이공계] ○○기관 품질관리(QC) 직무부트캠프 참여 (20XX.XX.XX~XX.XX)\n- 제조 공정 품질검사 전 과정 가상 실습 수행\n- Minitab을 활용한 불량 데이터 300건 관리도 분석\n- 관리 한계선(UCL·LCL) 기준을 적용해 이상 공정 판정\n- 불량률 급증 구간 발생 시 설비·원자재별 데이터 비교\n- 설비 조건 개선안 도출 및 멘토 피드백 반영해 보고서 보완\n\n[직무부트캠프 · 인문·상경] ○○기관 콘텐츠 마케팅 직무부트캠프 참여 (20XX.XX.XX~XX.XX)\n- 브랜드 SNS 채널 분석부터 캠페인 기획안 작성까지 전 과정 수행\n- GA4·SNS 인사이트를 활용한 게시물 30건 성과 분석\n- 타깃 연령·도달률 기준을 적용해 콘텐츠 유형 분류\n- 참여율 하락 시기 발생 시 게시 시간·형식별 반응 비교\n- 게시 전략 수정안 제안 및 가상 테스트 참여율 상승 확인',
+ work:'[아르바이트 · 서비스] ○○카페 매장 아르바이트 (20XX.XX~XX.XX, 주 3회)\n- 주문 접수·음료 제조·재고 관리 등 매장 운영 전반 지원\n- POS 시스템을 활용한 주문 처리 및 일일 정산 수행\n- 식품 위생 기준에 맞춰 재료 유통기한·보관 온도 점검\n- 피크 시간 대기 증가 시 주문 단계별 소요 시간 비교\n- 재료 사전 준비 순서 조정으로 평균 대기 시간 단축 확인'
+};
+var CEXS={
+ bootcamp:{org:'○○기관',name:'품질관리 직무부트캠프',period:'2025.07~08, 4주',l1:'제품 검사 과정 전체를 실습함',l2:'미니탭으로 불량 데이터 300건을 그래프로 분석',l3:'관리 기준선을 넘는지 확인하며 판정',l4:'불량이 갑자기 늘어난 구간에서 설비별·원료별 데이터를 비교',l5:'설비 조건 개선안을 내고 멘토 피드백으로 보고서를 고침',learn:'숫자를 나눠 보면 원인이 보인다'},
+ class:{org:'전공 수업',name:'통계학개론 설문 분석 과제',period:'2024년 1학기',l1:'설문 데이터를 모아 분석하고 보고서를 씀',l2:'엑셀로 응답 200건을 정리하고 평균을 비교',l3:'빈 응답과 중복 응답은 빼고 계산',l4:'예상과 결과가 달라 학년별로 나눠 다시 비교',l5:'학년별 차이를 찾아 발표했고 A0를 받음',learn:'전체 평균만 보면 놓치는 게 있다'},
+ team:{org:'학과 수업',name:'재고 관리 웹 페이지 팀 프로젝트',period:'2024.09~12, 4명',l1:'웹 페이지 화면 만들기 담당',l2:'HTML과 자바스크립트로 입고·출고 화면을 만듦',l3:'팀원이 만든 기능과 이름을 맞춰 연결',l4:'합칠 때 버튼이 안 눌려서 내 코드와 팀원 코드를 비교',l5:'이름이 다른 부분을 고쳐 전시 전에 완성',learn:'합치기 전에 규칙부터 맞춰야 한다'},
+ work:{org:'○○카페',name:'매장 아르바이트',period:'2025.03~08, 주 3회',l1:'주문 받기, 음료 만들기, 재고 정리',l2:'포스기로 주문 받고 하루 매출 정산',l3:'재료 유통기한이랑 냉장고 온도를 매일 확인',l4:'손님이 몰릴 때 줄이 길어져서 주문 단계별로 걸리는 시간을 비교',l5:'재료를 미리 준비해 두는 순서로 바꿨더니 대기가 줄었음',learn:'바쁠수록 순서를 먼저 바꿔야 한다'},
+ intern:{org:'○○구청',name:'행정 현장실습',period:'2025.01~02, 8주',l1:'민원 서류 접수와 자료 정리 지원',l2:'엑셀로 민원 접수 현황표를 매일 업데이트',l3:'개인정보가 보이지 않게 가리고 정리',l4:'같은 질문이 반복돼서 민원 유형별 건수를 비교',l5:'자주 묻는 질문 안내문을 만들어 창구에 붙임',learn:'반복되는 일은 먼저 정리해 두면 모두 편하다'},
+ club:{org:'교내 동아리',name:'홍보부',period:'2024.03~2025.02',l1:'행사 홍보와 SNS 운영',l2:'캔바로 카드뉴스를 매주 1개 만듦',l3:'행사 날짜·장소를 두 번 확인하고 올림',l4:'신청자가 적어서 올린 시간대별 조회수를 비교',l5:'저녁 9시에 올리도록 바꿨더니 신청자가 늘었음',learn:'올리는 시간도 내용만큼 중요하다'},
+ etc:{org:'독학',name:'파이썬 온라인 강의',period:'2025.01~03',l1:'파이썬 기초를 배우고 작은 프로그램을 만듦',l2:'온라인 강의로 매일 1시간씩 실습',l3:'예제를 그대로 따라 하지 않고 직접 바꿔 봄',l4:'에러가 나면 내 코드와 예제 코드를 한 줄씩 비교',l5:'가계부 프로그램을 끝까지 완성함',learn:'막히면 비교해 보면 된다'}
+};
+var CPH={l1:'',l2:'',l3:'',l4:'',l5:''};
+var CLAB={l1:'① 수행 범위',l2:'② 도구·핵심 행동',l3:'③ 기준·주의점',l4:'④ 문제·비교',l5:'⑤ 조치·결과'};
+var CQ={l1:'무슨 일을 했나요?',l2:'무엇을 써서, 무엇을 했나요?',l3:'하면서 꼭 지킨 것은?',l4:'예상과 달랐던 일은? 그때 무엇과 무엇을 비교했나요?',l5:'그래서 어떻게 했고, 무엇이 달라졌나요?',learn:'이 일로 알게 된 것 한 줄'};
+var VERBS=[['분석·확인',['비교한다','분석한다','확인한다','찾아낸다']],['정리·계획',['정리한다','기록한다','계획한다','관리한다']],['사람·소통',['설명한다','돕는다','설득한다','조율한다']],['만들기·개선',['만든다','기획한다','개선한다','해결한다']]];
+function renderVerbs(){
+  state.likes=state.likes||[];
+  var all=[].concat.apply([],VERBS.map(function(g){return g[1];}));
+  var custom=state.likes.filter(function(v){return all.indexOf(v)<0;});
+  $('verbs').innerHTML=VERBS.map(function(g){return'<div class="vgroup"><b>'+g[0]+'</b><div class="vbtns">'+g[1].map(function(v){return'<button type="button" class="verb'+(state.likes.indexOf(v)>=0?' on':'')+'" data-verb="'+v+'">'+v+'</button>';}).join('')+'</div></div>';}).join('')+
+    (custom.length?'<div class="vgroup"><b>직접 쓴 행동</b><div class="vbtns">'+custom.map(function(v){return'<button type="button" class="verb on" data-verb="'+esc(v)+'">'+esc(v)+' ✕</button>';}).join('')+'</div></div>':'');
+  var n=state.likes.length,st=$('verbStat');st.className='fstat'+(n>=2?' ok':'');st.textContent=n+'/3 선택';
+}
+function toggleVerb(v){
+  var i=state.likes.indexOf(v);
+  if(i>=0){state.likes.splice(i,1);(state.cards||[]).forEach(function(c){if(c.acts){var k=c.acts.indexOf(v);if(k>=0)c.acts.splice(k,1);}});}
+  else{if(state.likes.length>=3){toast('3개까지만 고를 수 있습니다. 하나를 빼고 고르세요.');return;}state.likes.push(v);}
+  save();renderVerbs();renderCards();markDone();
+}
+$('verbs').addEventListener('click',function(e){var b=e.target.closest('[data-verb]');if(b)toggleVerb(b.dataset.verb);});
+$('verbAdd').addEventListener('click',function(){var v=$('verbCustom').value.trim();if(!v)return;if(!/다$/.test(v))v=v+'다';if(state.likes.indexOf(v)<0)toggleVerb(v);$('verbCustom').value='';});
+$('verbCustom').addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();$('verbAdd').click();}});
+function casual(e){return[e.org+' '+e.name+' ('+e.period+')','무슨 일: '+e.l1,'쓴 것·한 것: '+e.l2,'지킨 것: '+e.l3,'달랐던 일·비교: '+e.l4,'어떻게·결과: '+e.l5,'알게 된 것: '+e.learn].join('\n');}
+function cardLines(c){return['l1','l2','l3','l4','l5'].filter(function(k){return(c[k]||'').trim();}).length;}
+function cardValid(c){return!!((c.name||c.org||'').trim())&&cardLines(c)>=2;}
+function cardCount(){return(state.cards||[]).filter(cardValid).length;}
+function basicLine(c){var h=[c.org,c.name].filter(function(x){return x&&x.trim();}).join(' ');return(h||'[기관] [활동명]')+(c.type==='bootcamp'||c.type==='intern'?' 참여':'')+' ('+(c.period||'기간')+')';}
+function cardText(c){var L=[basicLine(c)];['l1','l2','l3','l4','l5'].forEach(function(k){L.push('- '+((c[k]||'').trim()||'('+CLAB[k]+' 비어 있음)'));});return L.join('\n');}
+function cardTitle(c,i){return(c.star?'★ ':'')+'경험 '+(i+1)+': '+(((c.org||'')+' '+(c.name||'')).trim()||CTYPES[c.type]);}
+function renderCards(){
+  if(!state.cards||!state.cards.length)state.cards=[newCard()];
+  var box=$('cards');box.innerHTML='';
+  state.cards.forEach(function(c,i){
+    var el=document.createElement('div');el.className='card5'+(c.star?' star':'');var ex=CEXS[c.type]||CEXS.work;
+    el.innerHTML='<div class="c5head"><span class="qnum">경험 '+(i+1)+'</span><select aria-label="경험 유형">'+Object.keys(CTYPES).map(function(k){return'<option value="'+k+'"'+(c.type===k?' selected':'')+'>'+CTYPES[k]+'</option>';}).join('')+'</select><span class="sp"></span><button type="button" class="starbtn'+(c.star?' on':'')+'" data-star="'+i+'">'+(c.star?'★ 가장 보여 주고 싶은 경험':'☆ 가장 보여 주고 싶다면')+'</button>'+(state.cards.length>1?'<button class="btn danger small" type="button" data-cdel="'+i+'">삭제</button>':'')+'</div>'+
+      ((state.likes||[]).length?'<div class="c5acts">이 경험에서 한 좋아하는 행동: '+state.likes.map(function(v){var on=(c.acts||[]).indexOf(v)>=0;return'<button type="button" class="verb'+(on?' on':'')+'" data-act="'+i+'|'+esc(v)+'">'+esc(v)+'</button>';}).join('')+'</div>':'<div class="c5acts">위에서 좋아하는 행동을 고르면 여기서 연결할 수 있습니다.</div>')+
+      '<p class="c5tip">말하듯 편하게 쓰세요. 이력서 문장으로 바꾸는 건 AI 코치가 합니다. 모르는 칸은 비워 두세요.</p>'+
+      '<div class="c5basic"><div><label class="c5q">어디서?</label><input type="text" data-k="org" placeholder="예: '+esc(ex.org)+'" value="'+esc(c.org)+'"></div><div><label class="c5q">무슨 활동?</label><input type="text" data-k="name" placeholder="예: '+esc(ex.name)+'" value="'+esc(c.name)+'"></div><div><label class="c5q">언제, 얼마나?</label><input type="text" data-k="period" placeholder="예: '+esc(ex.period)+'" value="'+esc(c.period)+'"></div></div>'+
+      ['l1','l2','l3','l4','l5'].map(function(k){return'<div class="c5line"><label><span class="c5q">'+CQ[k]+'</span><small>'+CLAB[k]+'</small></label><input type="text" data-k="'+k+'" placeholder="예: '+esc(ex[k])+'" value="'+esc(c[k])+'"></div>';}).join('')+
+      '<div class="c5line"><label><span class="c5q">'+CQ.learn+'</span><small>⑥ 배운 점, 자소서에만 씀</small></label><input type="text" data-k="learn" placeholder="예: '+esc(ex.learn)+'" value="'+esc(c.learn)+'"></div>'+
+      '<details class="c5ex"><summary>이 유형 전체 예시 보기</summary><div class="c5exgrid"><div><b>이렇게 말하듯 쓰면</b><pre>'+esc(casual(ex))+'</pre></div>'+(CEX[c.type]?'<div><b>AI가 이렇게 다듬어요 (이력서 5줄)</b><pre>'+esc(CEX[c.type].split('\n\n')[0])+'</pre></div>':'')+'</div></details>'+
+      '<div class="c5prev" data-prev></div>';
+    box.appendChild(el);
+    function prev(){var p=el.querySelector('[data-prev]');var ls=['l1','l2','l3','l4','l5'].filter(function(k){return(c[k]||'').trim();});var head=((c.org||'')+' '+(c.name||'')).trim();if(!head&&!ls.length){p.innerHTML='<span class="muted">적은 내용이 여기에 모입니다.</span>';return;}p.innerHTML='<b>지금까지 적은 내용</b>\n'+esc((head||'(어디서·무슨 활동)')+(c.period?' ('+c.period+')':''))+ls.map(function(k){return'\n- '+esc(c[k]);}).join('')+(ls.length<5?'\n<span class="muted">빈 칸 '+(5-ls.length)+'개는 AI 코치가 질문으로 함께 채웁니다.</span>':'');}
+    el.querySelectorAll('input[data-k]').forEach(function(inp){inp.addEventListener('input',function(){c[inp.dataset.k]=inp.value;save();prev();markDone();});});
+    el.querySelector('select').addEventListener('change',function(){c.type=this.value;save();renderCards();markDone();});
+    prev();
+  });
+}
+$('cards').addEventListener('click',function(e){
+  var ac=e.target.closest('[data-act]');if(ac){var pp=ac.dataset.act.split('|'),cc=state.cards[+pp[0]];cc.acts=cc.acts||[];var kk=cc.acts.indexOf(pp[1]);if(kk>=0)cc.acts.splice(kk,1);else cc.acts.push(pp[1]);save();renderCards();return;}
+  var s=e.target.closest('[data-star]');if(s){var i=+s.dataset.star,on=!state.cards[i].star;state.cards.forEach(function(c){c.star=false;});state.cards[i].star=on;save();renderCards();return;}
+  var d=e.target.closest('[data-cdel]');if(d){var j=+d.dataset.cdel;if(ok2('경험 '+(j+1)+'을 지울까요?')){state.cards.splice(j,1);save();renderCards();markDone();}}
+});
+$('addCard').addEventListener('click',function(){state.cards.push(newCard());save();renderCards();var cs=document.querySelectorAll('.card5');var last=cs[cs.length-1];if(last){last.scrollIntoView({behavior:'smooth',block:'center'});last.querySelector('input').focus({preventScroll:true});}});
+function renderLinks(){
+  var box=$('links');if(!box)return;
+  var cs=(state.cards||[]).map(function(c,i){return{c:c,i:i};}).filter(function(x){return cardValid(x.c);});
+  var qs=state.items.map(function(it,i){return{it:it,i:i};}).filter(function(x){return x.it.q.trim();});
+  if(!cs.length){box.innerHTML='<p class="empty">1단계에서 경험 카드를 먼저 정리하세요.</p>';return;}
+  if(!qs.length){box.innerHTML='<p class="empty">위에서 문항을 고르면 여기서 연결할 수 있습니다.</p>';return;}
+  box.innerHTML=cs.map(function(x){var c=x.c;c.tags=c.tags||[];return'<div class="linkrow"><span class="lt">'+esc(cardTitle(c,x.i))+'</span>'+qs.map(function(q){var on=c.tags.indexOf(q.i)>=0;return'<button type="button" class="chip'+(on?' on':'')+'" data-link="'+x.i+':'+q.i+'">문항 '+(q.i+1)+'</button>';}).join('')+'</div>';}).join('');
+}
+$('links').addEventListener('click',function(e){var b=e.target.closest('[data-link]');if(!b)return;var p=b.dataset.link.split(':'),c=state.cards[+p[0]],q=+p[1];c.tags=c.tags||[];var k=c.tags.indexOf(q);if(k>=0)c.tags.splice(k,1);else c.tags.push(q);save();renderLinks();});
+function bindIntern(){
+  state.prep=state.prep||{};
+  $('period').value=state.period||'';$('period').oninput=function(){state.period=this.value;save();};
+  $('credit').value=state.credit||'';$('credit').onchange=function(){state.credit=this.value;save();};
+  ['gap','goal','help','after'].forEach(function(k){var el=$('prep_'+k);el.value=state.prep[k]||'';el.oninput=function(){state.prep[k]=el.value;save();};});
+}
+function bindExtra(){
+  state.me=state.me||{};
+  MEK.forEach(function(k){var el=$('me_'+k);el.value=state.me[k]||'';el.oninput=function(){state.me[k]=el.value;save();};});
+  bindIntern();
+  renderVerbs();renderCards();
+}
+bindExtra();
+var PRESETS=[
+ {k:'motive',label:'지원 동기와 실습 목표',q:'현장실습에 지원한 동기와 실습 기간 동안 이루고 싶은 목표를 기술해 주십시오.',needCo:true},
+ {k:'job',label:'전공 지식과 준비 과정',q:'지원 분야와 관련해 학교에서 배운 전공 지식과, 현장실습을 위해 준비한 과정을 기술해 주십시오.'},
+ {k:'plan',label:'실습 기간 학습계획',q:'현장실습 기간 동안 무엇을 어떻게 배우고 수행할지 학습계획을 기술해 주십시오.'},
+ {k:'team',label:'협업·공동 과업',q:'조직의 공동 과업을 달성하는 과정에서 겪은 어려움과, 이를 극복하기 위해 기울인 노력을 기술해 주십시오.'},
+ {k:'feedback',label:'피드백을 받아 고친 경험',q:'다른 사람의 조언이나 피드백을 받아 자신의 방식을 고친 경험과, 그 결과를 기술해 주십시오.'},
+ {k:'rule',label:'규칙·절차를 지킨 경험',q:'정해진 규칙이나 절차를 지키며 과제를 수행한 경험을 기술해 주십시오.'},
+ {k:'learn',label:'새로운 지식 스스로 학습',q:'기존 지식이나 경험만으로 해결하기 어려운 상황에서 새로운 지식이나 기술을 스스로 학습해 적용한 경험을 기술해 주십시오.'},
+ {k:'after',label:'실습 후 학업·진로 계획',q:'현장실습 경험을 실습 후 학업과 진로에 어떻게 활용할 계획인지 기술해 주십시오.'},
+ {k:'personality',label:'성격의 장단점',q:'본인 성격의 장점과 단점, 그리고 단점을 보완하기 위한 노력을 기술해 주십시오.'},
+ {k:'courses',label:'이수 과목 3개',q:'본인의 역량을 잘 나타낼 수 있는 이수 과목 3개를 선정하여 학습 결과(학점)와 학습 과정에서 배운 점을 기술해 주십시오.'}
+];
+function renderPresets(){
+  var box=$('presets');
+  box.innerHTML=PRESETS.map(function(p){var on=state.items.some(function(it){return it.q===p.q;});return'<button type="button" class="preset'+(on?' on':'')+'" data-p="'+p.k+'">'+(on?'✓ ':'+ ')+esc(p.label)+(p.needCo&&state.mode!=='full'?'<span class="warn">기관 필요</span>':'')+'</button>';}).join('');
+}
+$('presets').addEventListener('click',function(e){
+  var b=e.target.closest('[data-p]');if(!b)return;
+  var p=PRESETS.filter(function(x){return x.k===b.dataset.p;})[0];
+  var idx=state.items.findIndex(function(it){return it.q===p.q;});
+  if(idx>=0){if(state.items[idx].final.trim()&&!ok2('이 문항을 빼면 작성한 내용도 지워집니다. 뺄까요?'))return;if(state.items.length>1)state.items.splice(idx,1);else{state.items[0].q='';}}
+  else{
+    if(p.needCo&&state.mode!=='full')toast('지원 동기는 실습 기관이 정해져야 제대로 쓸 수 있습니다. 기관 부분은 빈칸으로 남깁니다.');
+    var empty=state.items.findIndex(function(it){return!it.q.trim()&&!it.final.trim();});
+    var it=empty>=0?state.items[empty]:(state.items.push(newItem()),state.items[state.items.length-1]);
+    it.q=p.q;
+  }
+  save();renderQ();renderPresets();renderLinks();markDone();
+});
+var MODE_HINT={full:'실습 기관명과 실습 분야를 넣고, 아래에 현장실습 모집공고를 붙여 넣으세요.',role:'실습 분야만 넣으면 됩니다. 비슷한 현장실습 공고가 있으면 붙여 넣을수록 더 정확해집니다.',none:'괜찮습니다. AI 코치가 내 경험에서 어울리는 실습 분야 후보를 보여 주고, 원하지 않으면 어디에나 쓸 수 있는 기본 현장실습 자소서로 씁니다.'};
+function applyMode(){
+  var m=state.mode||'full';
+  document.querySelectorAll('input[name=mode]').forEach(function(r){r.checked=r.value===m;});
+  $('fCompany').hidden=m!=='full';$('fRole').hidden=m==='none';
+  $('modeFields').querySelector('.row').hidden=m==='none';
+  $('modeHint').textContent=MODE_HINT[m];
+  $('jdPanel').hidden=m==='none';
+  $('jdOpt').textContent=m==='role'?'선택':'';
+  renderPresets();
+}
+document.querySelectorAll('input[name=mode]').forEach(function(r){r.addEventListener('change',function(){state.mode=r.value;save();applyMode();markDone();});});
+applyMode();
+$('blind').checked=!!state.blind;$('blind').addEventListener('change',function(){state.blind=this.checked;save();});
+$('jd').addEventListener('input',function(){if(/블라인드/.test(this.value)&&!state.blind){state.blind=true;$('blind').checked=true;save();toast('공고에 블라인드 채용이 있어 체크했습니다.');}});
+$('jdAttach').checked=!!state.jdAttach;$('jdAttach').addEventListener('change',function(){state.jdAttach=this.checked;save();});
+$('aiOut').value=state.aiOut||'';$('aiOut').addEventListener('input',function(){state.aiOut=this.value;save();});
+$('aiOut').addEventListener('paste',function(){setTimeout(function(){state.aiOut=$('aiOut').value;$('parseBtn').click();},30);});
+
+function renderQ(){
+  var box=$('qList');box.innerHTML='';
+  state.items.forEach(function(it,i){
+    var c=document.createElement('div');c.className='qcard';
+    c.innerHTML='<div class="qhead"><span class="qnum">문항 '+(i+1)+'</span><span class="sp"></span>'+(state.items.length>1?'<button class="btn danger small" type="button" data-del="'+i+'">삭제</button>':'')+'</div>'+
+      '<div class="qgrid"><div><label class="f" for="q'+i+'">문항 질문</label><input type="text" id="q'+i+'" value="'+esc(it.q)+'" placeholder="예: 소속 조직의 공동 과업을 달성하며 겪은 어려움과 노력"></div>'+
+      '<div><label class="f" for="l'+i+'">글자수 제한</label><input type="number" min="0" step="50" id="l'+i+'" value="'+(it.limit||'')+'"></div>'+
+      '<div><label class="f" for="m'+i+'">세는 기준</label><select id="m'+i+'"><option value="with">공백 포함</option><option value="without">공백 제외</option></select></div></div>'+
+      '<label class="f" for="d'+i+'">이 문항에 쓰고 싶은 경험 <small>선택, 모르면 비워 두세요</small></label><input type="text" id="d'+i+'" value="'+esc(it.memo||'')+'" placeholder="예: 카페 아르바이트 때 재고표 만든 일">';
+    box.appendChild(c);
+    var sel=c.querySelector('#m'+i);sel.value=it.mode;
+    c.querySelector('#q'+i).addEventListener('input',function(){it.q=this.value;save();markDone();renderPresets();});
+    c.querySelector('#l'+i).addEventListener('input',function(){it.limit=parseInt(this.value,10)||0;upd();save();});
+    sel.addEventListener('change',function(){it.mode=this.value;upd();save();});
+    c.querySelector('#d'+i).addEventListener('input',function(){it.memo=this.value;save();});
+    function upd(){}
+  });
+}
+$('qList').addEventListener('click',function(e){var d=e.target.closest('[data-del]');if(!d)return;var i=+d.dataset.del;if(ok2('문항 '+(i+1)+'을 지울까요?')){state.items.splice(i,1);save();renderQ();renderPresets();}});
+$('addQ').addEventListener('click',function(){state.items.push(newItem());save();renderQ();});
+
+/* ---------- master prompt ---------- */
+function buildMaster(){
+  var s=state,L=[];
+  var jdTxt=s.jd.trim()?s.jd.trim():(s.jdAttach?'(학생이 이 메시지에 이미지·PDF로 첨부함. 첨부를 읽을 수 없으면 담당업무·자격요건·우대사항을 텍스트로 붙여 달라고 요청할 것)':'(공고 없음. 지원 직무 기준의 임시 판단임을 밝히고, 공고를 받으면 다시 맞춤)');
+  var MEN={major:'전공',value:'일할 때 중요하게 여기는 것',proud:'가장 뿌듯했던 경험',combo:'나만의 조합'};
+  L.push('너는 대학 취업지원센터 워크숍의 현장실습 지원서 코치다. 이 학생은 현장실습 지원 자소서를 처음 쓴다. 목표는 학생의 실제 경험만으로 모든 문항을 "최소 제출 가능" 초안으로 완성해 제출할 수 있게 하는 것이다. 답은 짧게, 한국어로 한다.');
+  L.push('');
+  L.push('# 입력 자료');
+  var md=s.mode||'full';
+  if(md==='full'){L.push('- 지원 기업: '+(s.company||'미입력')+' / 직무: '+(s.role||'미입력'));L.push('- 채용공고·직무기술서:\n'+jdTxt);}
+  else if(md==='role'){L.push('- 지원 기업: 미정 / 희망 직무: '+(s.role||'미입력'));if(s.jd.trim())L.push('- 참고용 비슷한 공고:\n'+s.jd.trim());
+    L.push('- [직무만 정한 경우] 공고 대신 이 분야 현장실습생이 일반적으로 맡는 업무와 필요 기초역량을 3줄로 정리해 기준으로 삼고 "일반 기준(임시)"이라고 밝힌다. 특정 기업명, 기업 서비스, 지원 동기의 기업 관련 내용은 쓰지 않고 【빈칸: 기업명·지원 이유(예: …)】로 남긴다.');}
+  else{L.push('- 지원 기업·직무: 아직 정하지 않음');
+    L.push('- [기업·직무 미정] 첫 응답(A)에서 공고 핵심 3줄 대신, 학생이 고른 좋아하는 행동과 경험 카드에서 확인된 행동을 근거로 어울릴 수 있는 직무 방향 후보 3개를 근거 경험과 함께 제시한다. 직무를 대신 결정하거나 적성으로 단정하지 않는다. 소재 배치 확인 질문 전에 방향 질문 1개를 먼저 한다: ①②③ 후보 중 하나로 방향 잡기 / ④ 직무 없이 기본 자소서로 쓰기.');
+    L.push('- 기본 자소서로 쓰면: 각 문항 끝의 직무 연결 문장 대신 "어떤 일에서도 쓰일 나의 행동" 한 문장을 쓴다. 기업명과 지원 동기의 기업 관련 내용은 【빈칸】으로 남긴다.');}
+  var CR={yes:'학점 인정',no:'학점 인정 없음'};
+  L.push('- 실습 기간: '+((s.period||'').trim()||'미입력')+' / 학점 연계: '+(CR[s.credit]||'모름'));
+  var PRL={gap:'① 수업에서 배웠지만 현장에서 확인하고 싶은 것',goal:'② 실습 기간에 가장 먼저 익히고 싶은 업무',help:'③ 실습생으로 확실히 해낼 수 있는 일',after:'④ 실습 후 쓰고 싶은 곳'},pr=s.prep||{};
+  L.push('- 학생이 미리 적은 현장실습 준비(학생이 쓴 사실로 사용, 비어 있으면 질문으로 찾음):');
+  Object.keys(PRL).forEach(function(k){L.push('  · '+PRL[k]+': '+((pr[k]||'').trim()||'비어 있음'));});
+  if(s.blind)L.push('- 블라인드 채용: 예. 학교명, 출신 지역, 가족 정보, 나이, 성별 등 개인 식별 정보는 자소서에 쓰지 않는다. 발견하면 "⚠ 블라인드 위반 위험: ○건"으로 표시하고 초안에서 뺀다.');
+  var me=Object.keys(MEN).filter(function(k){return s.me&&s.me[k]&&s.me[k].trim();});
+  if(me.length){L.push('- 나에 대해:');me.forEach(function(k){L.push('  · '+MEN[k]+': '+s.me[k].trim());});}
+  if((s.likes||[]).length)L.push('- 학생이 고른 좋아하는 행동(선호 확인됨): '+s.likes.join(', '));
+  L.push('- 경험 카드(학생이 직접 적음. 이력서 경력 기술 5줄 형식, 빈 줄은 아직 모름):');
+  (s.cards||[]).forEach(function(c,i){if(!((c.org||c.name||'').trim())&&!cardLines(c))return;
+    L.push('  [경험 '+(i+1)+']'+(c.star?' ★가장 보여 주고 싶은 경험':'')+' 유형: '+CTYPES[c.type]);
+    L.push(cardText(c).split('\n').map(function(l){return'  '+l;}).join('\n'));
+    if((c.learn||'').trim())L.push('  ⑥ 배운 점(자소서용): '+c.learn.trim());
+    if((c.acts||[]).length)L.push('  이 경험에서 한 좋아하는 행동: '+c.acts.join(', '));
+    var tg=(c.tags||[]).filter(function(q){return s.items[q]&&s.items[q].q.trim();});
+    L.push('  학생이 연결한 문항: '+(tg.length?tg.map(function(q){return q+1;}).join(', '):'미정(AI 추천)'));});
+  s.items.forEach(function(it,i){
+    L.push('');
+    L.push('[문항 '+(i+1)+'] '+(it.q||'(문항 미입력)')+' / 제한 '+(it.limit?it.limit+'자('+modeLabel(it.mode)+')':'없음'));
+    if(it.memo&&it.memo.trim())L.push('학생이 쓰고 싶은 경험: '+it.memo.trim());
+  });
+  L.push('');
+  L.push('# 현장실습 기준 (모든 단계에 적용)');
+  L.push('- 이 서류는 정규 채용이 아니라 현장실습(인턴형 실습) 지원서다. 평가 기준은 "즉시 성과를 낼 사람"이 아니라 "실습 기간에 무엇을 배워 갈지 알고, 현장에 안전하게 적응하며 기존 인력의 부담을 늘리지 않을 사람"이다.');
+  L.push('- 정규 채용 자소서와 다르게 쓴다.');
+  L.push('  · 지원동기: 회사 비전 공감이 아니라, 전공 학습과 현장 사이의 빈칸(수업에서 배웠지만 현장에서 어떻게 돌아가는지 모르는 것)을 메우려는 이유.');
+  L.push('  · 역량: 직무 즉시 투입 역량이 아니라 기초역량(정확성, 기록, 규칙·절차 준수, 협업, 전공 기초지식)과 실습생으로서 현실적으로 보조할 수 있는 업무 범위(자료 정리, 기록, 확인, 보조).');
+  L.push('  · 경험: 성과·수치보다 과정, 피드백을 받아들여 고친 방식, 배운 점. 수치가 있으면 쓰되 없어도 감점하지 않는다.');
+  L.push('  · 포부: "입사 후 기여"가 아니라 실습 기간 안에 끝나는 학습계획과 실습 후 학업·진로 연결 계획.');
+  L.push('  · 톤: 겸손하되 구체적인 학습 의지. "많이 배우겠습니다", "열심히 하겠습니다"처럼 막연한 다짐은 쓰지 않고, 어떤 업무에서 무엇을 익힐지 한 가지로 쓴다.');
+  L.push('- 현장실습 필수 요소 4개(자소서 전체에서 각 1회 이상): ① 왜 지금, 왜 이 실습인가(전공과 현장 사이의 빈칸) ② 실습 기간 안에 끝나는 학습목표 1개 ③ 실습생 범위의 기여(보조·기록·확인 수준) ④ 실습 후 학업·진로 연결.');
+  L.push('- 쓰지 않는 표현: "입사 후", "입사하면", "회사 발전에 기여", "귀사의 성장", "즉시 투입", "성과를 창출", 매출·효율을 높이겠다처럼 실습생 범위를 넘는 약속.');
+  L.push('- 학습목표(②)와 실습 후 계획(④)은 네가 지어내지 않는다. 공고의 실습 업무에서 후보를 선택지로 보여 주고, 학생이 고른 뒤 내 말로 한 줄을 받는다.');
+  L.push('- 실습 현장이 제조·물류·연구실·의료·건설·현장 서비스처럼 안전·보안 규정이 중요한 곳이면 규칙·절차를 지킨 경험을 묻는 질문 1개를 넣는다.');
+  L.push('- 실습 기간을 모르면 【빈칸: 실습 기간(예: 8주)】으로 둔다.');
+  L.push('');
+  L.push('# 절대 원칙');
+  L.push('1. 사실은 학생이 적은 경험 카드와 대화 중 학생이 직접 답한 내용뿐이다. 좋아하는 행동은 학생의 선호일 뿐 사실 근거가 아니므로, 경험 카드나 답변으로 확인된 행동만 문장에 쓴다. 경험, 역할, 기간, 인원, 수치, 성과, 고객 반응을 지어내지 않는다. 비어 있으면 학생이 채울 수 있게 【빈칸: 무엇을 쓰는지(예: 예시)】로 남긴다.');
+  L.push('2. 학생 답변을 확대 해석하지 않는다. 본인 행동은 "저는/제가", 팀의 결정과 성과는 "팀은"으로 구분한다.');
+  L.push('3. 숫자, STAR, 실패담이 없다는 이유만으로 감점하거나 만들어 넣지 않는다.');
+  L.push('4. 이 대화에서는 점수를 매기지 않는다. 초안 완성에만 집중한다.');
+  L.push('5. 읽지 못한 첨부는 읽은 척하지 말고 텍스트로 다시 받는다.');
+  L.push('6. "분석했다, 소통했다, 협업했다, 노력했다, 기여했다"라는 말만으로 행동을 인정하지 않는다.');
+  L.push('');
+  L.push('# 진행 순서');
+  L.push('A) 첫 응답: 소재 배치 → B) 소재·나의 한 줄 확정 → C) 문항별 인터뷰와 초안 → D) /완성. 이 대화에서는 점수를 매기지 않는다. 점수 평가와 다듬기는 다음 단계(첨삭 워크북)에서 한다.');
+  L.push('');
+  L.push('# A. 첫 응답: 소재 배치 (초안 작성 금지)');
+  L.push('- 실습 핵심 3줄: 실습 업무 / 필요 기초역량 / 우대사항');
+  L.push('- 경험 카드 다듬기: 각 카드를 이력서 경력 기술 5줄 형식(기본 정보 줄 + ①수행 범위 ②도구·핵심 행동 ③기준·주의점 ④문제·비교 ⑤조치·결과)으로 다듬어 보여 준다. 학생이 쓴 사실의 문장만 다듬고, 비어 있는 줄은 【빈칸: …(예: …)】으로 둔다. 새 도구, 수치, 결과를 넣지 않는다.');
+  L.push('- 관심데이터 표: | 좋아하는 행동 | 확인된 경험(카드 번호와 줄) | 상태 |  상태는 "관심데이터 후보"(선호 + 경험 확인), "경험 확인 필요"(고른 행동을 한 경험이 카드에 없음) 중 하나. 강점이나 적성으로 단정하지 않는다.');
+  L.push('- 소재 배치표: | 문항 | 추천 소재 | 고른 이유(문항 요구·공고 역량·관심데이터) | 대안 소재 |  학생이 연결한 문항은 우선 존중하되 맞지 않으면 이유를 한 줄로 적는다. ★ 경험은 가장 비중 큰 문항에 우선 배치한다. 문항끼리 같은 경험을 쓰지 않는다. 같은 경험을 꼭 써야 하면 다른 측면을 명시한다. 맞는 경험이 없으면 "소재 부족"이라고 쓴다.');
+  L.push('- 필수 요소 배치: 현장실습 필수 요소 ①~④를 각각 어느 문항에 넣을지 한 줄씩 적는다. 학생이 현장실습 준비에 이미 적은 요소는 "확인됨", 비어 있는 요소는 "질문 필요"로 표시한다.');
+  L.push('- 나의 한 줄 후보 3개: 관심데이터 후보(좋아하고 실제로 한 행동)와 "나에 대해" 답만 근거로 만들고 각 후보 옆에 근거 경험을 적는다. 비유, 과장, 기업 슬로건 흉내를 쓰지 않는다. 한 줄은 모든 문항이 향하는 방향이며 문장에 그대로 반복해 넣지 않는다.');
+  L.push('- 마지막에 질문 하나만: 배치표 확인. ① 배치표대로 진행 / ② 바꿀 문항이 있다(예: "② 2번은 대안으로") / ③ 소재 부족 문항의 경험을 같이 찾고 싶다');
+  L.push('');
+  L.push('# B. 소재 확정 후');
+  L.push('- 다음 질문으로 나의 한 줄을 고르게 한다: ①②③ 후보 / ✍ 직접 쓰기: ( ). 고른 한 줄을 이후 모든 문항의 방향으로 삼는다.');
+  L.push('- 소재 부족 문항은 그 문항 요구에 맞는 상황 예시 6~8개와 ⑨ 해당 없음, ✍ 직접 쓰기로 경험을 먼저 찾는다. 끝까지 없으면 가장 가까운 경험을 제안하고 학생이 동의할 때만 쓴다.');
+  L.push('');
+  L.push('# C. 문항별 인터뷰와 첫 초안');
+  L.push('- 문항 1부터 순서대로. 문항당 질문 3~4개, 전체 질문은 12개를 넘기지 않는다.');
+  L.push('- 필수 요소가 빠진 문항(특히 지원동기·학습계획·포부 문항)은 필수 요소 질문부터 한다: ① → ② → ③ → ④. 경험 문항은 결과보다 "누구에게 어떤 피드백을 받고 무엇을 고쳤나"를 먼저 묻는다.');
+  L.push('- 질문은 그 문항 소재 카드의 비어 있는 줄부터 채운다: ②도구·핵심 행동 → ④문제·비교 → ⑤조치·결과 → ①③. 카드에 이미 적힌 사실은 다시 묻지 않는다. 답을 받으면 카드 줄도 함께 채운다.');
+  L.push('- 인터뷰가 끝나면 그 문항의 첫 초안을 쓰고 "문항 ○ 첫 초안입니다. 다음 문항으로 넘어갑니다."라고 알린다. 모든 문항 초안이 끝나면 "모든 문항 초안이 나왔습니다. ‘/완성’을 입력하세요."라고 안내한다.');
+  L.push('- 학생이 "다음"이라고 하면 그 문항은 확인된 사실만으로 첫 초안을 쓰고 빈 곳은 【빈칸】으로 남긴 뒤 넘어간다.');
+  L.push('');
+  L.push('# 질문 형식 (반드시 1개씩)');
+  L.push('- 한 응답에 질문은 1개, 사실 하나만. 앞에 "질문 ○/○ (문항 ○)". 질문 문장은 30~50자.');
+  L.push('- 카드의 해당 줄을 인용한 뒤 묻는다. 형식: 경험 2 > ④ 문제·비교 > (비어 있음)');
+  L.push('- 좋은 질문 유형: 가장 먼저 한 행동, 판단 기준(무엇과 무엇을 비교해 정했나), 결과 확인(그 뒤 무엇이 달라졌나), 역할 경계(본인이 정했나, 팀이 정했나). 역량 단어로 묻거나 "더 구체적으로" 같은 질문은 하지 않는다.');
+  L.push('- 형식:');
+  L.push('  ① 구체 선택지 → 반영 문장: …');
+  L.push('  ② 구체 선택지 → 반영 문장: …');
+  L.push('  ③ 구체 선택지 → 반영 문장: …');
+  L.push('  ④ 구체 선택지 → 반영 문장: …');
+  L.push('  ⑤ 모르겠다');
+  L.push('  ✍ 직접 쓰기: ( 여기에 사실을 적어 주세요 )');
+  L.push('  답 예: ② 재고를 엑셀로 정리했어요 / 직접: 6개월 / ⑤');
+  L.push('  ※ 선택지는 기억을 돕는 예시입니다. 실제로 한 행동만 고르세요.');
+  L.push('- 위 ※ 문장은 모든 질문 아래에 빠짐없이 그대로 붙인다.');
+  L.push('- 선택지는 이 학생 상황에서 있을 법한 평범한 행동 수준으로, 네 개의 수준을 비슷하게 만든다. 성과·수치·리더십이 들어간 인상적인 선택지를 섞지 않는다.');
+  L.push('- 선택은 1~2개까지. 셋 이상이면 실제로 가장 먼저 한 것 1개만 다시 고르게 한다.');
+  L.push('- 핵심 사실(본인 행동, 결과)은 번호만으로 확정하지 않고 "내 말로 한 줄"을 함께 받는다. 번호만 오면 같은 질문 안에서 한 번만 "그때 한 일을 내 말로 한 줄만 적어 주세요."라고 묻는다(질문 수에 넣지 않음). 문장에는 학생의 한 줄을 우선 쓰고, 한 줄에 없는 세부는 선택지에서 가져오지 않고 【빈칸】으로 둔다.');
+  L.push('- 기간·인원·횟수 같은 단순 사실은 번호나 "직접: …"만으로 충분하다.');
+  L.push('- ⑤나 "모르겠다"면 떠올리기 쉬운 상황 예시 5~8개, ⑨ 해당 없음, ✍ 직접 쓰기, ※ 문장을 함께 준다(같은 질문의 연장). 해당 없음이면 일반화하거나 【빈칸】으로 두고 넘어간다.');
+  L.push('');
+  L.push('# 초안·수정본 작성 규칙');
+  L.push('- 글자수는 제한의 95~100%로 맞춘다(500자면 475~500자, 제한 이내라도 90% 미만은 미완성). 부족하면 확인된 사실(맥락, 판단 이유, 행동 순서, 결과, 직무 연결)로 채우고, 채울 사실이 없으면 늘리지 말고 부족한 글자수를 적은 뒤 그 사실을 묻는 질문 1개를 낸다. 수식어, 같은 말 반복, 일반론으로 분량을 늘리지 않는다. 수정본 아래에 글자수를 적는다(기준: 문항별 표시 기준).');
+  L.push('- 학생이 경험 카드와 답변에서 직접 쓴 단어와 말투를 최대한 살린다. 자소서 흐름은 카드의 ①②③ 상황·과정 → ④ 전환점 → ⑤ 결과 → ⑥ 배운 점 → 실습 업무 연결 순으로 잡는다.');
+  L.push('- 흐름: 소제목 한 줄 → 맥락 1~2문장 → 어려움이나 과제 → 본인 판단과 행동 → 받은 피드백과 고친 점(있을 때) → 결과와 배운 점 → 공고의 실습 업무 하나와 연결한 학습 의지 한 문장(그 업무에서 무엇을 익히고 실습생으로서 무엇을 보조할지). 문항마다 서로 다른 실습 업무를 겨냥해 메시지가 겹치지 않게 한다.');
+  L.push('- AI 문체를 피한다: 같은 어미 3번 이상 반복, 대구 나열, "~을 통해 ~을 배웠습니다" 반복, "다양한·함양·시너지·귀사" 같은 추상어, 모든 문장이 같은 길이, 요약형 마무리. 단, 사람 냄새를 내려고 없는 실패담이나 숫자를 넣지 않는다.');
+  L.push('- 기업·서비스 이름은 학생이 직접 조사해 설명할 수 있다고 확인한 경우에만 넣는다.');
+  L.push('- 굵게 표시는 쓰지 않는다.');
+  L.push('- 글자수는 ** 기호와 【빈칸】 안내문을 빼고 센다.');
+  L.push('- 초안 뒤에는 두 줄만: 이 초안에 쓴 확인된 사실 요약 / 남은 【빈칸】.');
+  L.push('');
+  L.push('# "/완성"을 받으면');
+  L.push('출력 전에 사실관계를 점검한다: 같은 경험의 기간·인원·수치가 문항마다 같은가 / 과정을 성과처럼 쓰지 않았는가 / 팀 성과를 개인 성과로 쓰지 않았는가 / 역할 설명이 앞뒤로 맞는가 / 문항 요구와 반대되는 결말이 없는가 / 정규직용 표현이나 막연한 다짐이 남아 있지 않은가 / 현장실습 필수 요소 4개가 자소서 전체에 있는가. 고칠 수 있는 것은 고치고, 학생 확인이 필요한 것은 【빈칸】으로 남긴다.');
+  L.push('출력 전에 모든 문항 글자수가 제한의 95~100%인지 다시 세고, 부족한 문항은 확인된 사실로 보강한다. 아직 초안이 없는 문항도 질문하지 말고 확인된 사실만으로 초안을 쓴다. 문항 요구 누락, 소재·메시지 중복, 팀과 개인 구분, 글자수를 점검해 고친 뒤, 아래 형식을 정확히 지켜 전체를 출력한다. 이 형식은 학생의 워크북 페이지가 자동으로 읽는다.');
+  L.push('===경력기술===');
+  L.push('(경험 카드마다 기본 정보 줄 + "- "로 시작하는 5줄. 대화에서 채운 사실을 반영하고, 아직 모르는 줄은 【빈칸】. 배운 점은 넣지 않는다.)');
+  L.push('===자소서 최종본===');
+  L.push('[문항 1]');
+  L.push('(소제목과 본문)');
+  L.push('[문항 2]');
+  L.push('(소제목과 본문)');
+  L.push('===끝===');
+  L.push('===끝=== 아래에는 문항별로 한 줄씩만 적는다: 상태(미완성 / 최소 제출 가능) / 글자수 / 남은 【빈칸】. 점수는 매기지 않는다.');
+  L.push('그 아래 한 줄: "현장실습 필수 요소: ①○/× ②○/× ③○/× ④○/×" (×이면 어느 문항에 넣으면 되는지 함께).');
+  L.push('마지막에 "초안이 완성되었습니다. 워크북 4단계에 붙여 넣고 빈칸을 채운 뒤 첨삭으로 넘어가세요."라고 안내한다.');
+  L.push('');
+  L.push('# 기타 명령: "/현황" 문항별 단계·상태·남은 확인 사항 / "/노트" 지금까지 확인된 사실 목록 / "다음" 현재 문항을 확인된 사실로 정리하고 넘어가기');
+  L.push('');
+  L.push('지금 A. 첫 응답(소재 배치)을 시작하라.');
+  return L.join('\n');
+}
+
+var FIX={
+  one:'질문은 한 번에 1개씩만 해 주세요. 방금 낸 질문 중 가장 중요한 것 1개만 다시 선택형(①~④, ⑤ 모르겠다, ✍ 직접 쓰기)으로 내 주세요.',
+  fact:'방금 수정본에 제가 말하지 않은 경험, 수치, 역할, 결과가 있으면 모두 【빈칸: 무엇(예: 예시)】으로 바꿔 주세요. 선택지 문장에서 가져왔지만 제가 내 말로 확인하지 않은 세부도 빈칸으로 바꿔 주세요. 제가 제출하거나 직접 쓴 사실만 남겨 주세요.',
+  len:'모든 문항 글자수를 코드로 다시 세어 주세요(** 기호와 【빈칸】 안내문 제외). 제한의 95~100%가 아닌 문항은 확인된 사실로 채우거나 중복부터 줄여 맞추고, 채울 사실이 없으면 선택형 질문 1개로 물어봐 주세요.',
+  dup:'문항끼리 같은 경험이나 같은 메시지가 겹칩니다. 제 경험 목록에서 문항마다 다른 경험, 또는 같은 경험이라도 다른 측면을 쓰도록 소재 배치표를 다시 보여 주고, 바꿀 문항만 선택형 질문 1개로 물어봐 주세요.',
+  format:'/완성 결과를 다시 출력해 주세요. 첫 줄은 ===자소서 최종본===, 각 문항은 [문항 1]처럼 한 줄에 단독으로 쓰고 그 아래에 본문, 마지막 줄은 ===끝=== 입니다. 표나 코드 블록은 쓰지 마세요.'
+};
+var MINI={
+  more:'제 경험 목록만으로는 소재가 부족한 문항이 있습니다. 그 문항 요구에 맞는 상황 예시 6~8개(수업, 아르바이트, 팀 활동, 동아리, 일상 등)를 번호로 보여 주고, ⑨ 해당 없음과 ✍ 직접 쓰기를 함께 주세요. 제가 고르면 내 말로 한 줄을 받아 주세요. 선택지는 기억을 돕는 예시일 뿐이니 제가 확인하기 전에는 문장에 쓰지 마세요.',
+  role:'방금 수정본에서 제가 직접 한 행동과 팀이 한 결정·성과가 문장마다 구분되도록 고쳐 주세요. 본인 행동은 "저는/제가", 팀은 "팀은"으로 씁니다. 누가 했는지 분명하지 않은 문장은 고치기 전에 선택형 질문(⑤ 기억 안 남 포함)으로 먼저 물어봐 주세요. 글자수 제한은 유지합니다.',
+  voice:'방금 수정본을 제 말투로 다듬어 주세요. 기준은 제 원문 답변과 이 대화에서 제가 직접 쓴 답변입니다. 1) 먼저 제 글에서 말투 특징 3~5개를 뽑아 보여 주세요: 자주 쓰는 단어와 연결어, 문장 길이, 끝맺음 방식, 설명하는 순서. 2) 수정본에서 제 원문과 답변에 없던 AI식 표현(추상어, 대구 나열, 같은 끝맺음 반복, "~을 통해 배웠습니다", 요약형 마무리)을 제가 실제로 쓴 단어와 표현으로 바꿔 주세요. 3) 사실, 수치, 순서, 저와 팀의 구분은 바꾸지 않습니다. 없는 경험, 감정, 숫자를 넣지 않습니다. "저는/제가"를 더 넣는 것은 말투 수정이 아닙니다. 4) 바꾼 부분은 **굵게** 표시하고, 글자수는 제한의 95~100%를 유지하며 코드로 세어 적어 주세요. 제 원문이 없거나 두세 문장뿐이면 고치기 전에 "이 경험을 친구에게 말하듯 3~4문장으로 적어 주세요"라고 한 번만 요청하고, 그 답을 기준으로 삼아 주세요.',
+  intern:'제 자소서에서 정규직 지원서 표현("입사 후", "회사 발전에 기여", "귀사의 성장", "즉시 투입", 성과·매출 약속)과 막연한 다짐("많이 배우겠습니다", "열심히 하겠습니다")을 모두 찾아 표로 보여 주세요: | 위치(문항 > 문단) | 원래 표현 | 문제 | 바꿀 방향 |. 그다음 실습 기간 안의 학습목표와 실습생이 할 수 있는 일로 바꾼 문장을 제안해 주세요. 학습목표와 실습 후 계획은 지어내지 말고, 공고의 실습 업무에서 후보를 골라 선택형 질문 1개로 먼저 물어봐 주세요. 바꾼 부분은 **굵게** 표시하고 글자수를 세어 적어 주세요.',
+  fit:'[문항 번호]를 글자수 제한의 95~100%로 맞춰 주세요(500자면 475~500자). 넘치면 두 번 나오는 설명과 수식어부터 줄이고, 모자라면 이미 확인된 사실(맥락, 판단 이유, 행동 순서, 결과, 직무 연결)로 채워 주세요. 채울 사실이 없으면 늘리지 말고 필요한 사실을 선택형 질문 1개로 물어봐 주세요. 제 원래 표현을 살리고, 맞춘 뒤 글자수를 세어 적어 주세요.',
+  company:'제가 지원하는 실습 기관이 하는 일 중 실습 업무와 연결될 만한 영역 후보 2~3개를 알려 주세요. 그리고 제가 직접 조사해 답할 질문 3개를 주세요(이 기관에서 실습생이 주로 맡는 업무 / 공식 사이트나 기사에서 찾은 이 기관의 최근 활동 1개 / 이 실습에서 내가 가장 먼저 익혀야 할 것). 제가 조사해 답하기 전에는 기관의 사업·서비스 이름을 자소서에 넣지 마세요. 제 답을 받으면 사실 여부를 검토한 뒤 지원동기 문장 교체안을 글자수와 함께 제안해 주세요.'
+};
+function renderReady(){
+  var s=state,miss=[];
+  var md=s.mode||'full';
+  if(md==='full'&&!(s.company&&s.role))miss.push('실습 기관명·분야');
+  if(md==='role'&&!s.role)miss.push('희망 실습 분야');
+  if(!s.items.some(function(i){return i.q.trim();}))miss.push('문항 질문');
+  if(md==='full'&&!s.jd.trim()&&!s.jdAttach)miss.push('현장실습 모집공고');
+  if(cardCount()<2)miss.push('경험 카드 2개 이상(기관·활동명과 2줄 이상)');
+  $('readyBox').innerHTML=miss.length?'<div class="panel flat" style="display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:12px 18px"><span style="color:var(--pen);font-weight:600">1단계에서 '+miss.join(', ')+'을(를) 먼저 넣어 주세요.</span><button class="btn small" type="button" data-go="2">1단계로</button></div>':'';
+  $('masterPrev').textContent=buildMaster();
+}
+$('copyMaster').addEventListener('click',function(){copyText(buildMaster(),'복사했습니다. ChatGPT 새 대화에 붙여 넣으세요.',this);state.copied=true;save();markDone();});
+document.querySelectorAll('[data-fix]').forEach(function(b){b.addEventListener('click',function(){copyText(FIX[b.dataset.fix],'복사했습니다. 같은 대화창에 보내세요.');});});
+document.querySelectorAll('[data-quick]').forEach(function(b){b.addEventListener('click',function(){copyText(b.dataset.quick,'‘'+b.dataset.quick+'’ 복사했습니다.',b);});});
+var DEMO={company:'○○물류(가상 기업)',role:'물류운영 현장실습',student:'예시 학생',jd:'실습 내용\n· 입고·출고 화물의 서류와 실물 대조 보조\n· 재고 현황 엑셀 기록·정리\n· 현장 안전 점검표 작성 보조\n· 부서 회의 자료 정리\n\n지원 자격\n· 경영·물류·산업공학 등 관련 전공 3~4학년\n· 엑셀 기초 활용 가능자\n\n우대사항\n· 물류관리 관련 과목 이수자\n· 학기제 현장실습 학점 인정',jdAttach:false,
+  period:'2026.03~06, 16주 (학기제)',credit:'yes',prep:{gap:'물류관리 수업에서 입고 절차를 배웠지만 실제로 서류와 물건을 어떻게 맞추는지 모른다',goal:'',help:'정해진 양식에 빠짐없이 기록하기',after:''},
+  likes:['비교한다','개선한다','설명한다'],
+  cards:[{type:'work',org:'○○카페',name:'매장 아르바이트',period:'2025.03~2025.08, 주 3회',l1:'주문 접수·음료 제조·재고 관리 등 매장 운영 전반 지원',l2:'POS 시스템을 활용한 주문 처리 및 일일 정산 수행',l3:'식품 위생 기준에 맞춰 재료 유통기한·보관 온도 점검',l4:'피크 시간 대기 증가 시 주문 단계별 소요 시간 비교',l5:'',learn:'바쁠수록 순서를 먼저 바꿔야 한다는 것',star:true,tags:[1],acts:['비교한다','개선한다']},
+         {type:'bootcamp',org:'○○기관',name:'콘텐츠 마케팅 직무부트캠프',period:'2025.07.01~07.26',l1:'브랜드 SNS 채널 분석부터 캠페인 기획안 작성까지 전 과정 수행',l2:'GA4·SNS 인사이트를 활용한 게시물 성과 분석',l3:'',l4:'참여율 하락 시기 발생 시 게시 시간·형식별 반응 비교',l5:'',learn:'',star:false,tags:[],acts:['비교한다','설명한다']},
+         {type:'team',org:'학과 수업',name:'재고 관리 웹 페이지 팀 프로젝트',period:'2024.09~12, 4명',l1:'웹 페이지 화면 설계와 구현 담당',l2:'',l3:'',l4:'',l5:'학과 프로젝트 전시 참가',learn:'',star:false,tags:[],acts:[]}],
+  me:{major:'경영학',value:'약속한 시간 지키기',proud:'카페 재고표를 엑셀로 만들어 마감 정리가 빨라진 일',combo:'데이터 과목 + 고객 응대 아르바이트'},
+  items:[{q:'현장실습에 지원한 동기와 실습 기간 동안 이루고 싶은 목표를 기술해 주십시오.',limit:500,mode:'with',draft:'',memo:'',final:'',raw:''},
+         {q:'다른 사람의 조언이나 피드백을 받아 자신의 방식을 고친 경험과, 그 결과를 기술해 주십시오.',limit:500,mode:'with',draft:'',memo:'',final:'',raw:''},
+         {q:'현장실습 경험을 실습 후 학업과 진로에 어떻게 활용할 계획인지 기술해 주십시오.',limit:500,mode:'with',draft:'',memo:'',final:'',raw:''}]};
+$('demoBtn').addEventListener('click',function(){
+  var has=state.company||cardCount()>0||(state.likes||[]).length||state.items.some(function(i){return i.final.trim();});
+  if(has&&!ok2('지금 입력한 내용을 예시로 바꿀까요?'))return;
+  var b=blank();Object.keys(DEMO).forEach(function(k){b[k]=JSON.parse(JSON.stringify(DEMO[k]));});state=b;save();
+  state.mode='full';['company','role','student','jd'].forEach(function(id){$(id).value=state[id];});bindExtra();applyMode();renderQ();renderPresets();renderLinks();$('jdAttach').checked=false;
+  renderQ();markDone();toast('예시 자료를 채웠습니다. 맨 위 파란 막대의 버튼을 따라가 보세요.');
+});
+document.querySelectorAll('[data-mini]').forEach(function(b){b.addEventListener('click',function(){copyText(MINI[b.dataset.mini],'복사했습니다. 같은 대화창에 붙여 넣으세요.');});});
+
+/* ---------- parsing ---------- */
+function parseAi(txt){
+  var t=norm(txt),m=t.match(/===\s*자소서 최종본\s*===([\s\S]*?)(===\s*끝\s*===|$)/);
+  var body=m?m[1]:t;
+  var re=/^[ \t>*#]*\[\s*문항\s*(\d+)\s*\][^\n]*$/gm,hits=[],x;
+  while((x=re.exec(body)))hits.push({n:+x[1],s:x.index,e:x.index+x[0].length,line:x[0]});
+  var out={};
+  hits.forEach(function(h,i){
+    var end=i+1<hits.length?hits[i+1].s:body.length;
+    var rest=h.line.replace(/^[ \t>*#]*\[\s*문항\s*\d+\s*\]\s*/,'').replace(/^\*\*\s*/,'').trim();
+    var seg=body.slice(h.e,end).replace(/^\n+/,'');
+    seg=seg.replace(/\n?-{3,}\s*$/,'').replace(/\s+$/,'');
+    if(rest&&!/^\(?\s*글자|^\(?\s*공백/.test(rest))seg=rest+'\n'+seg;
+    out[h.n]=seg;
+  });
+  return out;
+}
+$('parseBtn').addEventListener('click',function(){
+  var o=parseAi(state.aiOut),n=0;
+  Object.keys(o).forEach(function(k){var i=+k-1;if(i>=0&&i<state.items.length&&o[k].trim()){state.items[i].raw=o[k];state.items[i].final=o[k].replace(/\*\*/g,'');n++;}});
+  var sm=null;
+  var cm=norm(state.aiOut).match(/===\s*경력\s*기술\s*===([\s\S]*?)(?====\s*자소서 최종본|===\s*끝\s*===|$)/);
+  if(cm&&cm[1].trim()){state.career=cm[1].replace(/\*\*/g,'').trim();$('career').value=state.career;renderCareer();}
+  save();renderProof();markDone();
+  toast(n?'문항 '+n+'개를 불러왔습니다.':'[문항 1] 같은 표시를 찾지 못했습니다. 아래 칸에 직접 붙여 넣으세요.');
+});
+
+/* ---------- checks ---------- */
+var RULES=[
+  {id:'confirm',re:/【[^】]*】|\[[^\]\n]*(?:확인|○|OO|00|연도)[^\]\n]*\]|○○|00년/g,cls:'m-confirm',lv:'hard',msg:'채울 빈칸이 남아 있습니다. 아래 ‘빈칸 채우기’에서 사실을 적어 넣으세요.'},
+  {id:'abstract',re:/노력했습니다|노력하였습니다|노력했고|최선을 다했|최선을 다하|열심히|성실히|기여했습니다|기여하였습니다|소통했습니다|협업했습니다/g,cls:'m-risk',lv:'warn',msg:'무엇을, 어떻게 했는지 행동으로 바꾸면 증거력이 올라갑니다.'},
+  {id:'exagg',re:/획기적|완벽하게|완벽히|100%|누구보다|최고의|반드시|항상/g,cls:'m-risk',lv:'warn',msg:'근거가 없으면 과장으로 읽히는 표현입니다. 사실로 뒷받침하거나 지우세요.'},
+  {id:'regular',re:/입사 후|입사하면|입사해서|회사 발전|회사의 발전|귀사의 성장|회사에 기여|즉시 투입|바로 투입|성과를 창출|매출을 높|매출 향상/g,cls:'m-risk',lv:'warn',msg:'정규직 지원서 표현입니다. 실습 기간 안에 익힐 업무와 실습생이 할 수 있는 일로 바꾸세요.'},
+  {id:'vague',re:/많이 배우|많은 것을 배우|많은 것을 경험|배우고 싶습니다|배우겠습니다|열심히 하겠습니다|최선을 다하겠습니다/g,cls:'m-risk',lv:'warn',msg:'막연한 학습 다짐입니다. 어떤 업무에서 무엇을 익힐지 한 가지로 쓰세요.'},
+  {id:'ai',re:/(?:을|를) 통해|다양한|함양|시너지|귀사|이를 바탕으로|뿐만 아니라|나아가|성장할 수 있었습니다|깨달을 수 있었습니다|배울 수 있었습니다/g,cls:'m-style',lv:'soft',msg:'AI 글에서 자주 보이는 표현입니다. 한두 번은 괜찮지만 반복되면 평소 말투로 바꾸세요.'}
+];
+function sentences(t){return(norm(t).match(/[^.!?\n]+[.!?]?/g)||[]).map(function(s){return s.trim();}).filter(Boolean);}
+var BLIND_RE=/[가-힣]{2,}(?:대학교|대학원|고등학교|대학)|대학교|고등학교|고향|출신|아버지|어머니|부모님|가족|형제|자매|\d{2}세|\d{2}살/g;
+function analyze(it){
+  var t=norm(it.final),res={marks:[],issues:[],hard:0,warn:0,n:cnt(it,t)};
+  if(!t){res.issues.push({lv:'hard',msg:'아직 수정본이 없습니다.'});res.hard++;res.status=0;return res;}
+  RULES.forEach(function(r){
+    r.re.lastIndex=0;var m,c=0;
+    while((m=r.re.exec(t))){res.marks.push({s:m.index,e:m.index+m[0].length,cls:r.cls,tip:r.msg});c++;if(!m[0].length)r.re.lastIndex++;}
+    if(c){
+      if(r.id==='ai'&&c<3){res.issues.push({lv:'soft',msg:r.msg+' ('+c+'회)'});}
+      else{res.issues.push({lv:r.lv==='soft'?'warn':r.lv,msg:r.msg+' ('+c+'회)'});if(r.lv==='hard')res.hard++;else res.warn++;}
+    }
+  });
+  if(state.blind&&t){BLIND_RE.lastIndex=0;var bm,bc=0;while((bm=BLIND_RE.exec(t))){res.marks.push({s:bm.index,e:bm.index+bm[0].length,cls:'m-risk',tip:'블라인드 위반 위험'});bc++;}
+    if(bc){res.issues.unshift({lv:'hard',msg:'블라인드 위반 위험 '+bc+'곳: 학교명·출신지·가족·나이 정보는 지우거나 바꾸세요.'});res.hard++;}}
+  if(it.limit){
+    if(res.n>it.limit){res.issues.unshift({lv:'hard',msg:modeLabel(it.mode)+' '+res.n+'자로 제한 '+it.limit+'자를 넘었습니다.'});res.hard++;}
+    else if(res.n<it.limit*0.9){res.issues.unshift({lv:'hard',msg:'분량 부족: '+res.n+'/'+it.limit+'자('+Math.round(res.n/it.limit*100)+'%). 제한의 95% 이상('+Math.ceil(it.limit*0.95)+'자)까지 확인된 사실로 채우세요. AI 대화창에 ‘글자수에 맞추기’ 요청을 보내면 됩니다.'});res.hard++;}
+    else if(res.n<it.limit*0.95){res.issues.push({lv:'warn',msg:'조금 짧습니다: '+res.n+'/'+it.limit+'자. 목표는 '+Math.ceil(it.limit*0.95)+'~'+it.limit+'자입니다.'});res.warn++;}
+  }
+  var ss=sentences(t),endings={},pos=0;
+  ss.forEach(function(s){
+    var idx=t.indexOf(s,pos);if(idx>=0)pos=idx+s.length;
+    if(s.length>110&&idx>=0){res.marks.push({s:idx,e:idx+s.length,cls:'m-long',tip:'긴 문장'});}
+    var last=s.replace(/[.!?]+$/,'').split(/\s+/).pop();
+    if(/다$/.test(last))endings[last]=(endings[last]||0)+1;
+  });
+  var longN=ss.filter(function(s){return s.length>110;}).length;
+  if(longN){res.issues.push({lv:'warn',msg:'110자가 넘는 긴 문장이 '+longN+'개 있습니다. 두 문장으로 나누면 읽기 쉬워집니다.'});res.warn++;}
+  var rep=Object.keys(endings).filter(function(k){return endings[k]>=3;});
+  if(rep.length){res.issues.push({lv:'warn',msg:'같은 끝맺음이 3번 이상 반복됩니다: '+rep.map(function(k){return'“'+k+'” '+endings[k]+'회';}).join(', ')});res.warn++;}
+  if(/팀|우리|함께|조원|동료/.test(t)&&!/저는|제가|저의|제 /.test(t)){res.issues.push({lv:'warn',msg:'팀 이야기는 있는데 "저는/제가"가 없습니다. 내가 한 일이 무엇인지 보이게 하세요.'});res.warn++;}
+  if(!res.issues.length)res.issues.push({lv:'good',msg:'자동 점검에서 걸린 표현이 없습니다.'});
+  res.status=res.hard?0:(res.warn>=3?1:2);
+  return res;
+}
+function annotate(t,marks){
+  t=norm(t);marks=marks.slice().sort(function(a,b){return a.s-b.s||b.e-a.e;});
+  var out='',p=0;
+  marks.forEach(function(m){if(m.s<p)return;out+=esc(t.slice(p,m.s))+'<mark class="'+m.cls+'" title="'+esc(m.tip)+'">'+esc(t.slice(m.s,m.e))+'</mark>';p=m.e;});
+  out+=esc(t.slice(p));
+  return out.replace(/\n/g,'<br>');
+}
+function boldHtml(raw){return esc(norm(raw)).replace(/\*\*([\s\S]+?)\*\*/g,'<strong>$1</strong>').replace(/\*\*/g,'').replace(/\n/g,'<br>');}
+function renderProof(){
+  renderEval();
+  var box=$('proofList');box.innerHTML='';
+  state.items.forEach(function(it,i){
+    var p=document.createElement('div');p.className='panel';
+    p.innerHTML='<div class="qhead"><span class="qnum">문항 '+(i+1)+'</span><span class="sp"></span><span class="status" id="st'+i+'"></span></div>'+
+      '<p class="hint" style="margin-top:-4px">'+esc(it.q||'문항 질문 미입력')+'</p>'+
+      (it.raw&&/\*\*/.test(it.raw)?'<details class="prev" open style="margin-bottom:14px"><summary>AI가 바꾼 부분 보기 (굵은 글씨)</summary><div class="changed">'+boldHtml(it.raw)+'</div></details>':'')+
+      '<label class="f" for="f'+i+'">수정본</label><textarea class="draft" id="f'+i+'" placeholder="AI 결과가 자동으로 들어오거나, 여기에 직접 붙여 넣으세요.">'+esc(it.final)+'</textarea><div class="count" id="fc'+i+'"></div>'+
+      '<div class="proof" id="pv'+i+'" style="margin-top:12px" aria-label="교정지 미리 보기"></div>'+
+      '<div class="legend"><span><i class="sw c"></i>채울 빈칸</span><span><i class="sw r"></i>과장·위험 표현</span><span><i class="sw s"></i>AI 문체</span><span><i class="sw l"></i>긴 문장</span></div>'+
+      '<div class="blanks" id="bl'+i+'" hidden></div>'+
+      '<ul class="issues" id="is'+i+'"></ul>'+
+      (it.draft.trim()?'<details class="prev" style="margin-top:10px"><summary>처음 답변과 비교</summary><pre>'+esc(it.draft)+'</pre></details>':'');
+    box.appendChild(p);
+    var ta=p.querySelector('#f'+i);
+    function upd(){
+      var r=analyze(it);
+      p.querySelector('#fc'+i).innerHTML=modeLabel(it.mode)+' <b class="'+(it.limit&&(r.n>it.limit||r.n<it.limit*0.95)?'over':'')+'">'+r.n+'</b>'+(it.limit?' / '+it.limit+'자 (목표 '+Math.ceil(it.limit*0.95)+'~'+it.limit+'자)':'자')+', 공백 제외 '+cntWithout(it.final)+'자';
+      p.querySelector('#pv'+i).innerHTML=it.final.trim()?annotate(it.final,r.marks):'';
+      p.querySelector('#is'+i).innerHTML=r.issues.map(function(x){return'<li class="'+x.lv+'">'+esc(x.msg)+'</li>';}).join('');
+      var st=p.querySelector('#st'+i);st.textContent='자동 판정: '+STATUS[r.status];st.className='status st-'+r.status;
+      renderBlanks();
+    }
+    function renderBlanks(){
+      var bl=p.querySelector('#bl'+i),ms=[],re=/【([^】]*)】/g,m;
+      while((m=re.exec(it.final)))ms.push(m[1]);
+      if(!ms.length){bl.hidden=true;bl.innerHTML='';return;}
+      var keep={};bl.querySelectorAll('input').forEach(function(x){keep[x.dataset.k]=x.value;});
+      bl.hidden=false;
+      bl.innerHTML='<h3>빈칸 채우기 '+ms.length+'곳</h3><p class="hint" style="margin:0 0 6px">실제 사실만 적고 ‘넣기’를 누르면 수정본의 괄호 자리에 들어갑니다. 모르면 비워 두고 상담 때 물어보세요.</p>'+
+        ms.map(function(c,k){var lab=c.replace(/^\s*(빈칸|확인 필요)\s*[:：]\s*/,'');var ex=(lab.match(/\(예[:：]?\s*([^)]*)\)/)||[])[1]||'';
+          return'<div class="blank-row"><span class="blank-lab"><mark>'+esc(lab)+'</mark></span><input type="text" data-k="'+k+'" placeholder="'+esc(ex?'예: '+ex:'사실을 적어 주세요')+'" aria-label="'+esc(lab)+'"><button class="btn small" type="button" data-fill="'+k+'">넣기</button></div>';}).join('');
+      bl.querySelectorAll('input').forEach(function(x){if(keep[x.dataset.k])x.value=keep[x.dataset.k];});
+    }
+    p.addEventListener('click',function(e){
+      var b=e.target.closest('[data-fill]');if(!b)return;
+      var k=+b.dataset.fill,inp=p.querySelector('#bl'+i+' input[data-k="'+k+'"]'),v=(inp.value||'').trim();
+      if(!v){inp.focus();toast('빈칸에 들어갈 사실을 먼저 적어 주세요.');return;}
+      var re=/【[^】]*】/g,m,c=0,out=null;
+      while((m=re.exec(it.final))){if(c===k){out=it.final.slice(0,m.index)+v+it.final.slice(m.index+m[0].length);break;}c++;}
+      if(out===null)return;
+      it.final=out;ta.value=out;upd();save();markDone();toast('빈칸을 채웠습니다.');
+    });
+    ta.addEventListener('input',function(){it.final=ta.value;upd();save();markDone();});
+    upd();
+  });
+}
+document.querySelectorAll('.self').forEach(function(c){c.checked=!!state.self[c.dataset.k];c.addEventListener('change',function(){state.self[c.dataset.k]=c.checked;save();markDone();});});
+
+function renderCareer(){var n=(norm(state.career).match(/【[^】]*】/g)||[]).length,st=$('careerStat');if(!norm(state.career)){st.textContent='';return;}st.className='fstat'+(n?' err':' ok');st.textContent=n?'채울 빈칸 '+n+'곳이 있습니다. 직접 고쳐 쓰세요.':'빈칸 없이 정리되었습니다.';}
+$('career').value=state.career||'';$('career').addEventListener('input',function(){state.career=this.value;save();renderCareer();});renderCareer();
+$('copyCareer').addEventListener('click',function(){copyText(norm(state.career),'경력 기술을 복사했습니다.',this);});
+function handoverText(){
+  var s=state,L=['===처음 쓰기 워크북 초안===','기업: '+(s.mode==='full'?s.company:''),'직무: '+(s.mode==='none'?'':s.role),'지원 방향: '+({full:'기업·직무 정함',role:'직무만 정함',none:'미정'})[s.mode||'full'],'블라인드: '+(s.blind?'예':'아니오'),'공고 첨부: '+(s.jdAttach&&s.mode!=='none'?'예':'아니오'),'실습 기간: '+((s.period||'').trim()),'학점 연계: '+({yes:'학점 인정',no:'학점 인정 없음'}[s.credit]||'모름'),'[공고]',(s.mode==='none'?'':norm(s.jd)),'[/공고]','[경력기술]',norm(s.career),'[/경력기술]','[실습준비]',(function(){var p=s.prep||{},N={gap:'① 현장에서 확인하고 싶은 것',goal:'② 먼저 익히고 싶은 업무',help:'③ 실습생으로 할 수 있는 일',after:'④ 실습 후 쓸 곳'};return Object.keys(N).map(function(k){return N[k]+': '+((p[k]||'').trim()||'(비어 있음)');}).join('\n');})(),'[/실습준비]'];
+  s.items.forEach(function(it,i){L.push('[문항 '+(i+1)+'] '+it.q+' | '+(it.limit||0)+' | '+(it.mode==='without'?'공백 제외':'공백 포함'));L.push(norm(it.final).replace(/\*\*/g,''));});
+  L.push('===끝===');return L.join('\n');
+}
+function finalText(){return state.items.map(function(it,i){return'[문항 '+(i+1)+'] '+(it.q||'')+'\n'+norm(it.final);}).join('\n\n');}
+$('copyHandover').addEventListener('click',function(){state.finalCopied=true;save();window.__handover=handoverText();window.switchApp('revise');});
+$('copyFinal').addEventListener('click',function(){copyText(finalText(),'최종 자소서를 복사했습니다.',this);state.finalCopied=true;save();markDone();});
+
+$('resetBtn').addEventListener('click',function(){if(ok2('입력한 내용을 모두 지우고 새 학생으로 시작할까요?')){window.resetAll();}});
+
+/* ---------- 완성 후 평가 ---------- */
+function mdInline(s){return esc(s).replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>');}
+function mdRender(txt){
+  var lines=norm(txt).split('\n'),out='',i=0;
+  while(i<lines.length){
+    var l=lines[i];
+    if(/^\s*\|/.test(l)){
+      var rows=[];while(i<lines.length&&/^\s*\|/.test(lines[i])){rows.push(lines[i]);i++;}
+      rows=rows.filter(function(r){return!/^\s*\|[\s:|-]+\|\s*$/.test(r);});
+      out+='<table>'+rows.map(function(r,k){var cells=r.trim().replace(/^\||\|$/g,'').split('|');var tag=k===0?'th':'td';return'<tr>'+cells.map(function(c){return'<'+tag+'>'+mdInline(c.trim())+'</'+tag+'>';}).join('')+'</tr>';}).join('')+'</table>';
+      continue;
+    }
+    if(l.trim())out+='<p>'+mdInline(l.replace(/^#+\s*/,''))+'</p>';
+    i++;
+  }
+  return out;
+}
+function fillScore(){return null;}
+function renderScore(){}
+function renderEval(){}
+
+$('nbBtn').addEventListener('click',function(){if(curAct)curAct.f();});
+/* ---------- 파일에서 글자 불러오기 ---------- */
+var PDFJS='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/';
+function loadPdfLib(){
+  if(window.pdfjsLib)return Promise.resolve(window.pdfjsLib);
+  return new Promise(function(res,rej){var s=document.createElement('script');s.src=PDFJS+'pdf.min.js';s.onload=function(){try{window.pdfjsLib.GlobalWorkerOptions.workerSrc=PDFJS+'pdf.worker.min.js';}catch(e){}res(window.pdfjsLib);};s.onerror=function(){rej(new Error('net'));};document.head.appendChild(s);});
+}
+function readFileText(file){
+  var name=(file.name||'').toLowerCase();
+  if(/^image\//.test(file.type))return Promise.reject(new Error('image'));
+  if(/\.txt$/.test(name)||file.type==='text/plain')return file.text();
+  if(!/\.pdf$/.test(name)&&file.type!=='application/pdf')return Promise.reject(new Error('type'));
+  return loadPdfLib().then(function(lib){return file.arrayBuffer().then(function(ab){return lib.getDocument({data:ab,cMapUrl:PDFJS+'cmaps/',cMapPacked:true}).promise;});}).then(function(pdf){
+    var n=Math.min(pdf.numPages,10),jobs=[];
+    for(var k=1;k<=n;k++)jobs.push(pdf.getPage(k).then(function(pg){return pg.getTextContent();}).then(function(ct){return ct.items.map(function(it){return it.str+(it.hasEOL?'\n':'');}).join('');}));
+    return Promise.all(jobs).then(function(pages){return pages.join('\n').replace(/[ \t]+\n/g,'\n').replace(/\n{3,}/g,'\n\n').trim();});
+  });
+}
+function fileMsg(err){
+  var m=err&&err.message;
+  if(m==='image')return'이미지는 글자를 읽을 수 없습니다. ChatGPT에 지시문을 보낼 때 이 파일을 함께 첨부하세요.';
+  if(m==='type')return'PDF나 TXT 파일만 불러올 수 있습니다.';
+  if(m==='net')return'PDF 도구를 불러오지 못했습니다. 인터넷 연결을 확인하거나 글자를 복사해 붙여 넣으세요.';
+  if(m==='empty')return'글자가 없는 PDF(스캔 이미지)입니다. ChatGPT에 파일을 직접 첨부하세요.';
+  return'파일을 읽지 못했습니다. 글자를 복사해 붙여 넣으세요.';
+}
+function handleFile(file,target,stat,onImage){
+  stat.className='fstat';stat.textContent='읽는 중…';
+  readFileText(file).then(function(txt){
+    if(!txt||txt.replace(/\s/g,'').length<10)throw new Error('empty');
+    var ta=$(target);
+    if(ta.value.trim()&&!ok2('이미 입력한 내용을 파일 내용으로 바꿀까요?')){stat.textContent='';return;}
+    ta.value=txt;ta.dispatchEvent(new Event('input'));
+    stat.className='fstat ok';stat.textContent='불러왔습니다 ('+txt.replace(/\s/g,'').length+'자). 필요 없는 부분은 지워 주세요.';
+    ta.classList.add('flash');
+  }).catch(function(e){
+    stat.className='fstat err';stat.textContent=fileMsg(e);
+    if((e.message==='image'||e.message==='empty')&&onImage)onImage();
+  });
+}
+function jdImage(){var c=$('jdAttach');if(!c.checked){c.checked=true;state.jdAttach=true;save();}}
+$('jdFile').addEventListener('change',function(){var f=this.files[0];if(f)handleFile(f,'jd',$('jdStat'),jdImage);this.value='';});
+$('qList').addEventListener('change',function(e){var inp=e.target.closest('.dFile');if(!inp)return;var f=inp.files[0],i=inp.dataset.i;if(f)handleFile(f,'d'+i,$('dst'+i));inp.value='';});
+function dropTo(id,getStat,onImage){
+  var el=$(id)||null;if(!el)return;
+  el.addEventListener('dragover',function(e){e.preventDefault();el.classList.add('drop');});
+  el.addEventListener('dragleave',function(){el.classList.remove('drop');});
+  el.addEventListener('drop',function(e){el.classList.remove('drop');var f=e.dataTransfer&&e.dataTransfer.files&&e.dataTransfer.files[0];if(!f)return;e.preventDefault();handleFile(f,id,getStat(),onImage);});
+}
+dropTo('jd',function(){return $('jdStat');},jdImage);
+
+renderQ();
+go(state.step>=1&&state.step<=4?state.step:1);
+
+}
+function initR(ROOT){
+
+'use strict';
+var KEY='jaso-intern-revise-v1';
+var STATUS=['미완성','최소 제출 가능','상담 우선 검토','고도화 가능'];
+var state=load();
+
+function blank(){return{company:'',role:'',student:'',jd:'',jdAttach:false,extra:'',items:[newItem()],aiOut:'',aiHandoff:'',memo:'',self:{},override:{},score:{},evalOut:'',copied:false,blind:false,period:'',credit:'',step:1};}
+function newItem(){return{q:'',limit:500,mode:'with',draft:'',final:'',raw:''};}
+function load(){try{var s=localStorage.getItem(KEY);if(s){var o=JSON.parse(s);if(o&&o.items&&o.items.length)return Object.assign(blank(),o);}}catch(e){}return blank();}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}}
+var $=function(id){return document.getElementById(id);};
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+function norm(t){return(t||'').replace(/\r\n?/g,'\n').replace(/\s+$/,'');}
+function cntWith(t){return norm(t).length;}
+function cntWithout(t){return norm(t).replace(/\s/g,'').length;}
+function cnt(it,t){return it.mode==='without'?cntWithout(t):cntWith(t);}
+function modeLabel(m){return m==='without'?'공백 제외':'공백 포함';}
+
+function toast(msg){var el=$('toast');el.textContent=msg;el.classList.add('on');clearTimeout(el._t);el._t=setTimeout(function(){el.classList.remove('on');},2200);}
+function copyText(t,okMsg,btn){
+  if(btn){var old=btn.dataset.label||btn.textContent;btn.dataset.label=old;btn.textContent='복사됨 ✓';btn.classList.add('copied');clearTimeout(btn._c);btn._c=setTimeout(function(){btn.textContent=old;btn.classList.remove('copied');},1800);}
+  function fallback(){var ta=document.createElement('textarea');ta.value=t;ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();var ok=false;try{ok=document.execCommand('copy');}catch(e){}document.body.removeChild(ta);toast(ok?okMsg:'복사가 막혀 있습니다. 미리 보기를 열어 직접 선택해 복사하세요.');}
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(function(){toast(okMsg);},fallback);}else fallback();
+}
+
+/* ---------- steps ---------- */
+function go(n){
+  n=+n;state.step=n;save();
+  document.querySelectorAll('section.step').forEach(function(s){s.classList.toggle('show',s.id==='s'+n);});
+  document.querySelectorAll('#rail button').forEach(function(b){if(+b.dataset.go===n)b.setAttribute('aria-current','step');else b.removeAttribute('aria-current');});
+  if(n===2)renderReady();
+  if(n===3)renderProof();
+  markDone();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function nextAction(){
+  var s=state;
+  var anyQ=s.items.some(function(i){return i.q.trim();});
+  var anyD=s.items.some(function(i){return i.draft.trim();});
+  if(!(s.company||s.role)&&!anyQ&&!anyD)return{m:'써 둔 초안이나 처음 쓰기 워크북 내용을 ‘초안 붙여 넣기’ 칸에 넣으세요',b:'붙여 넣기 열기',f:function(){go(1);var b=$('importBox');b.open=true;setTimeout(function(){b.scrollIntoView({behavior:'smooth',block:'center'});b.classList.add('flash');$('importTxt').focus({preventScroll:true});},200);}};
+  if(!(s.company||s.role)&&s.direction!=='none')return{m:'실습 기관명과 실습 분야를 넣으세요',b:'1단계로',f:function(){go(1);focusEl('company');}};
+  var noQ=s.items.findIndex(function(i){return!i.q.trim();});
+  if(noQ>=0)return{m:'문항 '+(noQ+1)+'의 질문을 넣으세요',b:'넣으러 가기',f:function(){go(1);focusEl('q'+noQ);}};
+  if(!s.copied)return{m:'지시문을 복사해 ChatGPT 새 대화에 붙여 넣으세요',b:'복사하기',f:function(){go(2);$('copyMaster').click();}};
+  var hasFinal=s.items.some(function(i){return i.final.trim();});
+  if(!hasFinal)return{m:'ChatGPT와 대화를 마치고 ‘/완성’ 결과를 붙여 넣으세요',b:'붙여 넣으러 가기',f:function(){go(3);focusEl('aiOut');}};
+  var bi=s.items.findIndex(function(i){return/【[^】]*】/.test(i.final);});
+  if(bi>=0){var n=(s.items[bi].final.match(/【[^】]*】/g)||[]).length;return{m:'문항 '+(bi+1)+'에 채울 빈칸이 '+n+'곳 있습니다',b:'빈칸 채우기',f:function(){go(3);setTimeout(function(){var el=$('bl'+bi);if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.classList.add('flash');var x=el.querySelector('input');if(x)x.focus({preventScroll:true});}},200);}};}
+  var li=s.items.findIndex(function(it){var n=cnt(it,it.final);return it.limit&&(n>it.limit||n<it.limit*0.9);});
+  if(li>=0){var it=s.items[li];return{m:'문항 '+(li+1)+' 글자수를 맞추세요 ('+cnt(it,it.final)+'/'+it.limit+'자)',b:'맞추기 요청 복사',f:function(){copyText(MINI.fit.replace('[문항 번호]','[문항 '+(li+1)+']'),'복사했습니다. ChatGPT에 보내고 새 결과를 붙여 넣으세요.',$('nbBtn'));}};}
+  var SELF=['fact','role','voice','consist','gap','goal','scope','after'];var selfN=SELF.filter(function(k){return s.self&&s.self[k];}).length;
+  if(selfN<SELF.length)return{m:'제출 전 스스로 확인 '+SELF.length+'가지를 체크하세요 ('+selfN+'/'+SELF.length+')',b:'확인하러 가기',f:function(){go(3);setTimeout(function(){var el=document.querySelector('.self');if(el)el.closest('.panel').scrollIntoView({behavior:'smooth',block:'center'});},200);}};
+  return{m:s.finalCopied?'완성했습니다. 복사한 자소서를 제출 사이트에 붙여 넣으세요':'준비 완료! 최종 자소서를 복사하세요',b:'최종 자소서 복사',done:true,f:function(){go(3);$('copyFinal').click();}};
+}
+function focusEl(id){setTimeout(function(){var el=$(id);if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.focus({preventScroll:true});el.classList.add('flash');}},200);}
+var curAct=null;
+function renderNext(){curAct=nextAction();$('nbMsg').textContent=curAct.m;var b=$('nbBtn');if(!b.classList.contains('copied'))b.textContent=curAct.b;$('nextBar').classList.toggle('done',!!curAct.done);}
+function markDone(){
+  var d1=(state.company||state.role)&&state.items.some(function(i){return i.q.trim();});
+  var d2=!!state.aiOut.trim();
+  var d3=state.items.length&&state.items.every(function(i){return i.final.trim();});
+  var flags={1:d1,2:d2,3:d3,4:false};
+  document.querySelectorAll('#rail button').forEach(function(b){b.classList.toggle('done',!!flags[b.dataset.go]);});
+  var w=[state.student,state.company].filter(Boolean).join(' / ');
+  $('whoLabel').textContent=w;
+  var pill=$('progPill');
+  if(state.items.some(function(i){return i.final.trim();})){
+    var ok=state.items.filter(function(it){return analyze(it).status>=1;}).length;
+    pill.hidden=false;pill.textContent='제출 가능 '+ok+'/'+state.items.length;pill.classList.toggle('ok',ok===state.items.length);
+  }else pill.hidden=true;
+  renderNext();
+}
+ROOT.addEventListener('click',function(e){var g=e.target.closest('[data-go]');if(g){go(g.dataset.go);}});
+
+/* ---------- step 1 ---------- */
+['company','role','student','jd','extra','period'].forEach(function(id){var el=$(id);el.value=state[id]||'';el.addEventListener('input',function(){state[id]=el.value;save();markDone();});});
+$('blind').checked=!!state.blind;$('blind').addEventListener('change',function(){state.blind=this.checked;save();});
+$('credit').value=state.credit||'';$('credit').addEventListener('change',function(){state.credit=this.value;save();});
+$('jd').addEventListener('input',function(){if(/블라인드/.test(this.value)&&!state.blind){state.blind=true;$('blind').checked=true;save();toast('공고에 블라인드 채용이 있어 체크했습니다.');}});
+$('jdAttach').checked=!!state.jdAttach;$('jdAttach').addEventListener('change',function(){state.jdAttach=this.checked;save();});
+if(!state.score)state.score={};[['scInit','init'],['scTarget','target'],['scFinal','final']].forEach(function(p){var el=$(p[0]);el.value=state.score[p[1]]||'';el.addEventListener('input',function(){state.score[p[1]]=el.value;save();if(typeof renderScore==='function')renderScore();});});
+$('aiOut').value=state.aiOut||'';$('aiOut').addEventListener('input',function(){state.aiOut=this.value;save();});
+$('aiOut').addEventListener('paste',function(){setTimeout(function(){state.aiOut=$('aiOut').value;$('parseBtn').click();},30);});
+
+function renderQ(){
+  var box=$('qList');box.innerHTML='';
+  state.items.forEach(function(it,i){
+    var c=document.createElement('div');c.className='qcard';
+    c.innerHTML='<div class="qhead"><span class="qnum">문항 '+(i+1)+'</span><span class="sp"></span>'+(state.items.length>1?'<button class="btn danger small" type="button" data-del="'+i+'">삭제</button>':'')+'</div>'+
+      '<div class="qgrid"><div><label class="f" for="q'+i+'">문항 질문</label><input type="text" id="q'+i+'" value="'+esc(it.q)+'" placeholder="예: 소속 조직의 공동 과업을 달성하며 겪은 어려움과 노력"></div>'+
+      '<div><label class="f" for="l'+i+'">글자수 제한</label><input type="number" min="0" step="50" id="l'+i+'" value="'+(it.limit||'')+'"></div>'+
+      '<div><label class="f" for="m'+i+'">세는 기준</label><select id="m'+i+'"><option value="with">공백 포함</option><option value="without">공백 제외</option></select></div></div>'+
+      '<label class="f" for="d'+i+'">지금 쓴 답변 <small>없으면 비워 두세요</small></label><textarea class="draft" id="d'+i+'" placeholder="소제목과 본문을 그대로 붙여 넣으세요.">'+esc(it.draft)+'</textarea><div class="fileline" style="justify-content:space-between"><span><label class="btn quiet small filebtn">PDF·TXT 불러오기<input type="file" class="dFile" data-i="'+i+'" accept=".pdf,.txt" hidden></label><span class="fstat" id="dst'+i+'"></span></span><span class="count" id="dc'+i+'"></span></div>';
+    box.appendChild(c);
+    var sel=c.querySelector('#m'+i);sel.value=it.mode;
+    c.querySelector('#q'+i).addEventListener('input',function(){it.q=this.value;save();markDone();});
+    c.querySelector('#l'+i).addEventListener('input',function(){it.limit=parseInt(this.value,10)||0;upd();save();});
+    sel.addEventListener('change',function(){it.mode=this.value;upd();save();});
+    c.querySelector('#d'+i).addEventListener('input',function(){it.draft=this.value;upd();save();});
+    function upd(){var n=cnt(it,it.draft);var over=it.limit&&n>it.limit;c.querySelector('#dc'+i).innerHTML=modeLabel(it.mode)+' <b class="'+(over?'over':'')+'">'+n+'</b>'+(it.limit?' / '+it.limit+'자':'자');}
+    upd();
+  });
+}
+$('qList').addEventListener('click',function(e){var d=e.target.closest('[data-del]');if(!d)return;var i=+d.dataset.del;if(ok2('문항 '+(i+1)+'을 지울까요?')){state.items.splice(i,1);save();renderQ();}});
+$('addQ').addEventListener('click',function(){state.items.push(newItem());save();renderQ();});
+
+/* ---------- master prompt ---------- */
+function buildMaster(){
+  var s=state,L=[];
+  var jdTxt=s.jd.trim()?s.jd.trim():(s.jdAttach?'(학생이 이 메시지에 이미지·PDF로 첨부함. 첨부를 읽을 수 없으면 담당업무·자격요건·우대사항을 텍스트로 붙여 달라고 요청할 것)':'(공고 없음. 지원 직무 기준의 임시 진단임을 밝히고, 공고를 받으면 재평가)');
+  L.push('너는 대학 취업지원센터 워크숍의 현장실습 지원서 첨삭 코치다. 학생이 써 온 자소서가 정규 채용용으로 쓰였어도 현장실습 기준으로 진단하고 고친다. 목표는 이 학생의 모든 문항을 "최소 제출 가능"한 초안으로 정리해 상담사에게 넘기는 것이다. 답은 짧게, 한국어로 한다.');
+  L.push('');
+  L.push('# 입력 자료');
+  L.push('- 지원 기업: '+(s.company||'미입력')+' / 직무: '+(s.role||'미입력'));
+  L.push('- 현장실습 모집공고(실습 내용):\n'+jdTxt);
+  L.push('- 실습 기간: '+((s.period||'').trim()||'미입력')+' / 학점 연계: '+({yes:'학점 인정',no:'학점 인정 없음'}[s.credit]||'모름'));
+  if(!s.company&&!s.role)L.push('- [기업·직무 미정] P1 실습 직무 준비도는 "판단 보류"로 두고 점수는 "확인 가능 ○/80 · 임시 환산 ○/100"으로 표시한다. 점수 줄(초기·현재·목표)에는 임시 환산 점수를 쓴다. 직무 연결 문장 대신 "어떤 일에서도 쓰일 나의 행동" 한 문장을 기준으로 본다. 기업 관련 【빈칸】은 감점하지 않는다.');
+  else if(!s.company&&s.role)L.push('- [직무만 정함] 공고가 없으면 이 분야 현장실습생이 일반적으로 맡는 업무와 필요 기초역량을 기준으로 임시 진단한다. 기업 관련 【빈칸】은 감점하지 않는다.');
+  if(s.extra.trim())L.push('- 학생 참고 자료(이력서·경험 목록):\n'+s.extra.trim());
+  if(s.blind)L.push('- 블라인드 채용: 예. 학교명, 출신 지역, 가족 정보, 나이, 성별 등 개인 식별 정보는 자소서에 쓰지 않는다. 진단과 모든 수정본에서 발견하면 "⚠ 블라인드 위반 위험: ○건"으로 위치와 함께 표시하고, 수정본에서는 지운다.');
+  s.items.forEach(function(it,i){
+    L.push('');
+    L.push('[문항 '+(i+1)+'] '+(it.q||'(문항 미입력)')+' / 제한 '+(it.limit?it.limit+'자('+modeLabel(it.mode)+')':'없음'));
+    L.push(it.draft.trim()?'현재 답변:\n'+it.draft.trim():'현재 답변: 없음(질문으로 소재부터 찾을 것)');
+  });
+  L.push('');
+  L.push('# 현장실습 기준 (모든 단계에 적용)');
+  L.push('- 이 서류는 정규 채용이 아니라 현장실습(인턴형 실습) 지원서다. 평가 기준은 "즉시 성과를 낼 사람"이 아니라 "실습 기간에 무엇을 배워 갈지 알고, 현장에 안전하게 적응하며 기존 인력의 부담을 늘리지 않을 사람"이다.');
+  L.push('- 정규 채용 자소서와 다르게 쓴다.');
+  L.push('  · 지원동기: 회사 비전 공감이 아니라, 전공 학습과 현장 사이의 빈칸(수업에서 배웠지만 현장에서 어떻게 돌아가는지 모르는 것)을 메우려는 이유.');
+  L.push('  · 역량: 직무 즉시 투입 역량이 아니라 기초역량(정확성, 기록, 규칙·절차 준수, 협업, 전공 기초지식)과 실습생으로서 현실적으로 보조할 수 있는 업무 범위(자료 정리, 기록, 확인, 보조).');
+  L.push('  · 경험: 성과·수치보다 과정, 피드백을 받아들여 고친 방식, 배운 점. 수치가 있으면 쓰되 없어도 감점하지 않는다.');
+  L.push('  · 포부: "입사 후 기여"가 아니라 실습 기간 안에 끝나는 학습계획과 실습 후 학업·진로 연결 계획.');
+  L.push('  · 톤: 겸손하되 구체적인 학습 의지. "많이 배우겠습니다", "열심히 하겠습니다"처럼 막연한 다짐은 쓰지 않고, 어떤 업무에서 무엇을 익힐지 한 가지로 쓴다.');
+  L.push('- 현장실습 필수 요소 4개(자소서 전체에서 각 1회 이상): ① 왜 지금, 왜 이 실습인가(전공과 현장 사이의 빈칸) ② 실습 기간 안에 끝나는 학습목표 1개 ③ 실습생 범위의 기여(보조·기록·확인 수준) ④ 실습 후 학업·진로 연결.');
+  L.push('- 쓰지 않는 표현: "입사 후", "입사하면", "회사 발전에 기여", "귀사의 성장", "즉시 투입", "성과를 창출", 매출·효율을 높이겠다처럼 실습생 범위를 넘는 약속.');
+  L.push('- 학습목표(②)와 실습 후 계획(④)은 네가 지어내지 않는다. 공고의 실습 업무에서 후보를 선택지로 보여 주고, 학생이 고른 뒤 내 말로 한 줄을 받는다.');
+  L.push('- 실습 현장이 제조·물류·연구실·의료·건설·현장 서비스처럼 안전·보안 규정이 중요한 곳이면 규칙·절차를 지킨 경험을 묻는 질문 1개를 넣는다.');
+  L.push('- 실습 기간을 모르면 【빈칸: 실습 기간(예: 8주)】으로 둔다.');
+  L.push('');
+  L.push('# 절대 원칙');
+  L.push('1. 학생이 제출하거나 답한 사실만 쓴다. 경험, 역할, 기간, 인원, 수치, 성과, 고객 반응, 소제목의 근거를 지어내지 않는다. 비어 있으면 학생이 직접 채울 수 있게 【빈칸: 무엇을 쓰는지(예: 예시)】로 남긴다. 예: 【빈칸: 팀 인원(예: 4명)】, 【빈칸: 고객 반응(예: 수긍하고 재예약)】.');
+  L.push('2. 학생 답변을 확대 해석하지 않는다. 본인 행동은 "저는/제가", 팀의 결정과 성과는 "팀은"으로 구분한다. 팀 규칙을 본인이 만든 것처럼, 팀 수상을 개인 성과처럼 쓰지 않는다.');
+  L.push('3. 숫자, STAR, 실패담이 없다는 이유만으로 감점하거나 만들어 넣지 않는다. 확인 가능한 정성적 변화도 결과로 인정한다.');
+  L.push('4. 점수는 서류 완성도이며 합격 가능성이 아니다. P2·P3·P5를 관대하게 주지 않고, 학생이 목표를 말해도 점수를 맞춰 올리지 않는다.');
+  L.push('5. 읽지 못한 첨부나 빠진 문항은 평가한 척하지 말고 다시 붙여 달라고 한다.');
+  L.push('6. "분석했다, 소통했다, 협업했다, 노력했다, 기여했다"라는 말만으로 행동을 인정하지 않는다. 무엇을, 어떤 방법·기준으로, 왜 했는지가 보여야 한다.');
+  L.push('');
+  L.push('# 현장실습 자기소개서 평가 루브릭(100점) — 진단표는 반드시 이 기준으로 매긴다');
+  L.push('P1 실습 직무 준비도 20: 실습 업무에 필요한 기초역량(정확성·기록·규칙 준수·협업·전공 기초지식)이 학생 행동으로 증명되고, 실습생으로 맡을 업무 범위가 현실적인가. 5=관련 기초역량 행동 거의 없음 / 10=관련 경험 있으나 근거 약함 / 15=1순위 기초역량 행동증거 확인 / 20=기초역량 2개 이상을 행동·결과로 증명하고 보조할 업무 범위가 현실적. 직무 경력이 없다는 이유로 감점하지 않고 수업·과제·팀 프로젝트·아르바이트를 동등하게 인정한다. 실습생 범위를 넘는 역량 주장은 근거로 인정하지 않는다.');
+  L.push('P2 문항 의도+현장실습 필수 요소 20: 5=답변률 70% 미만 / 10=70~89%, 중요 요구 일부 누락 / 15=90% 이상, 일부 근거 약함 / 20=100%, 문항 요구와 해당 필수 요소 모두 충족. 지원동기·학습계획·포부 문항에서 필수 요소(① 빈칸 ② 학습목표 ③ 실습생 기여 ④ 실습 후 연결)가 빠지면 15점을 넘지 않는다. 글자수는 보조지표.');
+  L.push('P3 경험 증거력 15: 3=생각·다짐 중심, 역할 불명확 / 7=경험 나열, 핵심 분산 / 11=핵심 경험 1~2개, 역할·행동 확인 / 15=상황·역할·행동·결과 명확.');
+  L.push('P4 구조·문단·입체성 15: 3=시간순, 문단 기능 불명확 / 7=두괄식 부족, STAR 2요소 수준 / 11=두괄식 대체로 충족, STAR 3요소 / 15=핵심 앞배치, 문제→행동→결과·이유가 자연스럽게 연결. 문단 수보다 문단별 역할을 보고 STAR를 기계적으로 강요하지 않는다.');
+  L.push('P5 행동 구체성·동사 15: 3=팀 중심, 본인 행동 거의 없음 / 7=행동은 있으나 방법·기준 부족 / 11=행동 + 방법 또는 판단기준 확인 / 15=무엇을·어떻게·왜가 명확하고 결과와 연결.');
+  L.push('  - 내적·추상동사(느꼈다, 배웠다, 깨달았다, 노력했다, 성장했다, 책임감을 발휘했다)만으로 행동으로 인정하지 않는다.');
+  L.push('  - 범용 행동동사(참여, 담당, 수행, 진행, 관리, 소통, 협업, 조율, 조사, 분석)는 "무엇을 + 어떤 대상에 + 어떤 방법·기준으로 + 어떤 결과"가 확인될 때만 인정한다.');
+  L.push('  - 성취동사(비교, 분류, 측정, 검증, 도출, 설계, 제안, 개선, 조정, 원인파악, 기준수립, 적용, 구축)는 실제 행동과 일치할 때만 인정한다.');
+  L.push('  - 현장실습 기준: 피드백을 받고 고친 행동, 규칙·절차를 지킨 행동도 행동 증거로 인정한다.');
+  L.push('P6 성과·학습 변화 10: 2=결과·배운 점 없음 / 5=변화나 배운 점이 있으나 근거 약함 / 8=구체적 변화 또는 배운 것이 다음 행동을 바꾼 사례 / 10=행동→결과·학습 인과관계 명확. 수치가 없어도 피드백 반영 후 달라진 점, 원인 규명, 기준 수립, 절차 개선은 성과로 인정한다.');
+  L.push('P7 표현·소제목 5: 1=비문·오탈자·상투어가 의미 전달 방해 / 3=장문·반복·추상표현 다수 / 4=대체로 명확 / 5=한 문장 한 메시지, 반복·비문 거의 없음. 소제목이 없다는 이유로 감점하지 않는다. 정규직용 표현(입사 후, 회사 발전에 기여, 즉시 투입 등)이나 막연한 다짐(많이 배우겠습니다)이 있으면 5점을 주지 않는다.');
+  L.push('소제목 판정: [○○], <○○>, 본문과 분리된 독립 제목, 서식상 헤딩만 소제목으로 인정한다. 두괄식 첫 문장, 짧은 첫 문장, 굵은 본문, 따옴표 표현, 기업이 준 문항 제목, 네가 만든 제목은 인정하지 않는다. 없으면 "현재 소제목: 없음 / 부재 자체는 감점하지 않음"으로 적고, 추천은 "추천 방향"으로만 표시한다.');
+  L.push('점수 해석: 90~100 매우 우수 / 80~89 일부 보완 / 70~79 주요 보완 / 60~69 핵심 약점 / 59 이하 소재·구조 재검토. 점수는 합격확률이 아닌 서류 완성도 지표다.');
+  L.push('');
+  L.push('# 진행 순서');
+  L.push('1) 첫 응답: 점수 진단 후 목표 점수를 묻는다. 질문은 아직 하지 않는다.');
+  L.push('2) 목표 점수를 받으면: 문항별 보완 계획(문항 1 → 2 → 3 순서)을 알리고 문항 1의 첫 질문 1개를 낸다.');
+  L.push('3) 문항은 1번부터 순서대로 하나씩 끝낸다. 한 문항의 질문을 모두 마치고 그 문항 수정본(바뀐 곳 굵게)을 확정한 뒤에만 다음 문항으로 넘어간다. 문항 1 질문 → 문항 2 질문 → 다시 문항 1처럼 문항을 오가지 않는다. 학생이 앞 문항으로 돌아가자고 할 때만 돌아간다.');
+  L.push('3-1) 질문은 한 번에 1개씩. 답을 받으면 같은 문항의 다음 질문 1개를 낸다. 그 문항의 질문이 끝나면 수정본을 보여 주고 "문항 ○ 첨삭 완료(예상 ○점). 문항 ○로 넘어갑니다."라고 알린 뒤 다음 문항의 첫 질문을 낸다.');
+  L.push('3-2) 건너뛰기: 진단에서 "보완 필요 없음"인 문항은 질문 없이 "문항 ○은 이미 잘 써서 건너뜁니다"라고 알리고 다음 문항으로 간다. 학생이 "/다음"을 보내면 지금 문항은 확인된 사실만으로 수정본을 확정하고 다음 문항으로 간다.');
+  L.push('4) "/완성"을 받으면 전체 최종본을 정해진 형식으로 낸다.');
+  L.push('');
+  L.push('# 첫 응답: 진단표 + 목표 점수 질문 (수정본·질문 금지)');
+  L.push('- 실습 핵심 한 줄(실습 업무 / 필요 기초역량).');
+  L.push('① 전체 평가 표: | 코드 | 평가항목 | 배점 | 현재점수 | 수준 | 판정 근거 |');
+  L.push('   판정 근거에는 가능한 한 실제 값과 위치를 쓴다. 예: "추상동사 4회 / 방법까지 확인되는 행동 2개", "2번 > 3문단 > \"팀원들과 협업했다\"". P7 행에는 소제목 판정 결과를 함께 적는다.');
+  L.push('   표 아래: "총점 00/100 (해석 구간)"');
+  L.push('② 문항별 비교 표: | 문항 | 점수 | 가장 강한 부분 | 반드시 보완할 부분 | 평가자가 가질 의문 |');
+  L.push('   번호 문항은 빠짐없이 평가한다. 90점 이상이고 P1~P6에 중대한 약점이 없는 문항만 "보완 필요 없음 / 현재 구조 유지". 그 외 문항은 최소 1개 보완점을 "어디를(문항 > 문단 > 표현) / 왜(관련 P점수) / 어떻게"로 쓴다. 소재와 문항이 맞지 않거나 두 문항 소재가 겹치면 여기 적는다. "평가자가 가질 의문"은 서류를 읽는 사람이 실제로 떠올릴 질문 한 문장으로 쓴다(예: "팀 성과인데 본인은 무엇을 했지?").');
+  L.push('   ② 표 아래 한 줄: "현장실습 필수 요소: ①○/× ②○/× ③○/× ④○/×" (×이면 어느 문항에 넣으면 되는지). 정규직용 표현이 있으면 "정규직 표현 ○건"과 위치도 함께 적는다.');
+  L.push('③ 강점 2개: 형용사 칭찬 대신 행동 인과사슬로. 예: "문제 발생 → 기준 설정 → 비교 → 제안 → 결과 확보".');
+  L.push('④ 보완 우선순위 최대 5개(한 줄씩): 문항 미답·논리충돌 → 현장실습 필수 요소 누락·정규직 표현 → 소재 → 직무핏 → 행동 → 성과 → 구조·문단 → 동사·표현 → 소제목 순.');
+  L.push('- 마지막에 이것만 묻는다: "몇 점까지 올리고 싶은지 숫자로 입력해 주세요. (예: 85)"');
+  L.push('');
+  L.push('# 목표 점수를 받으면');
+  L.push('- "현재 ○점 → 목표 ○점(차이 ○점)"을 보여 주고, 목표 달성을 약속하지 않는다고 한 줄로 밝힌다.');
+  L.push('- 문항별 보완 계획을 문항 순서대로 한 줄씩 적는다: "문항 1: 보완 1~2개 / 질문 ○개", "문항 2: 건너뜀(보완 필요 없음)"처럼. 문항당 질문은 4개를 넘기지 않는다. 차이가 작으면 질문을 줄인다.');
+  L.push('- 곧바로 문항 1의 첫 질문 1개를 낸다. 문항 1이 건너뛰는 문항이면 그다음 문항부터 시작한다.');
+  L.push('');
+  L.push('# 운영 원칙');
+  L.push('- 목표는 모든 문항이 "최소 제출 가능"한 초안이다. 표현 고도화는 상담사에게 넘긴다.');
+  L.push('- 최소 제출 가능 기준: 문항 요구에 답함 / 핵심 경험 1개 / 본인 행동이 "저는·제가"로 보임 / 결과나 변화 1문장 / 글자수가 제한의 95~100% / 지어낸 사실 없음 / 【빈칸】은 문항당 2개 이하.');
+  L.push('- 묻는 대상은 네가 만들어 낼 수 없는 사실뿐이다: 문항에 맞는 소재, 본인이 한 행동, 결과나 변화, 팀과 개인의 구분, 기간·인원 같은 기본 정보. 구조, 문장 흐름, 직무 연결, 표현은 묻지 말고 확인된 사실 안에서 네가 고쳐 쓴다.');
+  L.push('- 한 문항에 오래 머물지 않는다. 문항당 질문이 4개에 이르면 확인된 사실만으로 수정본을 확정하고, 빠진 곳은 【빈칸: …(예: …)】으로 남긴 뒤 다음 문항으로 간다.');
+  L.push('');
+  L.push('# 질문 형식 (반드시 1개씩)');
+  L.push('- 한 응답에 질문은 1개. 한 질문은 사실 하나만 묻는다. 이미 확인한 사실은 다시 묻지 않는다. 질문 앞에 "질문 ○/○ (문항 ○)"을 붙인다.');
+  L.push('- 질문 문장은 30~50자로 짧게 쓴다.');
+  L.push('- 원문이 있으면 새 경험부터 묻지 않는다. 먼저 원문 속 문장을 짚어 그 안의 실제 행동을 묻는다. 형식: "1번 > 2문단 > \"팀원들과 협업했습니다\"" 한 줄을 인용한 뒤 질문.');
+  L.push('- 질문 우선순위: 빠진 현장실습 필수 요소(① → ② → ③ → ④) → 본인 행동 → 피드백을 받고 고친 점 → 결과·배운 점 → 팀·개인 구분 → 기간·인원.');
+  L.push('- 좋은 질문 유형: 가장 먼저 한 행동("그때 본인이 가장 먼저 한 일은?"), 판단 기준("무엇과 무엇을 비교해 정했나요?"), 결과 확인("그 뒤 무엇이 달라졌나요?"), 역할 경계("그 결정은 본인이 했나요, 팀이 했나요?").');
+  L.push('- 나쁜 질문: 사실 두 개를 한 번에 묻기, "더 구체적으로 설명해 주세요", 리더십·책임감 같은 역량 단어로 묻기.');
+  L.push('- 형식:');
+  L.push('  ① 구체 선택지 → 반영 문장: …');
+  L.push('  ② 구체 선택지 → 반영 문장: …');
+  L.push('  ③ 구체 선택지 → 반영 문장: …');
+  L.push('  ④ 구체 선택지 → 반영 문장: …');
+  L.push('  ⑤ 모르겠다');
+  L.push('  ✍ 직접 쓰기: ( 여기에 사실을 적어 주세요 )');
+  L.push('  답 예: ② 도착 시간을 메모해서 전달했어요 / 직접: 4명 / ⑤');
+  L.push('  ※ 선택지는 기억을 돕는 예시입니다. 실제로 한 행동만 고르세요.');
+  L.push('- 위 ※ 문장은 모든 질문 아래에 빠짐없이 그대로 붙인다.');
+  L.push('- 선택지 설계: ①~④는 이 학생 상황에서 있을 법한 평범한 행동 수준으로 만든다. 성과·수치·리더십이 들어간 인상적인 선택지를 섞지 않고, 네 선택지의 수준을 비슷하게 맞춘다. 학생이 좋아 보이는 것을 고르게 만들지 않기 위해서다.');
+  L.push('- 선택은 1~2개까지만 받는다. 셋 이상 고르면 실제로 가장 먼저 한 것 1개만 다시 고르게 한다.');
+  L.push('- 핵심 사실 확인: 그 문항의 본인 행동과 결과를 묻는 질문에서는 번호만으로 확정하지 않는다. 번호와 함께 "내 말로 한 줄"을 받는다. 번호만 오면 같은 질문 안에서 한 번만 "그때 한 일을 내 말로 한 줄만 적어 주세요. 선택지 문장을 그대로 쓰지 않아도 됩니다."라고 묻는다(질문 수에 넣지 않음).');
+  L.push('- 문장에는 학생이 쓴 한 줄의 단어를 우선 쓴다. 선택지 문장과 학생의 말이 다르면 학생의 말을 따른다. 학생의 한 줄에 없는 세부(수치, 대상, 결과)는 선택지에서 가져오지 않고 【빈칸】으로 둔다.');
+  L.push('- 기간·인원·횟수처럼 단순 사실을 묻는 질문은 번호나 "직접: …"만으로 충분하다.');
+  L.push('- 학생이 ⑤나 "모르겠다"라고 하면 자동으로 떠올리기 쉬운 상황 예시 5~8개를 번호로 보여 주고 "⑨ 해당 없음"과 "✍ 직접 쓰기: ( )", 그리고 ※ 문장을 함께 준다. 이것은 같은 질문의 연장이며 새 질문으로 세지 않는다. 예시에서 고른 것도 핵심 사실이면 내 말로 한 줄을 받는다.');
+  L.push('- 예시에서도 "해당 없음"이면 그 내용은 일반화하거나 【빈칸: …(예: …)】으로 남겨 학생이 나중에 채우게 하고 다음 질문으로 넘어간다. 절대 그럴듯하게 채우지 않는다.');
+  L.push('- 소재 교체가 필요하면 참고 자료와 학생 답에서 후보를 선택지로 제시하고, 학생이 고른 뒤에만 쓴다.');
+  L.push('- "/다음" 또는 "다음"을 받으면 그 문항은 확인된 사실만으로 수정본을 확정하고 다음 문항으로 간다.');
+  L.push('');
+  L.push('# 문항 수정본 작성 규칙');
+  L.push('- 글자수는 제한의 95~100%로 맞춘다(500자면 475~500자, 제한 이내라도 90% 미만은 미완성). 부족하면 확인된 사실(맥락, 판단 이유, 행동 순서, 결과, 직무 연결)로 채우고, 채울 사실이 없으면 늘리지 말고 그 사실을 묻는 질문 1개를 낸다. 수식어, 같은 말 반복, 일반론으로 분량을 늘리지 않는다. 수정본 아래에 글자수를 적는다(기준: 문항별 표시 기준).');
+  L.push('- 쓸 수 있는 원문 표현과 학생 말투를 최대한 살린다.');
+  L.push('- 흐름: 소제목 한 줄 → 맥락 1~2문장 → 어려움이나 과제 → 본인 판단과 행동 → 받은 피드백과 고친 점(있을 때) → 결과와 배운 점 → 공고의 실습 업무 하나와 연결한 학습 의지 한 문장(그 업무에서 무엇을 익히고 실습생으로서 무엇을 보조할지). 문항마다 서로 다른 실습 업무를 겨냥해 메시지가 겹치지 않게 한다.');
+  L.push('- AI 문체를 피한다: 같은 어미 3번 이상 반복, 대구 나열, "~을 통해 ~을 배웠습니다" 반복, "다양한·함양·시너지·귀사" 같은 추상어, 모든 문장이 같은 길이, 요약형 마무리. 단, 사람 냄새를 내려고 없는 실패담이나 숫자를 넣지 않는다.');
+  L.push('- 기업·서비스 이름은 학생이 직접 조사해 설명할 수 있다고 확인한 경우에만 넣는다.');
+  L.push('- 원문과 비교해 바꾸거나 새로 넣은 부분은 **굵게** 표시한다. 원문 그대로인 부분은 굵게 하지 않는다. 원문이 없던 문항은 "새로 작성"이라고 밝히고 굵게 표시하지 않는다.');
+  L.push('- 글자수는 ** 기호와 【빈칸】 안내문을 빼고 센다.');
+  L.push('- 수정본 뒤에는 세 줄만: 굵게 바꾼 이유 한 줄 / 점수 효과(예: P5 7→11 예상) / 남은 【빈칸】.');
+  L.push('');
+  L.push('# "/완성"을 받으면');
+  L.push('출력 전에 사실관계를 점검한다: 같은 경험의 기간·인원·수치가 문항마다 같은가 / 과정을 성과처럼 쓰지 않았는가 / 팀 성과를 개인 성과로 쓰지 않았는가 / 역할 설명이 앞뒤로 맞는가 / 문항 요구와 반대되는 결말이 없는가 / 정규직용 표현이나 막연한 다짐이 남아 있지 않은가 / 현장실습 필수 요소 4개가 자소서 전체에 있는가. 고칠 수 있는 것은 고치고, 학생 확인이 필요한 것은 【빈칸】으로 남긴다.');
+  L.push('출력 전에 모든 문항 글자수가 제한의 95~100%인지 다시 세고, 부족한 문항은 확인된 사실로 보강한다. 아직 수정본이 없는 문항도 질문하지 말고 확인된 사실만으로 전체 수정본을 쓴다. 문항 요구 누락, 소재·메시지 중복, 팀과 개인 구분, 글자수를 점검해 고친 뒤, 아래 형식을 정확히 지켜 전체를 출력한다. 이 형식은 학생의 워크북 페이지가 자동으로 읽는다.');
+  L.push('===자소서 최종본===');
+  L.push('[문항 1]');
+  L.push('(소제목과 본문)');
+  L.push('[문항 2]');
+  L.push('(소제목과 본문)');
+  L.push('===끝===');
+  L.push('최종본에서도 원문 대비 바뀐 부분은 **굵게** 유지한다.');
+  L.push('');
+  L.push('===끝=== 아래에 "완성 후 평가"를 초기 진단과 같은 루브릭, 같은 엄격도로 출력한다.');
+  L.push('① 전체 평가 표: | 코드 | 평가항목 | 배점 | 초기 | 현재 | 변화 | 판정 근거 |  판정 근거에는 무엇이 바뀌어 점수가 달라졌는지 위치와 함께 쓴다(예: "1번 > 3문단 > 보고 행동 추가, 추상동사 4→1회"). 오르지 않은 항목은 이유를 쓴다.');
+  L.push('   표 아래: "총점 초기 00 → 현재 00/100 (해석 구간)"');
+  L.push('② 문항별 비교 표: | 문항 | 초기 | 현재 | 글자수 | 상태 | 가장 강한 부분 | 남은 보완 |  상태는 미완성 / 최소 제출 가능 / 상담 우선 검토 / 고도화 가능 중 하나. 남은 보완은 어디를·왜·어떻게로 쓰고 없으면 "현재 구조 유지".');
+  L.push('③ 상승 구분: 확정 상승(문장에 반영된 것) / 조건부 상승(【빈칸】을 채우면 오를 항목과 예상 점수) / 상승 어려움(소재·경험 한계).');
+  L.push('④ 사실관계 점검 결과 한 줄: "이상 없음" 또는 발견한 건수와 위치. 블라인드 채용이면 위반 위험 건수도 함께. 그 아래 한 줄: 현장실습 필수 요소 ①②③④ 각각 ○/×.');
+  L.push('- 【빈칸】으로 남은 내용은 현재 점수에 반영하지 않는다. 목표에 맞춰 점수를 올리지 않는다. 점수는 합격 가능성이 아니다.');
+  L.push('- 마지막 줄은 굵게 표시 없이 반드시 이 형식 그대로: "초기 ○점 → 현재 ○점(목표 ○점)"');
+  L.push('모든 문항이 최소 제출 가능 이상이면 "현재 모든 문항이 최소 제출 가능한 구조까지 정리되었습니다."라고 안내한다. 아니면 완성이라고 말하지 않고 남은 문항을 적는다.');
+  L.push('');
+  L.push('# "/재평가"를 받으면');
+  L.push('학생이 빈칸을 채우거나 직접 고친 최종본을 함께 보낸다. 새로 들어온 내용 중 이 대화에서 확인되지 않은 사실이 있으면 어느 문장인지 짚고 사실인지 한 번 묻는다. 그 외에는 위 "완성 후 평가" ①②③을 같은 기준으로 다시 출력하고, 비교 기준은 초기 진단 점수로 한다. 문장은 고치지 않는다.');
+  L.push('');
+  L.push('# 기타 명령: "/현황" 문항별 단계·상태·남은 확인 사항 / "/노트" 지금까지 확인된 사실 목록');
+  L.push('');
+  L.push('지금 첫 응답(점수 진단 + 목표 점수 질문)을 시작하라.');
+  return L.join('\n');
+}
+var FIX={
+  one:'질문은 한 번에 1개씩만 해 주세요. 방금 낸 질문 중 가장 중요한 것 1개만 다시 선택형(①~④, ⑤ 모르겠다, ✍ 직접 쓰기)으로 내 주세요.',
+  fact:'방금 수정본에 제가 말하지 않은 경험, 수치, 역할, 결과가 있으면 모두 【빈칸: 무엇(예: 예시)】으로 바꿔 주세요. 선택지 문장에서 가져왔지만 제가 내 말로 확인하지 않은 세부도 빈칸으로 바꿔 주세요. 제가 제출하거나 직접 쓴 사실만 남겨 주세요.',
+  len:'모든 문항 글자수를 코드로 다시 세어 주세요(** 기호와 【빈칸】 안내문 제외). 제한의 95~100%가 아닌 문항은 확인된 사실로 채우거나 중복부터 줄여 맞추고, 채울 사실이 없으면 선택형 질문 1개로 물어봐 주세요.',
+  score:'점수를 다시 알려 주세요. 초기 진단 총점, 제가 말한 목표 점수, 지금 최종 총점을 아래 한 줄 형식 그대로 써 주세요. 굵게 표시나 표는 쓰지 마세요.\n초기 ○점 → 현재 ○점(목표 ○점)',
+  format:'/완성 결과를 다시 출력해 주세요. 첫 줄은 ===자소서 최종본===, 각 문항은 [문항 1]처럼 한 줄에 단독으로 쓰고 그 아래에 본문, 마지막 줄은 ===끝=== 입니다. 표나 코드 블록은 쓰지 마세요. 그 아래에 "초기 ○점 → 현재 ○점(목표 ○점)"을 적어 주세요.'
+};
+var MINI={
+  role:'방금 수정본에서 제가 직접 한 행동과 팀이 한 결정·성과가 문장마다 구분되도록 고쳐 주세요. 본인 행동은 "저는/제가", 팀은 "팀은"으로 씁니다. 누가 했는지 분명하지 않은 문장은 고치기 전에 선택형 질문(⑤ 기억 안 남 포함)으로 먼저 물어봐 주세요. 글자수 제한은 유지합니다.',
+  voice:'방금 수정본을 제 말투로 다듬어 주세요. 기준은 제 원문 답변과 이 대화에서 제가 직접 쓴 답변입니다. 1) 먼저 제 글에서 말투 특징 3~5개를 뽑아 보여 주세요: 자주 쓰는 단어와 연결어, 문장 길이, 끝맺음 방식, 설명하는 순서. 2) 수정본에서 제 원문과 답변에 없던 AI식 표현(추상어, 대구 나열, 같은 끝맺음 반복, "~을 통해 배웠습니다", 요약형 마무리)을 제가 실제로 쓴 단어와 표현으로 바꿔 주세요. 3) 사실, 수치, 순서, 저와 팀의 구분은 바꾸지 않습니다. 없는 경험, 감정, 숫자를 넣지 않습니다. "저는/제가"를 더 넣는 것은 말투 수정이 아닙니다. 4) 바꾼 부분은 **굵게** 표시하고, 글자수는 제한의 95~100%를 유지하며 코드로 세어 적어 주세요. 제 원문이 없거나 두세 문장뿐이면 고치기 전에 "이 경험을 친구에게 말하듯 3~4문장으로 적어 주세요"라고 한 번만 요청하고, 그 답을 기준으로 삼아 주세요.',
+  intern:'제 자소서에서 정규직 지원서 표현("입사 후", "회사 발전에 기여", "귀사의 성장", "즉시 투입", 성과·매출 약속)과 막연한 다짐("많이 배우겠습니다", "열심히 하겠습니다")을 모두 찾아 표로 보여 주세요: | 위치(문항 > 문단) | 원래 표현 | 문제 | 바꿀 방향 |. 그다음 실습 기간 안의 학습목표와 실습생이 할 수 있는 일로 바꾼 문장을 제안해 주세요. 학습목표와 실습 후 계획은 지어내지 말고, 공고의 실습 업무에서 후보를 골라 선택형 질문 1개로 먼저 물어봐 주세요. 바꾼 부분은 **굵게** 표시하고 글자수를 세어 적어 주세요.',
+  fit:'[문항 번호]를 글자수 제한의 95~100%로 맞춰 주세요(500자면 475~500자). 넘치면 두 번 나오는 설명과 수식어부터 줄이고, 모자라면 이미 확인된 사실(맥락, 판단 이유, 행동 순서, 결과, 직무 연결)로 채워 주세요. 채울 사실이 없으면 늘리지 말고 필요한 사실을 선택형 질문 1개로 물어봐 주세요. 제 원래 표현을 살리고, 맞춘 뒤 글자수를 세어 적어 주세요.',
+  company:'제가 지원하는 실습 기관이 하는 일 중 실습 업무와 연결될 만한 영역 후보 2~3개를 알려 주세요. 그리고 제가 직접 조사해 답할 질문 3개를 주세요(이 기관에서 실습생이 주로 맡는 업무 / 공식 사이트나 기사에서 찾은 이 기관의 최근 활동 1개 / 이 실습에서 내가 가장 먼저 익혀야 할 것). 제가 조사해 답하기 전에는 기관의 사업·서비스 이름을 자소서에 넣지 마세요. 제 답을 받으면 사실 여부를 검토한 뒤 지원동기 문장 교체안을 글자수와 함께 제안해 주세요.'
+};
+function renderReady(){
+  var s=state,miss=[];
+  if(!s.company&&!s.role)miss.push('실습 기관명·분야');
+  if(!s.items.some(function(i){return i.q.trim();}))miss.push('문항 질문');
+  if(!s.jd.trim()&&!s.jdAttach)miss.push('현장실습 모집공고');
+  $('readyBox').innerHTML=miss.length?'<div class="panel flat" style="display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:12px 18px"><span style="color:var(--pen);font-weight:600">1단계에서 '+miss.join(', ')+'을(를) 먼저 넣어 주세요.</span><button class="btn small" type="button" data-go="1">1단계로</button></div>':'';
+  $('masterPrev').textContent=buildMaster();
+}
+$('copyMaster').addEventListener('click',function(){copyText(buildMaster(),'복사했습니다. ChatGPT 새 대화에 붙여 넣으세요.',this);state.copied=true;save();markDone();});
+document.querySelectorAll('[data-fix]').forEach(function(b){b.addEventListener('click',function(){copyText(FIX[b.dataset.fix],'복사했습니다. 같은 대화창에 보내세요.');});});
+document.querySelectorAll('[data-quick]').forEach(function(b){b.addEventListener('click',function(){copyText(b.dataset.quick,'‘'+b.dataset.quick+'’ 복사했습니다.',b);});});
+var DEMO={company:'○○물류(가상 기업)',role:'물류운영 현장실습',student:'예시 학생',jd:'실습 내용\n· 입고·출고 화물의 서류와 실물 대조 보조\n· 재고 현황 엑셀 기록·정리\n· 현장 안전 점검표 작성 보조\n· 부서 회의 자료 정리\n\n지원 자격\n· 경영·물류·산업공학 등 관련 전공 3~4학년\n· 엑셀 기초 활용 가능자\n\n우대사항\n· 물류관리 관련 과목 이수자\n· 학기제 현장실습 학점 인정',jdAttach:false,period:'2026.03~06, 16주 (학기제)',credit:'yes',
+  extra:'카페 아르바이트 6개월(주말 오픈, 재고 정리) / 학부 팀 프로젝트: 재고 관리 웹 페이지 제작(4명, 화면 담당) / 물류관리 A0',
+  items:[{q:'현장실습에 지원한 동기와 실습 기간 동안 이루고 싶은 목표를 기술해 주십시오.',limit:500,mode:'with',draft:'저는 경영학을 전공하며 물류 분야에 관심을 갖게 되었습니다. 귀사는 업계를 선도하는 기업으로, 저는 이러한 귀사에서 많은 것을 배우고 싶어 지원하게 되었습니다. 저는 책임감이 강하고 성실한 성격으로, 입사 후 맡은 업무를 완벽하게 수행하여 회사 발전에 기여하겠습니다. 또한 다양한 경험을 통해 전문성을 함양하여 귀사의 성장에 보탬이 되는 인재가 되겠습니다.',final:'',raw:''},
+         {q:'소속된 조직의 공동 과업을 달성하는 과정에서 발생했던 어려움과, 이를 극복하기 위해 기울인 노력을 구체적인 사례로 기술해 주십시오.',limit:500,mode:'with',draft:'저는 카페에서 아르바이트를 하며 책임감을 배웠습니다. 주말에는 손님이 많아 힘들었지만 팀원들과 적극적으로 소통하고 협업하여 어려움을 극복했습니다. 한 번은 손님의 불만이 있었는데 최선을 다해 응대하여 잘 해결되었습니다. 이 경험을 통해 고객 응대의 중요성을 깨달을 수 있었습니다.',final:'',raw:''}]};
+$('demoBtn').addEventListener('click',function(){
+  var has=state.company||state.items.some(function(i){return i.draft.trim()||i.final.trim();});
+  if(has&&!ok2('지금 입력한 내용을 예시로 바꿀까요?'))return;
+  var b=blank();Object.keys(DEMO).forEach(function(k){b[k]=JSON.parse(JSON.stringify(DEMO[k]));});state=b;save();
+  ['company','role','student','jd','extra','period'].forEach(function(id){$(id).value=state[id]||'';});$('credit').value=state.credit||'';$('jdAttach').checked=false;
+  renderQ();markDone();toast('예시 자료를 채웠습니다. 2단계로 가서 지시문을 확인해 보세요.');
+});
+document.querySelectorAll('[data-mini]').forEach(function(b){b.addEventListener('click',function(){copyText(MINI[b.dataset.mini],'복사했습니다. 같은 대화창에 붙여 넣으세요.');});});
+
+/* ---------- parsing ---------- */
+function parseAi(txt){
+  var t=norm(txt),m=t.match(/===\s*자소서 최종본\s*===([\s\S]*?)(===\s*끝\s*===|$)/);
+  var body=m?m[1]:t;
+  var re=/^[ \t>*#]*\[\s*문항\s*(\d+)\s*\][^\n]*$/gm,hits=[],x;
+  while((x=re.exec(body)))hits.push({n:+x[1],s:x.index,e:x.index+x[0].length,line:x[0]});
+  var out={};
+  hits.forEach(function(h,i){
+    var end=i+1<hits.length?hits[i+1].s:body.length;
+    var rest=h.line.replace(/^[ \t>*#]*\[\s*문항\s*\d+\s*\]\s*/,'').replace(/^\*\*\s*/,'').trim();
+    var seg=body.slice(h.e,end).replace(/^\n+/,'');
+    seg=seg.replace(/\n?-{3,}\s*$/,'').replace(/\s+$/,'');
+    if(rest&&!/^\(?\s*글자|^\(?\s*공백/.test(rest))seg=rest+'\n'+seg;
+    out[h.n]=seg;
+  });
+  return out;
+}
+$('parseBtn').addEventListener('click',function(){
+  var o=parseAi(state.aiOut),n=0;
+  Object.keys(o).forEach(function(k){var i=+k-1;if(i>=0&&i<state.items.length&&o[k].trim()){state.items[i].raw=o[k];state.items[i].final=o[k].replace(/\*\*/g,'');n++;}});
+  var sm=fillScore(state.aiOut);
+  save();renderProof();markDone();
+  toast(n?'문항 '+n+'개를 불러왔습니다.'+(sm?' 점수도 기록했습니다.':''):$('evalMd').innerHTML?'평가표를 불러왔습니다.'+(sm?' 점수도 기록했습니다.':''):'[문항 1] 같은 표시를 찾지 못했습니다. 아래 칸에 직접 붙여 넣으세요.');
+});
+
+/* ---------- checks ---------- */
+var RULES=[
+  {id:'confirm',re:/【[^】]*】|\[[^\]\n]*(?:확인|○|OO|00|연도)[^\]\n]*\]|○○|00년/g,cls:'m-confirm',lv:'hard',msg:'채울 빈칸이 남아 있습니다. 아래 ‘빈칸 채우기’에서 사실을 적어 넣으세요.'},
+  {id:'abstract',re:/노력했습니다|노력하였습니다|노력했고|최선을 다했|최선을 다하|열심히|성실히|기여했습니다|기여하였습니다|소통했습니다|협업했습니다/g,cls:'m-risk',lv:'warn',msg:'무엇을, 어떻게 했는지 행동으로 바꾸면 증거력이 올라갑니다.'},
+  {id:'exagg',re:/획기적|완벽하게|완벽히|100%|누구보다|최고의|반드시|항상/g,cls:'m-risk',lv:'warn',msg:'근거가 없으면 과장으로 읽히는 표현입니다. 사실로 뒷받침하거나 지우세요.'},
+  {id:'regular',re:/입사 후|입사하면|입사해서|회사 발전|회사의 발전|귀사의 성장|회사에 기여|즉시 투입|바로 투입|성과를 창출|매출을 높|매출 향상/g,cls:'m-risk',lv:'warn',msg:'정규직 지원서 표현입니다. 실습 기간 안에 익힐 업무와 실습생이 할 수 있는 일로 바꾸세요.'},
+  {id:'vague',re:/많이 배우|많은 것을 배우|많은 것을 경험|배우고 싶습니다|배우겠습니다|열심히 하겠습니다|최선을 다하겠습니다/g,cls:'m-risk',lv:'warn',msg:'막연한 학습 다짐입니다. 어떤 업무에서 무엇을 익힐지 한 가지로 쓰세요.'},
+  {id:'ai',re:/(?:을|를) 통해|다양한|함양|시너지|귀사|이를 바탕으로|뿐만 아니라|나아가|성장할 수 있었습니다|깨달을 수 있었습니다|배울 수 있었습니다/g,cls:'m-style',lv:'soft',msg:'AI 글에서 자주 보이는 표현입니다. 한두 번은 괜찮지만 반복되면 평소 말투로 바꾸세요.'}
+];
+function sentences(t){return(norm(t).match(/[^.!?\n]+[.!?]?/g)||[]).map(function(s){return s.trim();}).filter(Boolean);}
+var BLIND_RE=/[가-힣]{2,}(?:대학교|대학원|고등학교|대학)|대학교|고등학교|고향|출신|아버지|어머니|부모님|가족|형제|자매|\d{2}세|\d{2}살/g;
+function analyze(it){
+  var t=norm(it.final),res={marks:[],issues:[],hard:0,warn:0,n:cnt(it,t)};
+  if(!t){res.issues.push({lv:'hard',msg:'아직 수정본이 없습니다.'});res.hard++;res.status=0;return res;}
+  RULES.forEach(function(r){
+    r.re.lastIndex=0;var m,c=0;
+    while((m=r.re.exec(t))){res.marks.push({s:m.index,e:m.index+m[0].length,cls:r.cls,tip:r.msg});c++;if(!m[0].length)r.re.lastIndex++;}
+    if(c){
+      if(r.id==='ai'&&c<3){res.issues.push({lv:'soft',msg:r.msg+' ('+c+'회)'});}
+      else{res.issues.push({lv:r.lv==='soft'?'warn':r.lv,msg:r.msg+' ('+c+'회)'});if(r.lv==='hard')res.hard++;else res.warn++;}
+    }
+  });
+  if(state.blind&&t){BLIND_RE.lastIndex=0;var bm,bc=0;while((bm=BLIND_RE.exec(t))){res.marks.push({s:bm.index,e:bm.index+bm[0].length,cls:'m-risk',tip:'블라인드 위반 위험'});bc++;}
+    if(bc){res.issues.unshift({lv:'hard',msg:'블라인드 위반 위험 '+bc+'곳: 학교명·출신지·가족·나이 정보는 지우거나 바꾸세요.'});res.hard++;}}
+  if(it.limit){
+    if(res.n>it.limit){res.issues.unshift({lv:'hard',msg:modeLabel(it.mode)+' '+res.n+'자로 제한 '+it.limit+'자를 넘었습니다.'});res.hard++;}
+    else if(res.n<it.limit*0.9){res.issues.unshift({lv:'hard',msg:'분량 부족: '+res.n+'/'+it.limit+'자('+Math.round(res.n/it.limit*100)+'%). 제한의 95% 이상('+Math.ceil(it.limit*0.95)+'자)까지 확인된 사실로 채우세요. AI 대화창에 ‘글자수에 맞추기’ 요청을 보내면 됩니다.'});res.hard++;}
+    else if(res.n<it.limit*0.95){res.issues.push({lv:'warn',msg:'조금 짧습니다: '+res.n+'/'+it.limit+'자. 목표는 '+Math.ceil(it.limit*0.95)+'~'+it.limit+'자입니다.'});res.warn++;}
+  }
+  var ss=sentences(t),endings={},pos=0;
+  ss.forEach(function(s){
+    var idx=t.indexOf(s,pos);if(idx>=0)pos=idx+s.length;
+    if(s.length>110&&idx>=0){res.marks.push({s:idx,e:idx+s.length,cls:'m-long',tip:'긴 문장'});}
+    var last=s.replace(/[.!?]+$/,'').split(/\s+/).pop();
+    if(/다$/.test(last))endings[last]=(endings[last]||0)+1;
+  });
+  var longN=ss.filter(function(s){return s.length>110;}).length;
+  if(longN){res.issues.push({lv:'warn',msg:'110자가 넘는 긴 문장이 '+longN+'개 있습니다. 두 문장으로 나누면 읽기 쉬워집니다.'});res.warn++;}
+  var rep=Object.keys(endings).filter(function(k){return endings[k]>=3;});
+  if(rep.length){res.issues.push({lv:'warn',msg:'같은 끝맺음이 3번 이상 반복됩니다: '+rep.map(function(k){return'“'+k+'” '+endings[k]+'회';}).join(', ')});res.warn++;}
+  if(/팀|우리|함께|조원|동료/.test(t)&&!/저는|제가|저의|제 /.test(t)){res.issues.push({lv:'warn',msg:'팀 이야기는 있는데 "저는/제가"가 없습니다. 내가 한 일이 무엇인지 보이게 하세요.'});res.warn++;}
+  if(!res.issues.length)res.issues.push({lv:'good',msg:'자동 점검에서 걸린 표현이 없습니다.'});
+  res.status=res.hard?0:(res.warn>=3?1:2);
+  return res;
+}
+function annotate(t,marks){
+  t=norm(t);marks=marks.slice().sort(function(a,b){return a.s-b.s||b.e-a.e;});
+  var out='',p=0;
+  marks.forEach(function(m){if(m.s<p)return;out+=esc(t.slice(p,m.s))+'<mark class="'+m.cls+'" title="'+esc(m.tip)+'">'+esc(t.slice(m.s,m.e))+'</mark>';p=m.e;});
+  out+=esc(t.slice(p));
+  return out.replace(/\n/g,'<br>');
+}
+function boldHtml(raw){return esc(norm(raw)).replace(/\*\*([\s\S]+?)\*\*/g,'<strong>$1</strong>').replace(/\*\*/g,'').replace(/\n/g,'<br>');}
+function renderProof(){
+  renderEval();
+  var box=$('proofList');box.innerHTML='';
+  state.items.forEach(function(it,i){
+    var p=document.createElement('div');p.className='panel';
+    p.innerHTML='<div class="qhead"><span class="qnum">문항 '+(i+1)+'</span><span class="sp"></span><span class="status" id="st'+i+'"></span></div>'+
+      '<p class="hint" style="margin-top:-4px">'+esc(it.q||'문항 질문 미입력')+'</p>'+
+      (it.raw&&/\*\*/.test(it.raw)?'<details class="prev" open style="margin-bottom:14px"><summary>AI가 바꾼 부분 보기 (굵은 글씨)</summary><div class="changed">'+boldHtml(it.raw)+'</div></details>':'')+
+      '<label class="f" for="f'+i+'">수정본</label><textarea class="draft" id="f'+i+'" placeholder="AI 결과가 자동으로 들어오거나, 여기에 직접 붙여 넣으세요.">'+esc(it.final)+'</textarea><div class="count" id="fc'+i+'"></div>'+
+      '<div class="proof" id="pv'+i+'" style="margin-top:12px" aria-label="교정지 미리 보기"></div>'+
+      '<div class="legend"><span><i class="sw c"></i>채울 빈칸</span><span><i class="sw r"></i>과장·위험 표현</span><span><i class="sw s"></i>AI 문체</span><span><i class="sw l"></i>긴 문장</span></div>'+
+      '<div class="blanks" id="bl'+i+'" hidden></div>'+
+      '<ul class="issues" id="is'+i+'"></ul>'+
+      (it.draft.trim()?'<details class="prev" style="margin-top:10px"><summary>처음 답변과 비교</summary><pre>'+esc(it.draft)+'</pre></details>':'');
+    box.appendChild(p);
+    var ta=p.querySelector('#f'+i);
+    function upd(){
+      var r=analyze(it);
+      p.querySelector('#fc'+i).innerHTML=modeLabel(it.mode)+' <b class="'+(it.limit&&(r.n>it.limit||r.n<it.limit*0.95)?'over':'')+'">'+r.n+'</b>'+(it.limit?' / '+it.limit+'자 (목표 '+Math.ceil(it.limit*0.95)+'~'+it.limit+'자)':'자')+', 공백 제외 '+cntWithout(it.final)+'자';
+      p.querySelector('#pv'+i).innerHTML=it.final.trim()?annotate(it.final,r.marks):'';
+      p.querySelector('#is'+i).innerHTML=r.issues.map(function(x){return'<li class="'+x.lv+'">'+esc(x.msg)+'</li>';}).join('');
+      var st=p.querySelector('#st'+i);st.textContent='자동 판정: '+STATUS[r.status];st.className='status st-'+r.status;
+      renderBlanks();
+    }
+    function renderBlanks(){
+      var bl=p.querySelector('#bl'+i),ms=[],re=/【([^】]*)】/g,m;
+      while((m=re.exec(it.final)))ms.push(m[1]);
+      if(!ms.length){bl.hidden=true;bl.innerHTML='';return;}
+      var keep={};bl.querySelectorAll('input').forEach(function(x){keep[x.dataset.k]=x.value;});
+      bl.hidden=false;
+      bl.innerHTML='<h3>빈칸 채우기 '+ms.length+'곳</h3><p class="hint" style="margin:0 0 6px">실제 사실만 적고 ‘넣기’를 누르면 수정본의 괄호 자리에 들어갑니다. 모르면 비워 두고 상담 때 물어보세요.</p>'+
+        ms.map(function(c,k){var lab=c.replace(/^\s*(빈칸|확인 필요)\s*[:：]\s*/,'');var ex=(lab.match(/\(예[:：]?\s*([^)]*)\)/)||[])[1]||'';
+          return'<div class="blank-row"><span class="blank-lab"><mark>'+esc(lab)+'</mark></span><input type="text" data-k="'+k+'" placeholder="'+esc(ex?'예: '+ex:'사실을 적어 주세요')+'" aria-label="'+esc(lab)+'"><button class="btn small" type="button" data-fill="'+k+'">넣기</button></div>';}).join('');
+      bl.querySelectorAll('input').forEach(function(x){if(keep[x.dataset.k])x.value=keep[x.dataset.k];});
+    }
+    p.addEventListener('click',function(e){
+      var b=e.target.closest('[data-fill]');if(!b)return;
+      var k=+b.dataset.fill,inp=p.querySelector('#bl'+i+' input[data-k="'+k+'"]'),v=(inp.value||'').trim();
+      if(!v){inp.focus();toast('빈칸에 들어갈 사실을 먼저 적어 주세요.');return;}
+      var re=/【[^】]*】/g,m,c=0,out=null;
+      while((m=re.exec(it.final))){if(c===k){out=it.final.slice(0,m.index)+v+it.final.slice(m.index+m[0].length);break;}c++;}
+      if(out===null)return;
+      it.final=out;ta.value=out;upd();save();markDone();toast('빈칸을 채웠습니다.');
+    });
+    ta.addEventListener('input',function(){it.final=ta.value;upd();save();markDone();});
+    upd();
+  });
+}
+document.querySelectorAll('.self').forEach(function(c){c.checked=!!state.self[c.dataset.k];c.addEventListener('change',function(){state.self[c.dataset.k]=c.checked;save();markDone();});});
+
+function finalText(){return state.items.map(function(it,i){return'[문항 '+(i+1)+'] '+(it.q||'')+'\n'+norm(it.final);}).join('\n\n');}
+$('copyFinal').addEventListener('click',function(){copyText(finalText(),'최종 자소서를 복사했습니다.',this);state.finalCopied=true;save();markDone();});
+
+$('resetBtn').addEventListener('click',function(){if(ok2('입력한 내용을 모두 지우고 새 학생으로 시작할까요?')){window.resetAll();}});
+
+/* ---------- 완성 후 평가 ---------- */
+function mdInline(s){return esc(s).replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>');}
+function mdRender(txt){
+  var lines=norm(txt).split('\n'),out='',i=0;
+  while(i<lines.length){
+    var l=lines[i];
+    if(/^\s*\|/.test(l)){
+      var rows=[];while(i<lines.length&&/^\s*\|/.test(lines[i])){rows.push(lines[i]);i++;}
+      rows=rows.filter(function(r){return!/^\s*\|[\s:|-]+\|\s*$/.test(r);});
+      out+='<table>'+rows.map(function(r,k){var cells=r.trim().replace(/^\||\|$/g,'').split('|');var tag=k===0?'th':'td';return'<tr>'+cells.map(function(c){return'<'+tag+'>'+mdInline(c.trim())+'</'+tag+'>';}).join('')+'</tr>';}).join('')+'</table>';
+      continue;
+    }
+    if(l.trim())out+='<p>'+mdInline(l.replace(/^#+\s*/,''))+'</p>';
+    i++;
+  }
+  return out;
+}
+function lastNum(t,re){var m,v=null;re.lastIndex=0;while((m=re.exec(t)))v=m[1];return v;}
+function fillScore(txt){
+  var t=norm(txt).replace(/\*\*/g,'');
+  var ini=lastNum(t,/초기(?:\s*(?:진단|점수|총점))?\s*[:：]?\s*(\d{1,3})\s*(?:점|\/\s*100)?/g);
+  var fin=lastNum(t,/(?:현재|최종|완성\s*후)(?:\s*(?:점수|총점))?\s*[:：]?\s*(\d{1,3})\s*(?:점|\/\s*100)/g);
+  var tgt=lastNum(t,/목표(?:\s*점수)?\s*[:：]?\s*(\d{1,3})\s*점/g);
+  if(!ini&&!fin&&!tgt)return null;
+  state.score=state.score||{};
+  if(ini)state.score.init=ini;if(fin)state.score.final=fin;if(tgt)state.score.target=tgt;
+  $('scInit').value=state.score.init||'';$('scFinal').value=state.score.final||'';$('scTarget').value=state.score.target||'';save();
+  return true;
+}
+function renderScore(){
+  var sc=state.score||{},box=$('scoreSum'),i=parseInt(sc.init,10),f=parseInt(sc.final,10),g=parseInt(sc.target,10);
+  function tile(lab,v,cls){return'<div class="stile'+(cls?' '+cls:'')+'"><span>'+lab+'</span><b>'+(isNaN(v)?'-':v)+'<small>점</small></b></div>';}
+  var d=(!isNaN(i)&&!isNaN(f))?f-i:null,hit=!isNaN(g)&&!isNaN(f)&&f>=g;
+  var h='<div class="stiles">'+tile('진단 점수',i)+tile('목표 점수',g)+tile('최종 점수',f,hit?'hit':'')+'</div>';
+  var line=[];
+  if(d!==null)line.push('<b style="color:'+(d>=0?'var(--ok)':'var(--pen)')+'">'+(d>=0?'+':'')+d+'점</b>');
+  if(!isNaN(g)&&!isNaN(f))line.push(hit?'<b style="color:var(--ok)">목표 달성</b>':'<b style="color:var(--pen)">목표까지 '+(g-f)+'점</b>');
+  var src=norm(state.evalOut)||((norm(state.aiOut).match(/===\s*끝\s*===([\s\S]*)$/)||[])[1]||'');
+  var cl=src.split('\n').filter(function(l){return/조건부/.test(l);})[0];
+  if(line.length)h+='<p class="sline">'+line.join(' · ')+'</p>';
+  if(cl&&!hit)h+='<span class="cond">'+mdInline(cl.replace(/^[\s|*#-]+/,'').replace(/\|/g,' ').trim())+'</span>';
+  var none=isNaN(i)&&isNaN(f)&&isNaN(g);
+  if(none&&norm(state.aiOut)){h+='<span class="cond" style="color:var(--pen)">결과에서 점수를 찾지 못했습니다. 아래 ‘점수 직접 적기’에 옮겨 적거나, 2단계 ‘점수가 안 나온다’ 요청을 ChatGPT에 보내고 받은 한 줄을 아래 재평가 칸에 붙여 넣으세요.</span>';document.querySelector('details.score-edit').open=true;}
+  else if(none)h+='<span class="cond">‘/완성’ 결과를 붙여 넣으면 점수가 자동으로 채워집니다.</span>';
+  h+='<span class="cond">점수는 서류 완성도이며 합격 가능성이 아닙니다.</span>';
+  box.className='score-sum'+(hit?' hit':'');box.innerHTML=h;
+}
+function renderEval(){
+  var body='';
+  if(/\|/.test(norm(state.evalOut)))body=norm(state.evalOut);
+  else{var m=norm(state.aiOut).match(/===\s*끝\s*===([\s\S]*)$/);if(m)body=m[1].trim();}
+  $('evalMd').innerHTML=body?mdRender(body):'';
+  $('evalEmpty').hidden=!!body;
+  renderScore();
+}
+$('evalOut').value=state.evalOut||'';
+function onEvalOut(){state.evalOut=$('evalOut').value;fillScore(state.evalOut);renderEval();save();markDone();}
+$('evalOut').addEventListener('input',onEvalOut);
+$('reEval').addEventListener('click',function(){
+  var sc=state.score||{};
+  var msg='/재평가\n빈칸을 채우고 고친 최종본입니다. 초기 진단과 같은 기준으로 다시 평가해 주세요. 새로 들어간 내용 중 이 대화에서 확인되지 않은 사실이 있으면 어느 문장인지 짚고 물어봐 주세요.'+(sc.init?'\n(초기 '+sc.init+'점'+(sc.target?', 목표 '+sc.target+'점':'')+')':'')+'\n\n===자소서 최종본===\n'+state.items.map(function(it,i){return'[문항 '+(i+1)+']\n'+norm(it.final);}).join('\n')+'\n===끝===';
+  copyText(msg,'재평가 요청을 복사했습니다. 같은 대화창에 보내세요.',this);
+});
+
+$('nbBtn').addEventListener('click',function(){if(curAct)curAct.f();});
+/* ---------- 파일에서 글자 불러오기 ---------- */
+var PDFJS='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/';
+function loadPdfLib(){
+  if(window.pdfjsLib)return Promise.resolve(window.pdfjsLib);
+  return new Promise(function(res,rej){var s=document.createElement('script');s.src=PDFJS+'pdf.min.js';s.onload=function(){try{window.pdfjsLib.GlobalWorkerOptions.workerSrc=PDFJS+'pdf.worker.min.js';}catch(e){}res(window.pdfjsLib);};s.onerror=function(){rej(new Error('net'));};document.head.appendChild(s);});
+}
+function readFileText(file){
+  var name=(file.name||'').toLowerCase();
+  if(/^image\//.test(file.type))return Promise.reject(new Error('image'));
+  if(/\.txt$/.test(name)||file.type==='text/plain')return file.text();
+  if(!/\.pdf$/.test(name)&&file.type!=='application/pdf')return Promise.reject(new Error('type'));
+  return loadPdfLib().then(function(lib){return file.arrayBuffer().then(function(ab){return lib.getDocument({data:ab,cMapUrl:PDFJS+'cmaps/',cMapPacked:true}).promise;});}).then(function(pdf){
+    var n=Math.min(pdf.numPages,10),jobs=[];
+    for(var k=1;k<=n;k++)jobs.push(pdf.getPage(k).then(function(pg){return pg.getTextContent();}).then(function(ct){return ct.items.map(function(it){return it.str+(it.hasEOL?'\n':'');}).join('');}));
+    return Promise.all(jobs).then(function(pages){return pages.join('\n').replace(/[ \t]+\n/g,'\n').replace(/\n{3,}/g,'\n\n').trim();});
+  });
+}
+function fileMsg(err){
+  var m=err&&err.message;
+  if(m==='image')return'이미지는 글자를 읽을 수 없습니다. ChatGPT에 지시문을 보낼 때 이 파일을 함께 첨부하세요.';
+  if(m==='type')return'PDF나 TXT 파일만 불러올 수 있습니다.';
+  if(m==='net')return'PDF 도구를 불러오지 못했습니다. 인터넷 연결을 확인하거나 글자를 복사해 붙여 넣으세요.';
+  if(m==='empty')return'글자가 없는 PDF(스캔 이미지)입니다. ChatGPT에 파일을 직접 첨부하세요.';
+  return'파일을 읽지 못했습니다. 글자를 복사해 붙여 넣으세요.';
+}
+function handleFile(file,target,stat,onImage){
+  stat.className='fstat';stat.textContent='읽는 중…';
+  readFileText(file).then(function(txt){
+    if(!txt||txt.replace(/\s/g,'').length<10)throw new Error('empty');
+    var ta=$(target);
+    if(ta.value.trim()&&!ok2('이미 입력한 내용을 파일 내용으로 바꿀까요?')){stat.textContent='';return;}
+    ta.value=txt;ta.dispatchEvent(new Event('input'));
+    stat.className='fstat ok';stat.textContent='불러왔습니다 ('+txt.replace(/\s/g,'').length+'자). 필요 없는 부분은 지워 주세요.';
+    ta.classList.add('flash');
+  }).catch(function(e){
+    stat.className='fstat err';stat.textContent=fileMsg(e);
+    if((e.message==='image'||e.message==='empty')&&onImage)onImage();
+  });
+}
+function jdImage(){var c=$('jdAttach');if(!c.checked){c.checked=true;state.jdAttach=true;save();}}
+$('jdFile').addEventListener('change',function(){var f=this.files[0];if(f)handleFile(f,'jd',$('jdStat'),jdImage);this.value='';});
+$('qList').addEventListener('change',function(e){var inp=e.target.closest('.dFile');if(!inp)return;var f=inp.files[0],i=inp.dataset.i;if(f)handleFile(f,'d'+i,$('dst'+i));inp.value='';});
+function dropTo(id,getStat,onImage){
+  var el=$(id)||null;if(!el)return;
+  el.addEventListener('dragover',function(e){e.preventDefault();el.classList.add('drop');});
+  el.addEventListener('dragleave',function(){el.classList.remove('drop');});
+  el.addEventListener('drop',function(e){el.classList.remove('drop');var f=e.dataTransfer&&e.dataTransfer.files&&e.dataTransfer.files[0];if(!f)return;e.preventDefault();handleFile(f,id,getStat(),onImage);});
+}
+dropTo('jd',function(){return $('jdStat');},jdImage);
+
+/* ---------- 처음 쓰기 워크북 가져오기 ---------- */
+function importPackage(txt){
+  var t=norm(txt);if(!/===\s*처음 쓰기 워크북 초안\s*===/.test(t))return 0;
+  var body=t.split(/===\s*처음 쓰기 워크북 초안\s*===/)[1].split(/===\s*끝\s*===/)[0];
+  function field(name){var m=body.match(new RegExp('^'+name+':[ \\t]*(.*)$','m'));return m?m[1].trim():'';}
+  var jd=(body.match(/\[공고\]\n?([\s\S]*?)\[\/공고\]/)||[])[1]||'';
+  var re=/^\[문항\s*(\d+)\]\s*(.*)$/gm,hits=[],m;
+  while((m=re.exec(body)))hits.push({s:m.index,e:m.index+m[0].length,head:m[2]});
+  if(!hits.length)return 0;
+  var items=hits.map(function(h,i){
+    var parts=h.head.split('|').map(function(x){return x.trim();});
+    var it=newItem();it.q=parts[0]||'';it.limit=parseInt(parts[1],10)||500;it.mode=/제외/.test(parts[2]||'')?'without':'with';
+    it.draft=body.slice(h.e,i+1<hits.length?hits[i+1].s:body.length).replace(/^\n+|\s+$/g,'');return it;});
+  var career=(body.match(/\[경력기술\]\n?([\s\S]*?)\[\/경력기술\]/)||[])[1]||'';
+  var prep=(body.match(/\[실습준비\]\n?([\s\S]*?)\[\/실습준비\]/)||[])[1]||'';
+  var ex=[];if(career.trim())ex.push(career.trim());if(prep.trim())ex.push('현장실습 준비 메모:\n'+prep.trim());
+  if(ex.length){state.extra=ex.join('\n\n');$('extra').value=state.extra;}
+  state.period=field('실습 기간');var cr=field('학점 연계');state.credit=/없음/.test(cr)?'no':(/인정/.test(cr)?'yes':'');$('period').value=state.period;$('credit').value=state.credit;
+  var dir=field('지원 방향');
+  state.company=field('기업');state.role=field('직무');state.jd=jd.trim();state.blind=/예/.test(field('블라인드'));state.jdAttach=/예/.test(field('공고 첨부'));
+  state.direction=/미정/.test(dir)?'none':(/직무만/.test(dir)?'role':'full');
+  state.items=items;state.copied=false;state.aiOut='';state.evalOut='';state.score={};state.self={};
+  ['company','role','jd'].forEach(function(id){$(id).value=state[id]||'';});$('blind').checked=state.blind;$('jdAttach').checked=state.jdAttach;
+  save();renderQ();markDone();return items.length;
+}
+function qLimit(q){var m=(q||'').replace(/,/g,'').match(/(\d{2,4})\s*자/);return m?+m[1]:0;}
+function qMode(q){return/공백\s*제외/.test(q||'')?'without':(/공백\s*포함/.test(q||'')?'with':'');}
+function isQLine(l){
+  var s=l.trim();if(s.length<12||/^[\[<【]/.test(s))return false;
+  if(/(주십시오|주세요|하시오|바랍니다|보세요|서술|기술|작성)\s*[.?!)\]]*\s*(\([^)]*\))?\s*$/.test(s))return true;
+  if(/\?\s*(\([^)]*\))?\s*$/.test(s)&&!/다\.?\s*$/.test(s))return true;
+  if(/(\d{2,4}\s*자\s*(이내|이하|내외)|최대\s*[\d,]+\s*자)/.test(s)&&!/다\.\s*$/.test(s))return true;
+  return false;
+}
+function isTitleLine(l){var s=l.trim();return s.length>0&&s.length<=25&&!/[.!?。]$/.test(s)&&!/^[\[<【]/.test(s);}
+function splitDrafts(txt){
+  var t=norm(txt).replace(/\*\*/g,'');
+  if(/===\s*자소서 최종본\s*===/.test(t)||/^[ \t>*#]*\[\s*문항\s*\d+\s*\]/m.test(t)){var o=parseAi(t);var ks=Object.keys(o).map(Number).sort(function(a,b){return a-b;});return ks.length?ks.map(function(k){return{n:k,q:'',txt:o[k]};}):null;}
+  var lines=t.split('\n'),qs=[];
+  lines.forEach(function(l,i){if(isQLine(l))qs.push(i);});
+  function byQ(){
+    var out=[];
+    qs.forEach(function(qi,k){
+      var start=qi,title='';
+      var j=qi-1;while(j>=0&&!lines[j].trim())j--;
+      if(j>=0&&isTitleLine(lines[j])&&(k===0||j>qs[k-1])){var prevEnd=k?qs[k-1]:-1;if(j>prevEnd+0){title=lines[j].trim();start=j;}}
+      out.push({start:start,qi:qi,q:(title?title+' - ':'')+lines[qi].trim()});
+    });
+    return out.map(function(o,k){var end=k+1<out.length?out[k+1].start:lines.length;return{n:k+1,q:o.q,txt:lines.slice(o.qi+1,end).join('\n').trim()};}).filter(function(o){return o.txt||o.q;});
+  }
+  if(qs.length>=2)return byQ();
+  var re=/^[ \t]*(?:문항\s*(\d+)|Q\s*(\d+)|(\d+)\s*[.)번])[ \t.:)]*(.*)$/gm,hits=[],m;
+  while((m=re.exec(t)))hits.push({n:+(m[1]||m[2]||m[3]),s:m.index,e:m.index+m[0].length,rest:m[4]});
+  if(hits.length>=2&&hits.every(function(h,i){return h.n===i+1;}))return hits.map(function(h,i){return{n:h.n,q:(h.rest||'').trim(),txt:t.slice(h.e,i+1<hits.length?hits[i+1].s:t.length).trim()};});
+  if(qs.length===1)return byQ();
+  var hs=[];lines.forEach(function(l,i){if(/^\s*[\[<【][^\]>】]{2,40}[\]>】]\s*$/.test(l))hs.push(i);});
+  if(hs.length>=2)return hs.map(function(h,k){var end=k+1<hs.length?hs[k+1]:lines.length;return{n:k+1,q:'',txt:lines.slice(h,end).join('\n').trim()};});
+  return null;
+}
+function putDraft(i,txt){
+  while(state.items.length<=i)state.items.push(newItem());
+  state.items[i].draft=norm(txt).replace(/\*\*/g,'');
+}
+function afterImport(msg){var st=$('importStat');st.className='fstat ok';st.textContent=msg;$('importTxt').value='';$('importPick').hidden=true;$('importBox').open=false;save();renderQ();markDone();showImported();toast(msg);}
+$('importBtn').addEventListener('click',function(){
+  var raw=$('importTxt').value,st=$('importStat');
+  if(!raw.trim()){st.className='fstat err';st.textContent='붙여 넣은 내용이 없습니다.';return;}
+  if(/처음 쓰기 워크북 초안/.test(raw)){
+    var had=state.company||state.items.some(function(i){return i.draft.trim()||i.final.trim();});
+    if(had&&!ok2('지금 입력된 내용을 가져온 내용으로 바꿀까요?'))return;
+    var n=importPackage(raw);if(n){afterImport('문항 '+n+'개와 초안을 가져왔습니다.');return;}
+  }
+  var parts=splitDrafts(raw);
+  if(parts&&parts.length&&!(parts.length===1&&!parts[0].q)){
+    var over=parts.some(function(p){return state.items[p.n-1]&&state.items[p.n-1].draft.trim();});
+    if(over&&!ok2('이미 답변이 있는 문항은 새 내용으로 바뀝니다. 계속할까요?'))return;
+    parts.forEach(function(p){var i=p.n-1;putDraft(i,p.txt);var it=state.items[i];if(p.q&&!it.q.trim())it.q=p.q;var lm=qLimit(p.q);if(lm)it.limit=lm;var md=qMode(p.q);if(md)it.mode=md;});
+    afterImport('문항 '+parts.length+'개로 나눠 넣었습니다. 문항 질문과 글자수를 확인하세요.');return;
+  }
+  var pick=$('importPick');
+  pick.innerHTML='<b>이 글을 어느 문항의 답변으로 넣을까요?</b><div class="chips">'+state.items.map(function(it,i){return'<button type="button" class="chip" data-put="'+i+'">문항 '+(i+1)+(it.q.trim()?': '+esc(it.q.slice(0,18))+(it.q.length>18?'…':''):'')+(it.draft.trim()?' (답변 있음)':'')+'</button>';}).join('')+'<button type="button" class="chip" data-put="new">+ 새 문항으로</button></div>';
+  pick.hidden=false;st.className='fstat';st.textContent='';
+});
+$('importPick').addEventListener('click',function(e){
+  var b=e.target.closest('[data-put]');if(!b)return;
+  var i=b.dataset.put==='new'?state.items.length:+b.dataset.put;
+  if(state.items[i]&&state.items[i].draft.trim()&&!ok2('문항 '+(i+1)+'의 기존 답변을 바꿀까요?'))return;
+  putDraft(i,$('importTxt').value);
+  afterImport('문항 '+(i+1)+'에 넣었습니다.'+(state.items[i].q.trim()?'':' 문항 질문도 넣어 주세요.'));
+});
+
+if(!(state.company||state.role)&&!state.items.some(function(i){return i.q.trim();}))$('importBox').open=true;
+function showImported(){
+  var s=state,box=$('importedBox');
+  var rows=[['실습 기관·분야',(s.company||'미정')+' / '+(s.role||'미정'),'company'],
+    ['실습 기간',(s.period||'미입력'),'period'],
+    ['모집공고',s.jd.trim()?s.jd.trim().split('\n')[0].slice(0,40)+'…':(s.jdAttach?'파일로 첨부 예정':'없음'),'jd'],
+    ['경력 기술 5줄',s.extra.trim()?s.extra.trim().split('\n').length+'줄 (참고 자료 칸)':'없음','extra']];
+  s.items.forEach(function(it,i){rows.push(['문항 '+(i+1),(it.q||'').slice(0,34)+(it.q.length>34?'…':'')+' · 초안 '+cnt(it,it.draft)+'자','d'+i]);});
+  box.innerHTML='<h2>✓ 가져온 내용</h2><p class="hint" style="margin:4px 0 0">아래 칸들에 채워졌습니다. ‘보기’를 누르면 해당 칸으로 이동합니다. 확인했으면 AI 코치로 가세요.</p><ul class="imp-list">'+
+    rows.map(function(r){return'<li><span class="k">'+esc(r[0])+'</span><span>'+esc(r[1])+'</span><a data-see="'+r[2]+'">보기</a></li>';}).join('')+'</ul><div class="btns"><button class="btn" type="button" data-go="2">AI 코치로 가기</button></div>';
+  box.hidden=false;box.scrollIntoView({behavior:'smooth',block:'start'});
+}
+$('importedBox').addEventListener('click',function(e){var a=e.target.closest('[data-see]');if(a)focusEl(a.dataset.see);});
+$('importTxt').addEventListener('paste',function(){setTimeout(function(){$('importBtn').click();},30);});
+
+renderQ();
+if(window.__handover){var ho=window.__handover;window.__handover=null;state.step=1;var hn=importPackage(ho);if(hn){afterImport('처음 쓰기에서 문항 '+hn+'개와 초안을 가져왔습니다. 확인 후 AI 코치로 가세요.');}}
+go(state.step>=1&&state.step<=3?state.step:1);
+
+}
+var start='first';try{start=localStorage.getItem('intern-app')==='revise'?'revise':'first';}catch(e){}
+window.switchApp(start);
+})();
+</script>
+</body>
+</html>
+
+</body></html>
